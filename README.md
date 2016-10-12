@@ -1,4 +1,4 @@
-# the-chameleon
+# The Chameleon
 The Chameleon WordPress Theme
 
 === The Chameleon ===
