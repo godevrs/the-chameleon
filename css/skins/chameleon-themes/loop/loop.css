@@ -1,0 +1,66 @@
+
+/* = loop Post Wrap Design
+--------------------------------------------------------------*/ 
+.main-content-loop .post-loop {
+   
+}
+/* = loop Post Header Design
+--------------------------------------------------------------*/ 
+.main-content-loop .post-header-loop {
+   
+   padding-left: 0px; 
+}
+/* = loop Post Meta Design
+--------------------------------------------------------------*/ 
+.main-content-loop .post-meta-loop {
+   
+   padding-top: 0px; 
+   padding-bottom: 10px; 
+   padding-left: 0px; 
+}
+/* = loop Post Content Design
+--------------------------------------------------------------*/ 
+.main-content-loop .post-content-loop {
+   
+   padding-top: 0px; 
+   padding-left: 0px; 
+}
+/* = loop Post Meta p Typo
+--------------------------------------------------------------*/ 
+.main-content-loop .post-meta-loop,
+.main-content-loop .post-meta-loop p {
+   color: #999999; 
+   font-size: 14px; 
+}
+/* = loop Pagination Typo
+--------------------------------------------------------------*/ 
+.pagination a,
+.pagination span {
+   color: #ffffff; font-weight: bold; 
+}
+/* = loop Pagination Design
+--------------------------------------------------------------*/ 
+.pagination a {
+   
+   background-color: #f35e3e;
+   padding-top: 10px; 
+   padding-right: 15px; 
+   padding-bottom: 10px; 
+   padding-left: 15px; 
+}
+/* = loop Pagination Design Hover
+--------------------------------------------------------------*/ 
+.pagination a:hover {
+   color: #ffffff; 
+   background-color: #ec7d65;
+}
+/* = loop Pagination Design Current
+--------------------------------------------------------------*/ 
+.pagination span {
+   
+   background-color: #ec7d65;
+   padding-top: 10px; 
+   padding-right: 15px; 
+   padding-bottom: 10px; 
+   padding-left: 15px; 
+}

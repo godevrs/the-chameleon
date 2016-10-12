@@ -1,0 +1,63 @@
+
+/* = primary Menu Wrap
+--------------------------------------------------------------*/ 
+.menu-wrap {
+   
+   background-color: #f35e3e;
+}
+/* = primary Menu Li
+--------------------------------------------------------------*/ 
+.primary-menu ul.menu li a {
+   
+   padding-top: 15px; 
+   padding-right: 20px; 
+   padding-bottom: 15px; 
+   padding-left: 20px; 
+} 
+.primary-menu ul.menu li {
+   
+   margin-bottom: -2px; 
+}
+/* = primary Menu Li Last Child
+--------------------------------------------------------------*/ 
+.primary-menu ul.menu li:last-child {
+   
+   border-right: 0px Solid transparent; 
+}
+/* = primary Menu A Typo
+--------------------------------------------------------------*/ 
+.primary-menu ul.menu li a {
+   color: #ffffff; font-weight: bold; 
+}
+/* = primary Menu A:hover Typo
+--------------------------------------------------------------*/ 
+.primary-menu ul.menu li:hover a {
+   color: #eda293; 
+}
+/* = primary Menu A Current Typo
+--------------------------------------------------------------*/ 
+.primary-menu ul.menu li.current-menu-item a {
+   
+}
+/* = primary Sub Menu Ul
+--------------------------------------------------------------*/ 
+.primary-menu ul.menu li ul.sub-menu {
+   
+   background-color: #f35e3e;
+}
+/* = primary Sub Menu A Typo
+--------------------------------------------------------------*/ 
+.primary-menu ul.menu li ul.sub-menu li a {
+   color: #ffffff; 
+}
+/* = primary Sub Menu A:hover Typo
+--------------------------------------------------------------*/ 
+.primary-menu ul.menu li ul.sub-menu li:hover a,
+.primary-menu ul.menu li ul.sub-menu li.current-menu-item:hover a {
+   color: #ec7d65; 
+}
+/* = primary Sub Menu A Current Typo
+--------------------------------------------------------------*/ 
+.primary-menu ul.menu li ul.sub-menu li.current-menu-item a {
+   color: #ffffff; 
+}

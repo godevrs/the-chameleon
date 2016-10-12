@@ -1,0 +1,32 @@
+
+/* = page_builder_section_1  Design
+--------------------------------------------------------------*/ 
+.page-builder-section-1 {
+   
+   padding-top: 120px; 
+   padding-bottom: 120px; 
+}
+/* = page_builder_section_1  p
+--------------------------------------------------------------*/ 
+.page-builder-section-1,
+.page-builder-section-1 p {
+   
+}
+/* = page_builder_section_1  Headings
+--------------------------------------------------------------*/ 
+.page-builder-section-1 h1,
+.page-builder-section-1 h2,
+.page-builder-section-1 h3,
+.page-builder-section-1 h4,
+.page-builder-section-1 h5,
+.page-builder-section-1 h6 {
+   
+} 
+.page-builder-section-1 h1 a,
+.page-builder-section-1 h2 a,
+.page-builder-section-1 h3 a,
+.page-builder-section-1 h4 a,
+.page-builder-section-1 h5 a,
+.page-builder-section-1 h6 a {
+   
+}

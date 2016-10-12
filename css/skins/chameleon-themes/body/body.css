@@ -1,0 +1,223 @@
+
+/* = body  Design
+--------------------------------------------------------------*/ 
+body {
+   
+   background-color: #ffffff;
+}
+/* = body  p
+--------------------------------------------------------------*/ 
+body,
+body p {
+   color: #555555; font-family:  'Source Sans Pro', sans-serif; 
+   font-size: 18px; 
+   line-height: 31px; 
+}
+/* = body  a
+--------------------------------------------------------------*/ 
+body a {
+   color: #999999; 
+} 
+body a:hover {
+   color: #f35e3e; 
+}
+/* = body  Headings
+--------------------------------------------------------------*/ 
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+   color: #111111; font-family:  'Source Sans Pro', sans-serif; font-weight: bold; 
+} 
+body h1 a,
+body h2 a,
+body h3 a,
+body h4 a,
+body h5 a,
+body h6 a {
+   color: #111111; 
+}
+/* = body  Form Filed
+--------------------------------------------------------------*/ 
+body input:not([type=submit]):not([type=file]),
+body textarea {
+   
+   padding-top: 10px; 
+   padding-right: 10px; 
+   padding-bottom: 10px; 
+   padding-left: 10px; 
+   border-top: 1px Solid #eaeaea; 
+   border-right: 1px Solid #eaeaea; 
+   border-bottom: 1px Solid #eaeaea; 
+   border-left: 1px Solid #eaeaea; 
+   -webkit-border-top-left-radius: 2px; 
+   -moz-border-radius-topleft: 2px; 
+   -khtml-border-top-left-radius: 2px; 
+   border-top-left-radius: 2px; 
+   -webkit-border-top-right-radius: 2px; 
+   -moz-border-radius-topright: 2px; 
+   -khtml-border-top-right-radius: 2px; 
+   border-top-right-radius: 2px; 
+   -webkit-border-bottom-right-radius: 2px; 
+   -moz-border-radius-bottomright: 2px; 
+   -khtml-border-bottom-right-radius: 2px; 
+   border-bottom-right-radius: 2px; 
+   -webkit-border-bottom-left-radius: 2px; 
+   -moz-border-radius-bottomleft: 2px; 
+   -khtml-border-bottom-left-radius: 2px; 
+   border-bottom-left-radius: 2px; 
+}
+/* = body  Form Filed Typo
+--------------------------------------------------------------*/ 
+body input:not([type=submit]):not([type=file]),
+body textarea {
+   font-family: "Source Sans Pro",sans-serif; 
+   font-size: 14px; 
+}
+/* = body  Form Select
+--------------------------------------------------------------*/ 
+body select {
+   
+   background-color: #ffffff;
+   padding-top: 10px; 
+   padding-right: 10px; 
+   padding-bottom: 10px; 
+   padding-left: 10px; 
+   border-top: 1px Solid #eaeaea; 
+   border-right: 1px Solid #eaeaea; 
+   border-bottom: 1px Solid #eaeaea; 
+   border-left: 1px Solid #eaeaea; 
+   -webkit-border-top-left-radius: 2px; 
+   -moz-border-radius-topleft: 2px; 
+   -khtml-border-top-left-radius: 2px; 
+   border-top-left-radius: 2px; 
+   -webkit-border-top-right-radius: 2px; 
+   -moz-border-radius-topright: 2px; 
+   -khtml-border-top-right-radius: 2px; 
+   border-top-right-radius: 2px; 
+   -webkit-border-bottom-right-radius: 2px; 
+   -moz-border-radius-bottomright: 2px; 
+   -khtml-border-bottom-right-radius: 2px; 
+   border-bottom-right-radius: 2px; 
+   -webkit-border-bottom-left-radius: 2px; 
+   -moz-border-radius-bottomleft: 2px; 
+   -khtml-border-bottom-left-radius: 2px; 
+   border-bottom-left-radius: 2px; 
+}
+/* = body  Form Select Option
+--------------------------------------------------------------*/ 
+body select option {
+   
+   padding-top: 5px; 
+   padding-right: 10px; 
+   padding-bottom: 5px; 
+   padding-left: 10px; 
+}
+/* = body  Form Select Typo
+--------------------------------------------------------------*/ 
+body select {
+   font-family: "Source Sans Pro",sans-serif; 
+   font-size: 14px; font-weight: normal; 
+}
+/* = body  Form Submit
+--------------------------------------------------------------*/ 
+body input[type=submit],
+body button {
+   
+   background-color: #f35e3e;
+   padding-top: 10px; 
+   padding-right: 10px; 
+   padding-bottom: 10px; 
+   padding-left: 10px; 
+   border-top: 1px Solid #f35e3e; 
+   border-right: 1px Solid #f35e3e; 
+   border-bottom: 1px Solid #f35e3e; 
+   border-left: 1px Solid #f35e3e; 
+   -webkit-border-top-left-radius: 2px; 
+   -moz-border-radius-topleft: 2px; 
+   -khtml-border-top-left-radius: 2px; 
+   border-top-left-radius: 2px; 
+   -webkit-border-top-right-radius: 2px; 
+   -moz-border-radius-topright: 2px; 
+   -khtml-border-top-right-radius: 2px; 
+   border-top-right-radius: 2px; 
+   -webkit-border-bottom-right-radius: 2px; 
+   -moz-border-radius-bottomright: 2px; 
+   -khtml-border-bottom-right-radius: 2px; 
+   border-bottom-right-radius: 2px; 
+   -webkit-border-bottom-left-radius: 2px; 
+   -moz-border-radius-bottomleft: 2px; 
+   -khtml-border-bottom-left-radius: 2px; 
+   border-bottom-left-radius: 2px; 
+}
+/* = body  Form Submit Typo
+--------------------------------------------------------------*/ 
+body input[type=submit],
+body button {
+   color: #ffffff; font-family: "Source Sans Pro",sans-serif; 
+   font-size: 14px; font-weight: bold; 
+}
+/* = body  Form Filed:hover
+--------------------------------------------------------------*/ 
+body input:not([type=submit]):not([type=file]):hover,
+body textarea:hover {
+   
+   border-top: 1px Solid #d8d8d8; 
+   border-right: 1px Solid #d8d8d8; 
+   border-bottom: 1px Solid #d8d8d8; 
+   border-left: 1px Solid #d8d8d8; 
+}
+/* = body  Form Submit:hover
+--------------------------------------------------------------*/ 
+body input[type=submit]:hover,
+body button:hover {
+   
+   background-color: #ec7d65;
+}
+/* = body  Media 
+--------------------------------------------------------------*/ 
+body img,
+body a img,
+body embed,
+body a embed,
+body object,
+body a object,
+body iframe,
+body a iframe,
+body video,
+body a video,
+body audio,
+body a audio {
+   
+   background-color: #e7e7e7;
+}
+/* = body  Button Normal
+--------------------------------------------------------------*/ 
+body .btn {
+   font-family: 'Source Sans Pro', sans-serif; 
+   font-size: 18px; font-weight: bold; 
+   padding-right: 40px; 
+   padding-left: 40px; 
+}
+/* = body  Button Black
+--------------------------------------------------------------*/ 
+body .btn-black {
+   color: #ffffff; 
+   background-color: #151515;
+   border-top: 1px Solid #151515; 
+   border-right: 1px Solid #151515; 
+   border-bottom: 1px Solid #151515; 
+   border-left: 1px Solid #151515; 
+}
+/* = body  Button Red
+--------------------------------------------------------------*/ 
+body .btn-red {
+   color: #ffffff; 
+   background-color: #f35e3e;
+   border-top: 1px Solid #f35e3e; 
+   border-right: 1px Solid #f35e3e; 
+   border-bottom: 1px Solid #f35e3e; 
+   border-left: 1px Solid #f35e3e; 
+}

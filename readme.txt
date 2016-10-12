@@ -1,6 +1,3 @@
-# the-chameleon
-The Chameleon WordPress Theme
-
 === The Chameleon ===
 
 Contributors: GoDev

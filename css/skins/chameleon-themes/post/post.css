@@ -1,0 +1,35 @@
+
+/* = post  Content Design
+--------------------------------------------------------------*/ 
+.post-content-single {
+   
+   padding-left: 0px; 
+}
+/* = post Single Header Design
+--------------------------------------------------------------*/ 
+.post-single .post-header-single {
+   
+   padding-top: 0px; 
+   padding-left: 0px; 
+}
+/* = post Single Meta Design
+--------------------------------------------------------------*/ 
+.post-single .post-meta-single {
+   
+   padding-top: 0px; 
+   padding-bottom: 0px; 
+   padding-left: 0px; 
+}
+/* = post Single Header H1 Typo
+--------------------------------------------------------------*/ 
+.post-single .post-header-single h1 {
+   
+   font-size: 32px; 
+}
+/* = post Single Meta p Typo
+--------------------------------------------------------------*/ 
+.post-single .post-meta-single,
+.post-single .post-meta-single p {
+   color: #999999; 
+   font-size: 14px; 
+}

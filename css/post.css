@@ -1,0 +1,15 @@
+.post-footer ul, 
+.post-footer ul li{
+	list-style-type: none;	
+
+}
+.post-footer ul, 
+.post-footer ol{
+	  margin-left: 0;
+}
+
+.post-media-loop.aligncenter,
+.post-media-single.aligncenter{
+	margin-top:0;
+	margin-bottom:0;
+}

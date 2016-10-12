@@ -1,0 +1,48 @@
+
+
+/* =  MESSAGES 
+-------------------------------------------------------------- */
+.message {
+    font-family: Verdana,sans-serif;
+ 	width:100%;
+    padding: 7px 10px 7px 55px;
+    margin: 5px 0px 5px 0px;
+    color: #3d3333;
+    font-size: 11px;
+    line-height: 16px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.message h6 {
+    margin: 0px;
+}
+
+.message .inner {
+    background-position: -10px -10px;
+    background-repeat: no-repeat;
+    margin-bottom: -9px;
+    padding-bottom: 9px;
+}
+
+.message.error {
+    border: #d99d9d 1px solid;
+    background: #FFe5e5 url(img/error.png) no-repeat left center;
+}
+
+.message.success {
+    border: #9bdea8 1px solid;
+    background: #e9ffe5 url(img/success.png) no-repeat left center;
+}
+
+.message.notice {
+    border: #e8e657 1px solid;
+    background: #FFFee5 url(img/notice.png) no-repeat left center;
+}
+
+.message.info {
+    border: #aacdde 1px solid;
+    background: #d2ebf6 url(img/info.png) no-repeat left center;
+}
+

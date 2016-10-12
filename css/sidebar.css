@@ -1,0 +1,6 @@
+.sidebar select, 
+.sidebar input:not([type=submit]):not([type=file]), 
+.sidebar textarea {
+	
+	width:100% !important;
+}

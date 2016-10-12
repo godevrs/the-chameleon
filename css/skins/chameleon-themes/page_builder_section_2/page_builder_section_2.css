@@ -1,0 +1,33 @@
+
+/* = page_builder_section_2  Design
+--------------------------------------------------------------*/ 
+.page-builder-section-2 {
+   
+   background-color: #f35e3e;
+   padding-top: 120px; 
+   padding-bottom: 120px; 
+}
+/* = page_builder_section_2  p
+--------------------------------------------------------------*/ 
+.page-builder-section-2,
+.page-builder-section-2 p {
+   color: #ffffff; 
+}
+/* = page_builder_section_2  Headings
+--------------------------------------------------------------*/ 
+.page-builder-section-2 h1,
+.page-builder-section-2 h2,
+.page-builder-section-2 h3,
+.page-builder-section-2 h4,
+.page-builder-section-2 h5,
+.page-builder-section-2 h6 {
+   color: #ffffff; 
+} 
+.page-builder-section-2 h1 a,
+.page-builder-section-2 h2 a,
+.page-builder-section-2 h3 a,
+.page-builder-section-2 h4 a,
+.page-builder-section-2 h5 a,
+.page-builder-section-2 h6 a {
+   color: #ffffff; 
+}

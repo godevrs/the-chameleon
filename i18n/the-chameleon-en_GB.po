@@ -1,0 +1,981 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: the_chameleon-en_GB\n"
+"POT-Creation-Date: 2016-05-06 09:24+0200\n"
+"PO-Revision-Date: 2016-05-06 09:24+0200\n"
+"Last-Translator: NO Solutions - ThemeStreet <support@themestreet.net>\n"
+"Language-Team: The Chameleon <contact@chameleonthemes.net>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: framework/class-bootstrap.php:318
+msgid "Comments"
+msgstr ""
+
+#: framework/classes/class-config.php:65
+msgid "1 Column"
+msgstr ""
+
+#: framework/classes/class-config.php:66
+msgid "2 Columns"
+msgstr ""
+
+#: framework/classes/class-config.php:67
+msgid "2 Columns 30x70%"
+msgstr ""
+
+#: framework/classes/class-config.php:68
+msgid "2 Columns 70x30%"
+msgstr ""
+
+#: framework/classes/class-config.php:69
+msgid "3 Columns"
+msgstr ""
+
+#: framework/classes/class-config.php:70
+msgid "3 Columns 60x25x15%"
+msgstr ""
+
+#: framework/classes/class-config.php:71
+msgid "3 Columns 15x25x60%"
+msgstr ""
+
+#: framework/classes/class-config.php:72
+msgid "4 Columns 15x60x25%"
+msgstr ""
+
+#: framework/classes/class-config.php:73
+msgid "4 Columns"
+msgstr ""
+
+#: framework/classes/class-config.php:74
+msgid "5 Columns"
+msgstr ""
+
+#: framework/classes/class-config.php:75
+msgid "6 Columns"
+msgstr ""
+
+#: framework/classes/class-config.php:90 parts/Archive/Archive.php:131
+#: parts/Bottom/Bottom.php:41 parts/Copyright/Copyright.php:40
+#: parts/Footer/Footer.php:33 parts/Header/Header.php:39 parts/Main/Main.php:39
+#: parts/Menu/Menu.php:51 parts/Top/Top.php:41 parts/Upper/Upper.php:33
+msgid "Wrap"
+msgstr ""
+
+#: framework/classes/class-config.php:91
+msgid "Box"
+msgstr ""
+
+#: framework/classes/class-config.php:92 parts/Archive/Archive.php:136
+msgid "Stretch"
+msgstr ""
+
+#: framework/classes/class-config.php:93 parts/Archive/Archive.php:137
+msgid "Fullwidth"
+msgstr ""
+
+#: framework/classes/class-config.php:107 parts/Archive/Archive.php:68
+#: parts/Bottom/Bottom.php:60 parts/Copyright/Copyright.php:58
+#: parts/Footer/Footer.php:52 parts/Header/Header.php:57 parts/Top/Top.php:60
+#: parts/Upper/Upper.php:52
+msgid "Animate"
+msgstr ""
+
+#: framework/classes/class-config.php:195 parts/Archive/Archive.php:78
+#: parts/Bottom/Bottom.php:70 parts/Copyright/Copyright.php:68
+#: parts/Footer/Footer.php:62 parts/Header/Header.php:67 parts/Top/Top.php:70
+#: parts/Upper/Upper.php:62
+msgid "Duration"
+msgstr ""
+
+#: framework/classes/class-config.php:215 parts/Archive/Archive.php:87
+#: parts/Bottom/Bottom.php:79 parts/Copyright/Copyright.php:77
+#: parts/Footer/Footer.php:71 parts/Header/Header.php:76 parts/Top/Top.php:79
+#: parts/Upper/Upper.php:71
+msgid "Delay"
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:462
+msgid "Active Page Builder"
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:479
+msgid "Successfully create new sidebar."
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:485
+msgid "Sidebar with that name already exist."
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:502
+msgid "Create Sidebar"
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:506
+msgid "Add sidebar"
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:517
+#: framework/classes/class-sidebars.php:92 parts/Header/Header.php:89
+msgid "Header"
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:528
+#: framework/classes/class-meta-boxes.php:565
+#: framework/classes/class-meta-boxes.php:638
+#: framework/classes/class-meta-boxes.php:684 parts/Archive/Archive.php:58
+#: parts/Archive/Archive.php:162 parts/Bottom/Bottom.php:50
+#: parts/Copyright/Copyright.php:49 parts/Footer/Footer.php:42
+#: parts/Header/Header.php:48 parts/Top/Top.php:50 parts/Upper/Upper.php:42
+msgid "Columns"
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:543
+msgid "Choice options for Header"
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:553
+#: framework/classes/class-sidebars.php:93 parts/Top/Top.php:94
+msgid "Top"
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:581
+msgid "Choice options for Top"
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:591
+msgid "Main Content"
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:598
+msgid " Choice options for Main content"
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:610
+msgid "Number of Sections"
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:616
+msgid "Choice number of section in Main content"
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:627
+#, php-format
+msgid "Section %s"
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:661
+#, php-format
+msgid "Choice options for Section %s"
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:673
+#: framework/classes/class-sidebars.php:97 parts/Bottom/Bottom.php:93
+msgid "Bottom"
+msgstr ""
+
+#: framework/classes/class-meta-boxes.php:699
+msgid "Choice options for bottom"
+msgstr ""
+
+#: framework/classes/class-sidebars.php:90
+msgid "Select Sidebar"
+msgstr ""
+
+#: framework/classes/class-sidebars.php:91 parts/Upper/Upper.php:85
+msgid "Upper"
+msgstr ""
+
+#: framework/classes/class-sidebars.php:94
+#: parts/Breadcrumb/view/breadcrumb.php:22
+#: parts/Breadcrumb/view/breadcrumb.php:165 parts/Title/view/title.php:145
+msgid "Page"
+msgstr ""
+
+#: framework/classes/class-sidebars.php:95 parts/Post/Post.php:69
+msgid "Post"
+msgstr ""
+
+#: framework/classes/class-sidebars.php:96
+msgid "Post Footer"
+msgstr ""
+
+#: framework/classes/class-sidebars.php:98 parts/Footer/Footer.php:85
+#: parts/Post/Post.php:123
+msgid "Footer"
+msgstr ""
+
+#: framework/classes/class-sidebars.php:99 parts/Copyright/Copyright.php:90
+msgid "Copyright"
+msgstr ""
+
+#: framework/classes/class-sidebars.php:191
+msgid ""
+"New sidebar is successfully added. Please <a href=\"\">refresh page</a>."
+msgstr ""
+
+#: framework/classes/class-sidebars.php:201
+msgid "Sidebar is successfully delete. Please <a href=\"\">refresh page</a>."
+msgstr ""
+
+#: framework/classes/class-sidebars.php:208
+msgid "Custom Sidebars"
+msgstr ""
+
+#: framework/classes/class-sidebars.php:214
+msgid "Unique Sidebar Name"
+msgstr ""
+
+#: framework/classes/class-sidebars.php:217
+msgid "Create "
+msgstr ""
+
+#: framework/classes/class-sidebars.php:227
+msgid "Delete "
+msgstr ""
+
+#: parts/Archive/Archive.php:41 parts/Archive/Archive.php:145
+#: parts/Post/Post.php:40
+msgid "Template"
+msgstr ""
+
+#: parts/Archive/Archive.php:42
+msgid "Choice template"
+msgstr ""
+
+#: parts/Archive/Archive.php:44 parts/Archive/Archive.php:148
+#: parts/Post/Post.php:44
+msgid "Full Width"
+msgstr ""
+
+#: parts/Archive/Archive.php:45 parts/Archive/Archive.php:149
+#: parts/Post/Post.php:45
+msgid "Left Sidebar"
+msgstr ""
+
+#: parts/Archive/Archive.php:46 parts/Archive/Archive.php:150
+#: parts/Post/Post.php:46
+msgid "Right Sidebar"
+msgstr ""
+
+#: parts/Archive/Archive.php:47 parts/Archive/Archive.php:151
+#: parts/Post/Post.php:47
+msgid "Double Sidebars"
+msgstr ""
+
+#: parts/Archive/Archive.php:48 parts/Archive/Archive.php:152
+#: parts/Post/Post.php:48
+msgid "Double Right Sidebars"
+msgstr ""
+
+#: parts/Archive/Archive.php:49 parts/Archive/Archive.php:153
+#: parts/Post/Post.php:49
+msgid "Double Left Sidebars"
+msgstr ""
+
+#: parts/Archive/Archive.php:59
+msgid "Choice number of columns for the template."
+msgstr ""
+
+#: parts/Archive/Archive.php:69
+msgid "Choice animate effect for post in loop."
+msgstr ""
+
+#: parts/Archive/Archive.php:79 parts/Bottom/Bottom.php:71
+#: parts/Copyright/Copyright.php:69 parts/Footer/Footer.php:63
+#: parts/Header/Header.php:68 parts/Top/Top.php:71 parts/Upper/Upper.php:63
+msgid "Choice duration for animate effect."
+msgstr ""
+
+#: parts/Archive/Archive.php:88 parts/Bottom/Bottom.php:80
+#: parts/Copyright/Copyright.php:78 parts/Footer/Footer.php:72
+#: parts/Header/Header.php:77 parts/Top/Top.php:80 parts/Upper/Upper.php:72
+msgid "Choice delay for animate effect."
+msgstr ""
+
+#: parts/Archive/Archive.php:99 parts/Bottom/Bottom.php:90
+#: parts/Copyright/Copyright.php:87 parts/Custom/Custom.php:49
+#: parts/Footer/Footer.php:82 parts/Header/Header.php:86 parts/Main/Main.php:49
+#: parts/Menu/Menu.php:74 parts/Post/Post.php:66 parts/Skin/Skin.php:84
+#: parts/Top/Top.php:91 parts/Upper/Upper.php:82
+msgid "Theme Options"
+msgstr ""
+
+#: parts/Archive/Archive.php:102
+msgid "Archive"
+msgstr ""
+
+#: parts/Archive/Archive.php:103
+msgid "Use this options to set up default archive and blog section."
+msgstr ""
+
+#: parts/Archive/Archive.php:134 parts/Archive/Archive.php:147
+msgid "Default"
+msgstr ""
+
+#: parts/Archive/Archive.php:135
+msgid "Normal"
+msgstr ""
+
+#: parts/Archive/Archive.php:156
+msgid "The Template is possibility the term page show on a wide range of ways."
+msgstr ""
+
+#: parts/Archive/Archive.php:165
+msgid "The Layout is possibility that show posts in multiple columns."
+msgstr ""
+
+#: parts/Archive/Archive.php:172
+msgid "Posts Per Page"
+msgstr ""
+
+#: parts/Archive/Archive.php:174
+msgid "Number of posts that will be shown in this term."
+msgstr ""
+
+#: parts/Archive/Archive.php:182
+msgid "Sidebar Primary"
+msgstr ""
+
+#: parts/Archive/Archive.php:191
+msgid "Sidebar Secondary"
+msgstr ""
+
+#: parts/Archive/Archive.php:194
+msgid ""
+"The Sidebars is possibility to choose different sidebars for left and right "
+"side."
+msgstr ""
+
+#: parts/Archive/Archive.php:201
+msgid "Post Title"
+msgstr ""
+
+#: parts/Archive/Archive.php:203
+msgid "Full Title"
+msgstr ""
+
+#: parts/Archive/Archive.php:204 parts/Archive/Archive.php:251
+msgid "Hide"
+msgstr ""
+
+#: parts/Archive/Archive.php:229
+msgid ""
+"The Title is possibility to reduce the title of articles. Usually can be "
+"used when you choose layout in two or more columns to align more posts."
+msgstr ""
+
+#: parts/Archive/Archive.php:237
+msgid "Post Meta Pattern"
+msgstr ""
+
+#: parts/Archive/Archive.php:239
+msgid ""
+"The Meta is an option to define hoe to display meta appearance details with "
+"help of patterns. The available options are %author%, %date%, %category%, "
+"%comments% or to enter off and unplug meta completely. Example Example ( By "
+"%author% on %date% in %category% | %comments% )."
+msgstr ""
+
+#: parts/Archive/Archive.php:247
+msgid "Post Content"
+msgstr ""
+
+#: parts/Archive/Archive.php:249
+msgid "Excerpt"
+msgstr ""
+
+#: parts/Archive/Archive.php:250
+msgid "Content"
+msgstr ""
+
+#: parts/Archive/Archive.php:270
+msgid ""
+"The Text is possibility to short or extend text that appears in posts as a "
+"brief description or to display it in entirety."
+msgstr ""
+
+#: parts/Archive/view/archive.php:43 parts/Breadcrumb/view/breadcrumb.php:45
+#: parts/Title/view/title.php:36
+msgid "Search results for"
+msgstr ""
+
+#: parts/Archive/view/archive.php:90
+msgid "Nothing Found"
+msgstr ""
+
+#: parts/Archive/view/archive.php:97
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: parts/Archive/view/archive.php:300
+msgid "&laquo; Previous"
+msgstr ""
+
+#: parts/Archive/view/archive.php:301
+msgid "Next &raquo;"
+msgstr ""
+
+#: parts/Bottom/Bottom.php:42 parts/Copyright/Copyright.php:41
+#: parts/Header/Header.php:40 parts/Main/Main.php:40 parts/Top/Top.php:42
+#: parts/Upper/Upper.php:34
+msgid "Choice wrap"
+msgstr ""
+
+#: parts/Bottom/Bottom.php:51
+msgid "Choice number of columns for widgets in bottom section."
+msgstr ""
+
+#: parts/Bottom/Bottom.php:61 parts/Copyright/Copyright.php:59
+#: parts/Footer/Footer.php:53 parts/Header/Header.php:58 parts/Top/Top.php:61
+#: parts/Upper/Upper.php:53
+msgid "Choice animate effect for widgets."
+msgstr ""
+
+#: parts/Bottom/Bottom.php:94
+msgid "Use this options to set up bottom section."
+msgstr ""
+
+#: parts/Breadcrumb/view/breadcrumb.php:148
+msgid "Posts tagged "
+msgstr ""
+
+#: parts/Copyright/Copyright.php:50
+msgid "Choice number of columns for widgets in copyright section."
+msgstr ""
+
+#: parts/Copyright/Copyright.php:91
+msgid "Use this options to set up copyright section."
+msgstr ""
+
+#: parts/Custom/Custom.php:40
+msgid "CSS"
+msgstr ""
+
+#: parts/Custom/Custom.php:41
+msgid "Enter your custom css code."
+msgstr ""
+
+#: parts/Custom/Custom.php:52
+msgid "Custom CSS"
+msgstr ""
+
+#: parts/Custom/Custom.php:53
+msgid "Code added here will not be replaced after theme updates."
+msgstr ""
+
+#: parts/Footer/Footer.php:34
+msgid "Choice wrap."
+msgstr ""
+
+#: parts/Footer/Footer.php:43
+msgid "Choice number of columns for widgets in footer section."
+msgstr ""
+
+#: parts/Footer/Footer.php:86
+msgid "Use this options to set up footer."
+msgstr ""
+
+#: parts/Header/Header.php:49
+msgid "Choice number of columns for widgets in header section."
+msgstr ""
+
+#: parts/Header/Header.php:90
+msgid "Use this options to set up header section."
+msgstr ""
+
+#: parts/Main/Main.php:52
+msgid "Main"
+msgstr ""
+
+#: parts/Main/Main.php:53
+msgid "Use this option to set up main content."
+msgstr ""
+
+#: parts/Menu/Menu.php:29 parts/Menu/Menu.php:77
+msgid "Primary Menu"
+msgstr ""
+
+#: parts/Menu/Menu.php:52
+msgid "Choice wrap only for Type: The menu below the header."
+msgstr ""
+
+#: parts/Menu/Menu.php:60
+msgid "Type"
+msgstr ""
+
+#: parts/Menu/Menu.php:61
+msgid "Choice type of the primary menu."
+msgstr ""
+
+#: parts/Menu/Menu.php:63
+msgid "The menu below the header"
+msgstr ""
+
+#: parts/Menu/Menu.php:64
+msgid "Without the menu"
+msgstr ""
+
+#: parts/Menu/Menu.php:78
+msgid "Use this options to set up the primary menu."
+msgstr ""
+
+#: parts/Page/Page.php:34
+msgid "The Chameleon - Sidebars"
+msgstr ""
+
+#: parts/Page/Page.php:41 parts/Post/Post.php:103
+msgid "Primary"
+msgstr ""
+
+#: parts/Page/Page.php:43 parts/Post/Post.php:105
+msgid "This sidebar display for all templates whit one sidebar."
+msgstr ""
+
+#: parts/Page/Page.php:51 parts/Post/Post.php:113
+msgid "Secondary"
+msgstr ""
+
+#: parts/Page/Page.php:52 parts/Post/Post.php:114
+msgid "This sidebar display only for templates whit two sidebars."
+msgstr ""
+
+#: parts/Page/Page.php:63
+msgid "Page Builder - The Chameleon"
+msgstr ""
+
+#: parts/Page/Page.php:65
+msgid ""
+"Use this Page builder to build layout for your page using the widgets. "
+"Create sidebars and select them in one of twenty sections and choice number "
+"of columns, aminate effect, dealy and duration for that section. Then go on "
+"Appearance >> Customize and add widgets in the sidebars."
+msgstr ""
+
+#: parts/Page/Page.php:73
+msgid "Choice wrap for Header section."
+msgstr ""
+
+#: parts/Page/Page.php:270
+msgid "Custom CSS - The Chameleon"
+msgstr ""
+
+#: parts/Page/Page.php:272
+msgid "Use this option to enter custom css for this page."
+msgstr ""
+
+#: parts/Page/Page.php:280
+msgid "Enter your custom css just for this page."
+msgstr ""
+
+#: parts/Page/view/page.php:73
+msgid "Error 404 - Page not found!"
+msgstr ""
+
+#: parts/Post/Post.php:41
+msgid "Choice post template."
+msgstr ""
+
+#: parts/Post/Post.php:57
+msgid "Meta Pattern"
+msgstr ""
+
+#: parts/Post/Post.php:58
+msgid ""
+"Use %author%, %date%, %category% and  %comments% helpers to defile post meta "
+"view."
+msgstr ""
+
+#: parts/Post/Post.php:70
+msgid "Use this options for set up single post."
+msgstr ""
+
+#: parts/Post/Post.php:96
+msgid "Sidebars"
+msgstr ""
+
+#: parts/Post/Post.php:124
+msgid "Post footer content"
+msgstr ""
+
+#: parts/Post/Post.php:135
+msgid "Featured Media"
+msgstr ""
+
+#: parts/Post/Post.php:142
+msgid "Featured media"
+msgstr ""
+
+#: parts/Post/Post.php:144
+msgid "Add media link for video post format. "
+msgstr ""
+
+#: parts/Post/Post.php:144
+msgid "Okay, So What Sites Can I Embed From?"
+msgstr ""
+
+#: parts/Post/Post.php:145
+msgid "Entry your media url"
+msgstr ""
+
+#: parts/Post/Post.php:151
+msgid "Featured audio"
+msgstr ""
+
+#: parts/Post/Post.php:152
+msgid "Add link for audio post format in .mp3 format"
+msgstr ""
+
+#: parts/Post/Post.php:154
+msgid "Entry your audio url"
+msgstr ""
+
+#: parts/Post/Post.php:162
+msgid "Post Format Options"
+msgstr ""
+
+#: parts/Post/Post.php:169
+msgid "Quote author name"
+msgstr ""
+
+#: parts/Post/Post.php:171
+msgid "Add author name for Quote post format."
+msgstr ""
+
+#: parts/Post/Post.php:172
+msgid "Entry author name"
+msgstr ""
+
+#: parts/Post/Post.php:178
+msgid "Link post format"
+msgstr ""
+
+#: parts/Post/Post.php:179
+msgid "Add link for Link post format."
+msgstr ""
+
+#: parts/Post/Post.php:181
+msgid "Entry url"
+msgstr ""
+
+#: parts/Post/view/formats/footer.php:5
+msgid "Pages:"
+msgstr ""
+
+#: parts/Post/view/formats/footer.php:11
+msgid "Next page"
+msgstr ""
+
+#: parts/Post/view/formats/footer.php:12
+msgid "Previous page"
+msgstr ""
+
+#: parts/Skin/Skin.php:73 parts/Skin/Skin.php:87
+msgid "Skin"
+msgstr ""
+
+#: parts/Skin/Skin.php:74
+msgid "Choice skin for your The Chameleon."
+msgstr ""
+
+#: parts/Skin/Skin.php:88
+msgid ""
+"On one click you can change design of The Chamelon theme. For more designs "
+"check our site"
+msgstr ""
+
+#: parts/Title/view/title.php:134
+msgid "Articles posted by"
+msgstr ""
+
+#: parts/Title/view/title.php:138
+msgid "Error 404"
+msgstr ""
+
+#: parts/Top/Top.php:51
+msgid "Choice number of columns for widgets in top section."
+msgstr ""
+
+#: parts/Top/Top.php:95
+msgid "Use this options to set up the top section."
+msgstr ""
+
+#: parts/Upper/Upper.php:43
+msgid "Choice number of columns for widgets in upper section."
+msgstr ""
+
+#: parts/Upper/Upper.php:86
+msgid "Use this options to set up the upper section."
+msgstr ""
+
+#: templates/comments.php:15
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: templates/comments.php:49
+msgid "Comments are closed."
+msgstr ""
+
+#: templates/comments.php:105
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: templates/comments.php:108
+#, php-format
+msgid "<span class=\"comment-date\">%1$s at %2$s</span>"
+msgstr ""
+
+#: templates/comments.php:108 templates/comments.php:135
+msgid "(Edit)"
+msgstr ""
+
+#: templates/comments.php:122
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: templates/comments.php:135
+msgid "Pingback:"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:19
+msgid "Your site's most recent Posts with advanced functions."
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:20
+msgid "Recent Posts - The Chameleon"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:26
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:320
+msgid "Recent Posts"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:213
+#: widgets/Elements/Elements.php:116
+#: widgets/Social_Networks/Social_Networks.php:135
+msgid "Title:"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:216
+msgid "Tag:"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:239
+msgid "Category:"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:262
+msgid "Order by:"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:264
+msgid "Date"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:265
+msgid "ID"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:266
+msgid "Title"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:267
+msgid "Author"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:268
+msgid "Random"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:269
+msgid "Comment count"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:272
+msgid "Order:"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:274
+msgid "DESC"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:275
+msgid "ASC"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:278
+msgid "Number of posts to show:"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:282
+msgid "Columns:"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:296
+msgid "Show Post Title"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:298
+msgid "Post title length (characters)"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:301
+msgid "Meta Pattern:"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:306
+msgid "Show Post Media"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:308
+msgid "Media size (W-H):"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:313
+msgid "Show Post Excerpt"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:314
+msgid "Post excerpt length (characters)"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:318
+msgid "Template:"
+msgstr ""
+
+#: widgets/Advanced_Recent_Posts/Advanced_Recent_Posts.php:321
+msgid "Featured 1 of 5"
+msgstr ""
+
+#: widgets/Elements/Elements.php:18
+msgid "Add site elements Logo, Breadcrumb, Title or Copyright."
+msgstr ""
+
+#: widgets/Elements/Elements.php:19
+msgid "Elements - The Chameleon"
+msgstr ""
+
+#: widgets/Elements/Elements.php:25
+msgid "Elements"
+msgstr ""
+
+#: widgets/Elements/Elements.php:119
+msgid "Element:"
+msgstr ""
+
+#: widgets/Elements/Elements.php:136
+msgid "Logo Type:"
+msgstr ""
+
+#: widgets/Elements/Elements.php:140
+msgid "Image"
+msgstr ""
+
+#: widgets/Elements/Elements.php:141
+msgid "Text"
+msgstr ""
+
+#: widgets/Elements/Elements.php:150
+msgid "Logo:"
+msgstr ""
+
+#: widgets/Elements/Elements.php:154
+msgid "Copyright:"
+msgstr ""
+
+#: widgets/Elements/Elements.php:160
+msgid "Breadcrumb delimiter:"
+msgstr ""
+
+#: widgets/Empty/Empty.php:20
+msgid "Use this widget to make space between widgets."
+msgstr ""
+
+#: widgets/Empty/Empty.php:21
+msgid "Empty - The Chameleon"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:18
+msgid "Add social networks icon."
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:19
+msgid "Social Networks - The Chameleon"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:25
+msgid "Follow Us"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:138
+msgid "Twitter:"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:141
+msgid "Linkedin:"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:144
+msgid "Facebook:"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:147
+msgid "Google Plus:"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:150
+msgid "Skype:"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:153
+msgid "Pinterest:"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:156
+msgid "Flickr:"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:159
+msgid "Instagram:"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:162
+msgid "Youtube:"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:165
+msgid "Bitbucket:"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:168
+msgid "Github:"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:171
+msgid "Dribbble:"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:174
+msgid "Foursquare:"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:177
+msgid "Size:"
+msgstr ""
+
+#: widgets/Social_Networks/Social_Networks.php:192
+msgid "Style:"
+msgstr ""

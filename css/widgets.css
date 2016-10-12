@@ -1,0 +1,90 @@
+/* = Widgets rss
+-------------------------------------------------------------- */
+.widget-header img{
+	vertical-align:middle;
+}	
+.widget .rss-date{
+	display:block; font-size:85%;
+}
+	
+.widget-header,
+.widget-content{
+	float:left;
+	width:100%;
+}
+
+/* = Widget Advanced Recent Posts
+-------------------------------------------------------------- */
+.widget_advanced_recent_posts .widget-header{
+/*	display:none;*/
+}
+.widget_advanced_recent_posts, 
+.widget_advanced_recent_posts .widget-content{ }
+.widget_advanced_recent_posts .post-header{
+/*	padding:5px 10px 5px 10px;*/
+}
+
+/* = Widget Nav Menu 
+-------------------------------------------------------------- */
+.sidebar .widget_nav_menu {}
+.sidebar .widget_nav_menu ul.menu{}
+	
+.page-content-widgets .widget_nav_menu ul.menu a,	
+.sidebar .widget_nav_menu ul.menu a,
+.bottom .widget_nav_menu ul.menu a,
+.footer .widget_nav_menu ul.menu a{
+	display:block;
+}
+
+.page-content-widgets .widget_nav_menu ul.menu li.current-menu-item ul,
+.page-content-widgets .widget_nav_menu ul.menu li.current-menu-parent ul,
+.sidebar .widget_nav_menu ul.menu li.current-menu-item ul,
+.sidebar .widget_nav_menu ul.menu li.current-menu-parent ul,
+.bottom .widget_nav_menu ul.menu li.current-menu-item ul,
+.bottom .widget_nav_menu ul.menu li.current-menu-parent ul,
+.footer .widget_nav_menu ul.menu li.current-menu-item ul,
+.footer .widget_nav_menu ul.menu li.current-menu-parent ul{
+	visibility:visible; 
+	display:block;
+}	
+
+.page-content-widgets .widget_nav_menu ul.menu li ul,
+.sidebar .widget_nav_menu ul.menu li ul,
+.bottom .widget_nav_menu ul.menu li ul,
+.footer .widget_nav_menu ul.menu li ul{ 
+	visibility:hidden; 
+	display:none; 
+}	
+	
+/* = Widget Socila Networks 
+-------------------------------------------------------------- */
+.widget_social_networks i.fa{
+	padding:0px 2px 0px 2px;
+}
+
+/* = Widgets Search    
+-------------------------------------------------------------- */
+.widget_search input[type="text"], 
+#searchform input[type="text"] {
+    text-align: left !important; /*return text on left side in upper, header and top left block*/
+}
+
+.widget_search input[type="submit"], 
+label.screen-reader-text {
+    display: none; 
+}
+
+
+/* = Widget Elements, Widget Slider
+-------------------------------------------------------------- */
+.widget_elements .widget-title,
+.widget_slider .widget-title {
+    display: none !important; /*remove title from elements and slider widgets*/
+}
+
+/* = Widget Featured Content
+-------------------------------------------------------------- */
+.widget_featured_content .widget-header{
+	
+	display:none; /* remove header from featured content widget*/
+}

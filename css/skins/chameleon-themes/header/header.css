@@ -1,0 +1,92 @@
+
+/* = header  Design
+--------------------------------------------------------------*/ 
+.header {
+   
+   background-color: #f35e3e;
+   padding-left: 0px; 
+}
+/* = header  p
+--------------------------------------------------------------*/ 
+.header,
+.header p {
+   color: #ffffff; 
+}
+/* = header  Headings
+--------------------------------------------------------------*/ 
+.header h1,
+.header h2,
+.header h3,
+.header h4,
+.header h5,
+.header h6 {
+   color: #ffffff; 
+} 
+.header h1 a,
+.header h2 a,
+.header h3 a,
+.header h4 a,
+.header h5 a,
+.header h6 a {
+   color: #ffffff; 
+}
+/* = header  H1
+--------------------------------------------------------------*/ 
+.header h1 {
+   
+   font-size: 56px; 
+}
+/* = header Widgets Menu ul
+--------------------------------------------------------------*/ 
+.header .widget_nav_menu ul.menu {
+   
+   padding-top: 25px; 
+}
+/* = header Widgets Menu li
+--------------------------------------------------------------*/ 
+.header .widget_nav_menu ul.menu li a {
+   
+   padding-right: 9px; 
+   padding-left: 9px; 
+} 
+.header .widget_nav_menu ul.menu li {
+   
+}
+/* = header Widgets Menu a Typo
+--------------------------------------------------------------*/ 
+.header .widget_nav_menu ul.menu li a {
+   color: #ffffff; font-weight: bold; 
+}
+/* = header Widgets Menu a:Hover Typo
+--------------------------------------------------------------*/ 
+.header .widget_nav_menu ul.menu li:hover a {
+   color: #eda293; 
+}
+/* = header Widgets Sub Menu ul
+--------------------------------------------------------------*/ 
+.header .widget_nav_menu ul.menu li ul.sub-menu {
+   
+   padding-top: 12px; 
+}
+/* = header Widgets Sub Menu li
+--------------------------------------------------------------*/ 
+.header .widget_nav_menu ul.menu li ul.sub-menu li a {
+   
+   padding-top: 10px; 
+   padding-bottom: 10px; 
+} 
+.header .widget_nav_menu ul.menu li ul.sub-menu li {
+   
+   background-color: #f35e3e;
+}
+/* = header Widgets Sub Menu a Typo
+--------------------------------------------------------------*/ 
+.header .widget_nav_menu ul.menu li ul.sub-menu li a {
+   color: #ffffff; 
+}
+/* = header Widgets Sub Menu a:Hover Typo
+--------------------------------------------------------------*/ 
+.header .widget_nav_menu ul.menu li ul.sub-menu li:hover a,
+.header .widget_nav_menu ul.menu li ul.sub-menu li.current-menu-item:hover a {
+   color: #ec7d65; 
+}

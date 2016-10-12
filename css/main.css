@@ -1,0 +1,30 @@
+/* = Main 
+-------------------------------------------------------------- */
+.main{ min-height:500px; }
+.main-wrap{display:block; position:relative; }
+	
+/* = Main Content
+-------------------------------------------------------------- */	
+.main-content{}
+	
+/* = Main Content Loop
+-------------------------------------------------------------- */		
+.main-content-loop{}
+	
+/* = Sticky 
+-------------------------------------------------------------- */	
+.sticky {}	
+	
+/* = Main Content Post
+-------------------------------------------------------------- */	
+.main-content-post{}
+	
+/* = Main Content Page
+-------------------------------------------------------------- */
+.main-content-page{}
+	
+	
+	
+	.page-content, .page-content p{
+		   word-wrap: break-word;text-wrap:normal;
+	}

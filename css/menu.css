@@ -1,0 +1,208 @@
+/* = MENU responsive   ao-hall-logo-dark-135x35.png
+-------------------------------------------------------------- */
+.responsive-menu {
+    display: none;
+}
+
+.responsive-menu select {
+    width: 100%;
+    margin: 10px 10px 10px 10px;
+}
+
+
+/* = Horizontal Menu  
+-------------------------------------------------------------- */
+.upper .widget_nav_menu ul.menu,
+.header .widget_nav_menu ul.menu,
+.top .widget_nav_menu ul.menu,
+.copyright .widget_nav_menu ul.menu,
+.horizontal-menu ul {
+    display: inline-block;
+	width:100%;
+    position: relative;
+    padding: 0px;
+	margin:0px;
+    list-style-type: none !important; /*dont need dots on menu list*/
+}
+
+.upper .widget_nav_menu ul.menu li,
+.header .widget_nav_menu ul.menu li,
+.top .widget_nav_menu ul.menu li,
+.copyright .widget_nav_menu ul.menu li,
+.horizontal-menu ul li {
+	float: left;
+    display: inline-block;
+}
+
+.upper .widget_nav_menu ul.menu li a,
+.header .widget_nav_menu ul.menu li a,
+.top .widget_nav_menu ul.menu li a,
+.copyright .widget_nav_menu ul.menu li a,
+.horizontal-menu ul li a {
+	width:100%;
+    display: block;
+}
+
+
+/* = Horizontal Menu Sub
+-------------------------------------------------------------- */
+.upper .widget_nav_menu ul.menu ul, 
+.header .widget_nav_menu ul.menu ul, 
+.top .widget_nav_menu ul.menu ul, 
+.copyright .widget_nav_menu ul.menu ul, 
+.horizontal-menu ul ul{ 
+	width:180px; 	
+	display: none;
+    position: absolute;
+    z-index: 999999;
+}
+
+.upper .widget_nav_menu ul.menu ul li,
+.header .widget_nav_menu ul.menu ul li,
+.top .widget_nav_menu ul.menu ul li,
+.copyright .widget_nav_menu ul.menu ul li,
+.horizontal-menu ul ul li{
+	width:100%;
+} 
+
+
+.upper .widget_nav_menu ul.menu li:hover > ul, 
+.header .widget_nav_menu ul.menu li:hover > ul, 
+.top .widget_nav_menu ul.menu li:hover > ul, 
+.copyright .widget_nav_menu ul.menu li:hover > ul, 
+.horizontal-menu ul li:hover > ul{ 
+	display: block;
+ 
+}
+
+/* = Horizontal Menu Sub Sub
+-------------------------------------------------------------- */
+.upper .widget_nav_menu ul.menu ul ul, 
+.header .widget_nav_menu ul.menu ul ul,
+.top .widget_nav_menu ul.menu ul ul,
+.copyright .widget_nav_menu ul.menu ul ul,  
+.horizontal-menu ul ul ul,
+.upper .widget_nav_menu ul.menu ul ul ul ul ul ul,
+.header .widget_nav_menu ul.menu ul ul ul ul ul ul,
+.top .widget_nav_menu ul.menu ul ul ul ul ul ul, 
+.copyright .widget_nav_menu ul.menu ul ul ul ul ul ul,  
+.horizontal-menu ul ul ul ul ul ul ul,
+.upper .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul,
+.header .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul, 
+.top .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul,
+.copyright .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul,  
+.horizontal-menu ul ul ul ul ul ul ul ul ul ul ul{ 
+	top:0;
+	left:100%;
+	margin-top:0px !important;
+}
+
+/* = Horizontal Menu Sub Sub Sub 
+-------------------------------------------------------------- */
+.upper .widget_nav_menu ul.menu ul ul ul ul, 
+.header .widget_nav_menu ul.menu ul ul ul ul,
+.top .widget_nav_menu ul.menu ul ul ul ul,  
+.copyright .widget_nav_menu ul.menu ul ul ul ul, 
+.horizontal-menu ul ul ul ul ul,
+.upper .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul, 
+.header .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul,
+.top .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul,  
+.copyright .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul, 
+.horizontal-menu ul ul ul ul ul ul ul ul ul{ 
+	top:0;
+	left:-100%;
+}
+
+
+/* = Horizontal Menu  Header
+-------------------------------------------------------------- */
+.header .widget_nav_menu ul.menu {
+	float:right;
+	width:auto;
+}
+
+
+
+/* = Horizontal Menu  Top
+-------------------------------------------------------------- */
+.top .widget_nav_menu ul.menu {
+	float:right;
+	width:auto;
+	text-align:center !important;
+}
+
+
+
+.responsive-menu-item{
+		float:left;	width:30px;
+	
+}
+
+.responsive-menu-item span{
+	height:2px;
+	width:30px;
+	float:left;
+	border:2px solid #fff;
+	background:#fff;
+	margin-bottom:3px;
+	
+}
+
+.widget_nav_menu  {
+	position:relative;
+}
+	
+.responsive-menu-icon{
+	display:none;
+	position:absolute;
+	right:45%;
+	top:0px;
+	cursor:pointer;
+
+}
+.footer .responsive-menu-icon{
+	top:40px;
+}
+
+@media (max-width: 767px) {
+	
+	.widget_nav_menu ul{
+		width:100% !important;
+		}
+	
+	.widget_nav_menu ul li{
+		width:100% !important;
+		display:block !important;
+		text-align:center;
+		padding:5px 0px;
+
+	}
+
+	.responsive-menu-icon{
+		display:block !important;
+		right:47%;
+
+	}
+}
+/* = Responsive 480 
+-------------------------------------------------------------- */
+@media (max-width: 479px) {
+
+
+	.widget_nav_menu ul li{
+		width:100% !important;
+		display:block !important;
+		text-align:center;
+		padding:5px 0px;
+	}
+
+
+	.responsive-menu-icon{
+		display:block !important;
+			right:45%;
+	}
+
+}
+
+
+

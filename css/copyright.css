@@ -1,0 +1,5 @@
+/* = Copyright 
+-------------------------------------------------------------- */	
+.copyright .widget .widget-header{
+	display:none !important; /*remove widget title */
+}
