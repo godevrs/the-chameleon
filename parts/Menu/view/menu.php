@@ -20,6 +20,7 @@
 	
 </section>
 	
+<!--
 <section class="responsive-menu">
 	
 	<?php global  $locations;
@@ -49,7 +50,8 @@
     endif;
 		
 	print ( ! empty( $menu_list ) ) ? $menu_list : ''; ?>	
-</section><!--End Menu Part-->
+</section>-->
+<!--End Menu Part-->
 
 
 

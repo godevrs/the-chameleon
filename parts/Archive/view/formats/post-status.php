@@ -26,9 +26,6 @@
 	<!-- Post Content -->
 	<section class="col100 post-content-no-title post-content post-content-loop post-content-no-title-loop">
 
-
-
-
 		<?php the_content(); ?>
 		<!-- Post Tags -->
 		<span itemprop="keywords"><?php echo get_the_term_list( $post->ID, 'post_tag', '<i class="fa fa-tags"></i> ', ', ', '' ); ?></span>		

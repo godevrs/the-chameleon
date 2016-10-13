@@ -28,6 +28,12 @@ textarea {
 	min-width:250px;
 }
 
+input[type='radio'], 
+input[type='checkbox'],
+input[type='number']{
+	min-width:auto !important;	/*reste min-width:250px;*/
+}
+
 input[type='submit'], 
 input[type='button']{
 	line-height: 1;

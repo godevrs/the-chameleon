@@ -9,6 +9,9 @@
 	
 
 	<?php echo ( $TheChameleonMeta['custom_css'] ) ? '<style>' .  $TheChameleonMeta['custom_css']  . '</style>' : NULL; ?>
+	
+	<?php echo ( $main_wrap  == 'fullwidth'  and  $TheChameleonMeta['active_page_builder'] =="1" ) ? '<style>.main, .main-content{padding-left:0px !important; padding-right:0px !important;}</style>' : NULL; ?>
+	
 <!-- Start page -->
 <section id="page-<?php the_ID(); ?>" <?php post_class( $page_class ); ?>>
 		
