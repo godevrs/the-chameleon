@@ -16,7 +16,7 @@
 		
 	    <?php if ( $title_size == 'full_title' ) : ?>
 
- 			<h4 itemprop="name" style="text-align:left;"><a href="<?php the_permalink(); ?>#post-<?php the_ID(); ?>" itemprop="url"><?php the_title(); ?></a></h4>
+ 			<h3 itemprop="name" style="text-align:left;"><a href="<?php the_permalink(); ?>#post-<?php the_ID(); ?>" itemprop="url"><?php the_title(); ?></a></h4>
 
  	    <?php elseif ( $title_size != 'hide' ) : ?>
 	

@@ -745,7 +745,7 @@
    	    	wp_enqueue_style( 'the-chameleon', get_stylesheet_uri() );
       			
 			include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-			if ( !is_plugin_active( 'TheChameleonSkinGeneratorNew/TheChameleonSkinGeneratorNew.php' ) ) :
+			if ( !is_plugin_active( 'the-chameleon-css-generator/the-chameleon-css-generator.php' ) ) :
 				
 			
 				if ( isset( $_COOKIE['theskin'] ) ) :
@@ -757,8 +757,10 @@
 				
 				
 				//skin
+			/*
 				wp_register_style( 'the-chameleon-skin', $TheChameleonOption['skin'], array('the-chameleon') );
-				wp_enqueue_style( 'the-chameleon-skin' );		
+							wp_enqueue_style( 'the-chameleon-skin' );*/
+					
 			endif;
 		
 			

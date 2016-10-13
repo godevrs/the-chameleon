@@ -13,11 +13,11 @@
 		
 	    <?php if ( $title_size == 'full_title' ) : ?>
 
- 			<h5 itemprop="name"><a href="<?php the_permalink(); ?>#post-<?php the_ID(); ?>" itemprop="url"><?php the_title(); ?></a></h5>
+ 			<h3 itemprop="name"><a href="<?php the_permalink(); ?>#post-<?php the_ID(); ?>" itemprop="url"><?php the_title(); ?></a></h3>
 
  	    <?php elseif ( $title_size != 'hide' ) : ?>
 	
- 			<h5 title="<?php the_title(); ?>"  itemprop="name"><a href="<?php the_permalink(); ?>#post-<?php the_ID(); ?>" itemprop="url"><?php echo $TheChameleon->the_title_maxlength( get_the_title(), $title_size ); ?></a></h5>
+ 			<h3 title="<?php the_title(); ?>"  itemprop="name"><a href="<?php the_permalink(); ?>#post-<?php the_ID(); ?>" itemprop="url"><?php echo $TheChameleon->the_title_maxlength( get_the_title(), $title_size ); ?></a></h3>
 
  		<?php endif; ?>
 	
