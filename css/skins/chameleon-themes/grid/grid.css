@@ -228,54 +228,27 @@
 
 /* = Global Paddinga
 -------------------------------------------------------------- */
-.pagination{
-	padding:14px 0px !important; 	
-} 
-.post-header-loop h2{
-	margin-bottom:0px;
-}
-.post-header-loop{	
-	padding:14px 14px 7px 14px !important; 	
-}
-
-.post-meta, .post-meta-loop{
-	padding:7px 14px !important; 		
-}
-
-
-/*Page builder sections*/
-
-.page-builder-section-1,
-.page-builder-section-2{
-	padding:14px; 		
-}
-
-/*widgets*/
-
 .widget-header,
-
+.post-header-loop, /*loop*/
+.post-meta-loop,
+.post-meta,
+.pagination{
+	
+	padding:7px 14px; 	
+	
+	
+} /*widgets*/
 .widget-content,
-.page-content, 
+.page-content, /*page*/
 .post-content-loop,
 .post-footer-loop,
-
-.post-header,
+.post-header, /*loop*/
 .post-content,
 .post-footer,
-.comments
-/*.comment-respond*/
+.comments,
+.comment-respond/*comments*/
 {	
-	padding:7px 14px; 	
-}
-
-.post-content ul li, 
-.post-content ol li, 
-.page-content ul li, 
-.page-content ol li,
-.widget_text ul li,  
-.widget_text ol li{
-	padding:4px 0px 4px 0px; 	
-	
+	padding:14px; 	
 }
 
 
@@ -311,14 +284,10 @@
 .page-content h6,
 .page-content img,
 
-
-/*.page-content-widgets .widget,*/
-
-
+.page-content-widgets .widget,
 
 .top,
-/*.bottom*/
-
+.bottom,
 .bottom .widget,  /*bottom widgets*/
 
 .sidebar .widget,  /*widgets*/
@@ -344,39 +313,4 @@
 input:not([type=submit]):not([type=file]),
 textarea{
  	margin-bottom:14px;	
-}
-
-.post-content ul ul{margin-bottom:0px;}
-.post-content ol ol{margin-bottom:0px;}
-.page-content ul ul{margin-bottom:0px;}
-.page-content ol ol{margin-bottom:0px;}
-
-
-.post-widget{	
-	padding:14px 14px !important; 
-	margin-bottom:0px;
-
-}
-.post .post-widget-header h5, .post-widget-header h5{
-	padding:0px !important; 
-	margin:0px !important; 	
-	margin-bottom:-5px !important; 	
-}
-.post-widget-header{
-	padding-bottom:7px !important;	
-}
-
-.post-widget-meta{
-	padding:0px 0px !important;
-}
-.post-widget-media.aligncenter, .post-widget-media.aligncenter img{
-	margin:0px !important;		
-}
-.post-widget-media{
-	padding-top:0px;
-	padding-bottom:7px 0px !important; 
-}
-.post-widget-content{
-	padding:7px 0px !important; 
-	margin-bottom:-14px;
 }

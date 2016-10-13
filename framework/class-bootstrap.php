@@ -69,34 +69,8 @@
 			
 			
 				add_action('admin_menu',  array(&$this, 'theme_doc_menu' ) );
-				
-				
-				
-				add_action('woocommerce_before_main_content', array(&$this,'my_theme_wrapper_start'), 10);
-				add_action('woocommerce_after_main_content', array(&$this,'my_theme_wrapper_end'), 10);
-				
-				add_action( 'after_setup_theme', array(&$this,'woocommerce_support') );
-		
+			
 		}
-		
-		
-		
-	
-	
-		function woocommerce_support() {
-		    add_theme_support( 'woocommerce' );
-		}
-		
-		function my_theme_wrapper_start() {
-		  echo '<section id="main" class="main">';
-		}
-
-		function my_theme_wrapper_end() {
-		  echo '</section>';
-		}
-		
-		
-		
 		
 		/**
 		 * 	Theme doc menu
@@ -118,7 +92,7 @@
 		 **/
 		function theme_doc(){
 
-			echo '<iframe src="https://chameleonthemes.net/docs/" style="width:100%; border:0px; height:800px;"></iframe>';
+			echo '<iframe src="https://chameleonthemes.net/docs" style="width:100%; border:0px; height:800px;"></iframe>';
 		}
 		
 		/**
@@ -771,7 +745,7 @@
    	    	wp_enqueue_style( 'the-chameleon', get_stylesheet_uri() );
       			
 			include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-			if ( !is_plugin_active( 'TheChameleonSkinGeneratorNew/TheChameleonSkinGeneratorNew.php' ) ) :
+			if ( !is_plugin_active( 'the-chameleon-css-generator/the-chameleon-css-generator.php' ) ) :
 				
 			
 				if ( isset( $_COOKIE['theskin'] ) ) :
@@ -783,8 +757,10 @@
 				
 				
 				//skin
+			/*
 				wp_register_style( 'the-chameleon-skin', $TheChameleonOption['skin'], array('the-chameleon') );
-				wp_enqueue_style( 'the-chameleon-skin' );		
+							wp_enqueue_style( 'the-chameleon-skin' );*/
+					
 			endif;
 		
 			

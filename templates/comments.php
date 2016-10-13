@@ -100,7 +100,7 @@
 						
 				<section class="comment-header col100">
 					<div class="alignleft comment-avatar">
-						<?php echo get_avatar( $comment, 42 ); ?>
+						<?php echo get_avatar( $comment, 32 ); ?>
 					</div>
 					<?php printf( __( '%s', 'the-chameleon' ),  sprintf( '<h5 class="comment-author-name left" style="display:inline-block;">%s</h5>', get_comment_author_link() ) ) ; ?> 
 				

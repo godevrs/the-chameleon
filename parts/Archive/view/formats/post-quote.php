@@ -16,7 +16,7 @@
 	$get_post_meta = get_post_meta( get_the_ID(), 'the_chameleon_meta', TRUE );		
 	$author 	   = ! empty( $get_post_meta['quote_author_name'] ) ? $get_post_meta['quote_author_name'] : '';
 
-     echo '<q>'.get_the_content() .'</q><br /><i> -- ' . $author . '</i>'; ?>
+     echo get_the_content()	.'<br /><i>' . $author . '</i>'; ?>
 	<!-- Post Tags -->
 	<span itemprop="keywords"><?php echo get_the_term_list( $post->ID, 'post_tag', '<i class="fa fa-tags"></i> ', ', ', '' ); ?></span>
 </section>

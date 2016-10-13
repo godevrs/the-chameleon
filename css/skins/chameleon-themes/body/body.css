@@ -44,8 +44,6 @@ body h6 a {
 body input:not([type=submit]):not([type=file]),
 body textarea {
    
-   background-color: #ffffff;
-   margin-top: 3px; 
    padding-top: 10px; 
    padding-right: 10px; 
    padding-bottom: 10px; 
@@ -54,22 +52,22 @@ body textarea {
    border-right: 1px Solid #eaeaea; 
    border-bottom: 1px Solid #eaeaea; 
    border-left: 1px Solid #eaeaea; 
-   -webkit-border-top-left-radius: 3px; 
-   -moz-border-radius-topleft: 3px; 
-   -khtml-border-top-left-radius: 3px; 
-   border-top-left-radius: 3px; 
-   -webkit-border-top-right-radius: 3px; 
-   -moz-border-radius-topright: 3px; 
-   -khtml-border-top-right-radius: 3px; 
-   border-top-right-radius: 3px; 
-   -webkit-border-bottom-right-radius: 3px; 
-   -moz-border-radius-bottomright: 3px; 
-   -khtml-border-bottom-right-radius: 3px; 
-   border-bottom-right-radius: 3px; 
-   -webkit-border-bottom-left-radius: 3px; 
-   -moz-border-radius-bottomleft: 3px; 
-   -khtml-border-bottom-left-radius: 3px; 
-   border-bottom-left-radius: 3px; 
+   -webkit-border-top-left-radius: 2px; 
+   -moz-border-radius-topleft: 2px; 
+   -khtml-border-top-left-radius: 2px; 
+   border-top-left-radius: 2px; 
+   -webkit-border-top-right-radius: 2px; 
+   -moz-border-radius-topright: 2px; 
+   -khtml-border-top-right-radius: 2px; 
+   border-top-right-radius: 2px; 
+   -webkit-border-bottom-right-radius: 2px; 
+   -moz-border-radius-bottomright: 2px; 
+   -khtml-border-bottom-right-radius: 2px; 
+   border-bottom-right-radius: 2px; 
+   -webkit-border-bottom-left-radius: 2px; 
+   -moz-border-radius-bottomleft: 2px; 
+   -khtml-border-bottom-left-radius: 2px; 
+   border-bottom-left-radius: 2px; 
 }
 /* = body  Form Filed Typo
 --------------------------------------------------------------*/ 
@@ -83,30 +81,30 @@ body textarea {
 body select {
    
    background-color: #ffffff;
-   padding-top: 3px; 
+   padding-top: 10px; 
    padding-right: 10px; 
-   padding-bottom: 3px; 
+   padding-bottom: 10px; 
    padding-left: 10px; 
    border-top: 1px Solid #eaeaea; 
    border-right: 1px Solid #eaeaea; 
    border-bottom: 1px Solid #eaeaea; 
    border-left: 1px Solid #eaeaea; 
-   -webkit-border-top-left-radius: 3px; 
-   -moz-border-radius-topleft: 3px; 
-   -khtml-border-top-left-radius: 3px; 
-   border-top-left-radius: 3px; 
-   -webkit-border-top-right-radius: 3px; 
-   -moz-border-radius-topright: 3px; 
-   -khtml-border-top-right-radius: 3px; 
-   border-top-right-radius: 3px; 
-   -webkit-border-bottom-right-radius: 3px; 
-   -moz-border-radius-bottomright: 3px; 
-   -khtml-border-bottom-right-radius: 3px; 
-   border-bottom-right-radius: 3px; 
-   -webkit-border-bottom-left-radius: 3px; 
-   -moz-border-radius-bottomleft: 3px; 
-   -khtml-border-bottom-left-radius: 3px; 
-   border-bottom-left-radius: 3px; 
+   -webkit-border-top-left-radius: 2px; 
+   -moz-border-radius-topleft: 2px; 
+   -khtml-border-top-left-radius: 2px; 
+   border-top-left-radius: 2px; 
+   -webkit-border-top-right-radius: 2px; 
+   -moz-border-radius-topright: 2px; 
+   -khtml-border-top-right-radius: 2px; 
+   border-top-right-radius: 2px; 
+   -webkit-border-bottom-right-radius: 2px; 
+   -moz-border-radius-bottomright: 2px; 
+   -khtml-border-bottom-right-radius: 2px; 
+   border-bottom-right-radius: 2px; 
+   -webkit-border-bottom-left-radius: 2px; 
+   -moz-border-radius-bottomleft: 2px; 
+   -khtml-border-bottom-left-radius: 2px; 
+   border-bottom-left-radius: 2px; 
 }
 /* = body  Form Select Option
 --------------------------------------------------------------*/ 
@@ -137,22 +135,22 @@ body button {
    border-right: 1px Solid #f35e3e; 
    border-bottom: 1px Solid #f35e3e; 
    border-left: 1px Solid #f35e3e; 
-   -webkit-border-top-left-radius: 3px; 
-   -moz-border-radius-topleft: 3px; 
-   -khtml-border-top-left-radius: 3px; 
-   border-top-left-radius: 3px; 
-   -webkit-border-top-right-radius: 3px; 
-   -moz-border-radius-topright: 3px; 
-   -khtml-border-top-right-radius: 3px; 
-   border-top-right-radius: 3px; 
-   -webkit-border-bottom-right-radius: 3px; 
-   -moz-border-radius-bottomright: 3px; 
-   -khtml-border-bottom-right-radius: 3px; 
-   border-bottom-right-radius: 3px; 
-   -webkit-border-bottom-left-radius: 3px; 
-   -moz-border-radius-bottomleft: 3px; 
-   -khtml-border-bottom-left-radius: 3px; 
-   border-bottom-left-radius: 3px; 
+   -webkit-border-top-left-radius: 2px; 
+   -moz-border-radius-topleft: 2px; 
+   -khtml-border-top-left-radius: 2px; 
+   border-top-left-radius: 2px; 
+   -webkit-border-top-right-radius: 2px; 
+   -moz-border-radius-topright: 2px; 
+   -khtml-border-top-right-radius: 2px; 
+   border-top-right-radius: 2px; 
+   -webkit-border-bottom-right-radius: 2px; 
+   -moz-border-radius-bottomright: 2px; 
+   -khtml-border-bottom-right-radius: 2px; 
+   border-bottom-right-radius: 2px; 
+   -webkit-border-bottom-left-radius: 2px; 
+   -moz-border-radius-bottomleft: 2px; 
+   -khtml-border-bottom-left-radius: 2px; 
+   border-bottom-left-radius: 2px; 
 }
 /* = body  Form Submit Typo
 --------------------------------------------------------------*/ 
@@ -195,16 +193,6 @@ body a audio {
    
    background-color: #e7e7e7;
 }
-/* = body  Button Small
---------------------------------------------------------------*/ 
-body .btn-small {
-   
-   font-size: 11px; 
-   padding-top: 5px; 
-   padding-right: 5px; 
-   padding-bottom: 5px; 
-   padding-left: 5px; 
-}
 /* = body  Button Normal
 --------------------------------------------------------------*/ 
 body .btn {
@@ -223,140 +211,6 @@ body .btn-black {
    border-bottom: 1px Solid #151515; 
    border-left: 1px Solid #151515; 
 }
-/* = body  Button Black Hover
---------------------------------------------------------------*/ 
-body .btn-black:hover {
-   color: #ffffff; 
-   background-color: #383838;
-}
-/* = body  Button Gray
---------------------------------------------------------------*/ 
-body .btn-gray {
-   
-   background-color: #bcbcbc;
-   border-top: 1px Solid #bcbcbc; 
-   border-right: 1px Solid #bcbcbc; 
-   border-bottom: 1px Solid #bcbcbc; 
-   border-left: 1px Solid #bcbcbc; 
-   -webkit-border-top-left-radius: 3px; 
-   -moz-border-radius-topleft: 3px; 
-   -khtml-border-top-left-radius: 3px; 
-   border-top-left-radius: 3px; 
-   -webkit-border-top-right-radius: 3px; 
-   -moz-border-radius-topright: 3px; 
-   -khtml-border-top-right-radius: 3px; 
-   border-top-right-radius: 3px; 
-   -webkit-border-bottom-right-radius: 3px; 
-   -moz-border-radius-bottomright: 3px; 
-   -khtml-border-bottom-right-radius: 3px; 
-   border-bottom-right-radius: 3px; 
-   -webkit-border-bottom-left-radius: 3px; 
-   -moz-border-radius-bottomleft: 3px; 
-   -khtml-border-bottom-left-radius: 3px; 
-   border-bottom-left-radius: 3px; 
-}
-/* = body  Button Gray Hover
---------------------------------------------------------------*/ 
-body .btn-gray:hover {
-   color: #ffffff; 
-   background-color: #c9c9c9;
-}
-/* = body  Button Blue
---------------------------------------------------------------*/ 
-body .btn-blue {
-   color: #ffffff; 
-   background-color: #32649f;
-   border-top: 1px Solid #32649f; 
-   border-right: 1px Solid #32649f; 
-   border-bottom: 1px Solid #32649f; 
-   border-left: 1px Solid #32649f; 
-   -webkit-border-top-left-radius: 3px; 
-   -moz-border-radius-topleft: 3px; 
-   -khtml-border-top-left-radius: 3px; 
-   border-top-left-radius: 3px; 
-   -webkit-border-top-right-radius: 3px; 
-   -moz-border-radius-topright: 3px; 
-   -khtml-border-top-right-radius: 3px; 
-   border-top-right-radius: 3px; 
-   -webkit-border-bottom-right-radius: 3px; 
-   -moz-border-radius-bottomright: 3px; 
-   -khtml-border-bottom-right-radius: 3px; 
-   border-bottom-right-radius: 3px; 
-   -webkit-border-bottom-left-radius: 3px; 
-   -moz-border-radius-bottomleft: 3px; 
-   -khtml-border-bottom-left-radius: 3px; 
-   border-bottom-left-radius: 3px; 
-}
-/* = body  Button Blue Hover
---------------------------------------------------------------*/ 
-body .btn-blue:hover {
-   
-   background-color: #4d739e;
-}
-/* = body  Button Green
---------------------------------------------------------------*/ 
-body .btn-green {
-   color: #ffffff; 
-   background-color: #32c232;
-   border-top: 1px Solid #32c232; 
-   border-right: 1px Solid #32c232; 
-   border-bottom: 1px Solid #32c232; 
-   border-left: 1px Solid #32c232; 
-   -webkit-border-top-left-radius: 3px; 
-   -moz-border-radius-topleft: 3px; 
-   -khtml-border-top-left-radius: 3px; 
-   border-top-left-radius: 3px; 
-   -webkit-border-top-right-radius: 3px; 
-   -moz-border-radius-topright: 3px; 
-   -khtml-border-top-right-radius: 3px; 
-   border-top-right-radius: 3px; 
-   -webkit-border-bottom-right-radius: 3px; 
-   -moz-border-radius-bottomright: 3px; 
-   -khtml-border-bottom-right-radius: 3px; 
-   border-bottom-right-radius: 3px; 
-   -webkit-border-bottom-left-radius: 3px; 
-   -moz-border-radius-bottomleft: 3px; 
-   -khtml-border-bottom-left-radius: 3px; 
-   border-bottom-left-radius: 3px; 
-}
-/* = body  Button Green Hover
---------------------------------------------------------------*/ 
-body .btn-green:hover {
-   color: #ffffff; 
-   background-color: #70c170;
-}
-/* = body  Button Orange
---------------------------------------------------------------*/ 
-body .btn-orange {
-   color: #ffffff; 
-   background-color: #f3993e;
-   border-top: 1px Solid #f3993e; 
-   border-right: 1px Solid #f3993e; 
-   border-bottom: 1px Solid #f3993e; 
-   border-left: 1px Solid #f3993e; 
-   -webkit-border-top-left-radius: 3px; 
-   -moz-border-radius-topleft: 3px; 
-   -khtml-border-top-left-radius: 3px; 
-   border-top-left-radius: 3px; 
-   -webkit-border-top-right-radius: 3px; 
-   -moz-border-radius-topright: 3px; 
-   -khtml-border-top-right-radius: 3px; 
-   border-top-right-radius: 3px; 
-   -webkit-border-bottom-right-radius: 3px; 
-   -moz-border-radius-bottomright: 3px; 
-   -khtml-border-bottom-right-radius: 3px; 
-   border-bottom-right-radius: 3px; 
-   -webkit-border-bottom-left-radius: 3px; 
-   -moz-border-radius-bottomleft: 3px; 
-   -khtml-border-bottom-left-radius: 3px; 
-   border-bottom-left-radius: 3px; 
-}
-/* = body  Button Orange Hover
---------------------------------------------------------------*/ 
-body .btn-orange:hover {
-   color: #ffffff; 
-   background-color: #f2a960;
-}
 /* = body  Button Red
 --------------------------------------------------------------*/ 
 body .btn-red {
@@ -366,36 +220,4 @@ body .btn-red {
    border-right: 1px Solid #f35e3e; 
    border-bottom: 1px Solid #f35e3e; 
    border-left: 1px Solid #f35e3e; 
-}
-/* = body  Button Yellow
---------------------------------------------------------------*/ 
-body .btn-yellow {
-   color: #ffffff; 
-   background-color: #f3dc3e;
-   border-top: 1px Solid #f3dc3e; 
-   border-right: 1px Solid #f3dc3e; 
-   border-bottom: 1px Solid #f3dc3e; 
-   border-left: 1px Solid #f3dc3e; 
-   -webkit-border-top-left-radius: 3px; 
-   -moz-border-radius-topleft: 3px; 
-   -khtml-border-top-left-radius: 3px; 
-   border-top-left-radius: 3px; 
-   -webkit-border-top-right-radius: 3px; 
-   -moz-border-radius-topright: 3px; 
-   -khtml-border-top-right-radius: 3px; 
-   border-top-right-radius: 3px; 
-   -webkit-border-bottom-right-radius: 3px; 
-   -moz-border-radius-bottomright: 3px; 
-   -khtml-border-bottom-right-radius: 3px; 
-   border-bottom-right-radius: 3px; 
-   -webkit-border-bottom-left-radius: 3px; 
-   -moz-border-radius-bottomleft: 3px; 
-   -khtml-border-bottom-left-radius: 3px; 
-   border-bottom-left-radius: 3px; 
-}
-/* = body  Button Yellow Hover
---------------------------------------------------------------*/ 
-body .btn-yellow:hover {
-   color: #ffffff; 
-   background-color: #f2e171;
 }

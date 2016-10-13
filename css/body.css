@@ -12,6 +12,7 @@ p {
 
 }
 
+h1{font-size:200%;}
 /* = link
 -------------------------------------------------------------- */
 a, 
@@ -21,13 +22,7 @@ a:visited,
 a:focus, 
 a:hover {
     outline: 0;
-	-webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-
 }
-
 
 /* = abbr, acronym
 -------------------------------------------------------------- */

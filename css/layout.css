@@ -1,65 +1,186 @@
-/* = Global Paddinga
+/* =  Templates 6 16.5 
 -------------------------------------------------------------- */
-.widget-header,
-.post-header-loop, /*loop*/
-.post-meta-loop,
-.post-meta{
-	
-	padding:6px 12px; 	
-	
-	
-} /*widgets*/
-.widget-content,
-.page-content, /*page*/
-.post-content-loop,
-.post-footer-loop,
-.post-header, /*loop*/
-.post-content,
-.post-footer,
-.comments,
-.comment-respond/*comments*/
-{	
-	padding:12px; 	
+
+		 
+.temp-col-3-15x60x25 .col-item:nth-child(3n+1),		
+.temp-col-3-15x25x60 .col-item:nth-child(3n+1),	
+.temp-col-3-60x25x15 .col-item:nth-child(3n+1){
+	padding-right: 5px ;
+	clear:left;
+	background:green;
+} 
+
+
+.temp-col-3-15x60x25 .col-item:nth-child(3n+2),
+.temp-col-3-15x25x60 .col-item:nth-child(3n+2),
+.temp-col-3-60x25x15 .col-item:nth-child(3n+2){	
+	padding-left: 5px ;	
+	padding-right: 5px ;
+	background:green;
 }
+
+
+
+
+.temp-col-3-15x60x25 .col-item:nth-child(3n+3),
+.temp-col-3-15x25x60 .col-item:nth-child(3n+3),
+.temp-col-3-60x25x15 .col-item:nth-child(3n+3){	
+	padding-left: 5px ;	
+	background:green;
+}
+
+
+
+.temp-col-2-30x70 .col-item:nth-child(2n+1),		 
+.temp-col-2-70x30 .col-item:nth-child(2n+1){
+		padding-right: 5px ;
+		background:green;
+	
+}
+.temp-col-2-30x70 .col-item:nth-child(2n+2),
+.temp-col-2-70x30 .col-item:nth-child(2n+2){
+	padding-left: 5px ;
+	background:green;
+}
+
 
 
 /* = Global Margins
 -------------------------------------------------------------- */
-.post-loop, /*loop*/
-.pagination,
-.post, 
-.post-content p,
-.post-content blockquote,
-.post-content dl,	/*post-content*/
-.post-content table,
-.post-content code,
-.post-content pre,
-.post-content ul,
-.post-content ol,
-
-/*.page,*/ /*page-content*/
-.page-content p,
-.page-content blockquote,
-.page-content table,
-.page-content dl,
-.page-content code,
-.page-content pre,
-.page-content ul, 
-.page-content ol,
-
-.page-content-widgets .widget,
- 
-/*
-.top,
-.bottom,*/
-
-.bottom .widget,  /*bottom widgets*/
-
-.sidebar .widget,  /*widgets*/
-.widget_text p,
-.widget_text ul,  
-.widget_text ol,
-input:not([type=submit]):not([type=file]),
-textarea{
- 	margin-bottom:12px;	
+body{
+	background:black !important;
 }
+.upper,
+.header,
+.top,
+.menu-wrap,
+.main-content{
+	/*	border:1px solid blue;*/
+}
+
+/* = Post
+-------------------------------------------------------------- */
+
+
+.pagination,.post-content. .widget, section.post-content-single{
+	border:1px solid yellow !important;
+}
+.post-media{ margin-bottom:10px !important;  }
+
+/*
+	widgets margins
+*/
+.sidebar .widget,
+.bottom .widget,
+.footer .widget,
+.post-content,
+.post-media,
+.pagination,
+label,
+input,
+textarea{	
+	margin-bottom:10px;
+}
+
+.bottom,
+.footer {
+	padding-top:10px;
+}
+
+
+/*
+input:last-child{
+	margin-bottom:0px;	
+}
+*/
+
+/* = Paddings - pola od girda
+-------------------------------------------------------------- */
+/*
+.header,
+.top
+{
+	padding-top:10px;
+	padding-bottom:10px;
+	background:#eaeaea;
+}*/
+
+
+.widget-content,
+.post-content,
+.post-meta,
+.pagination,
+input,
+textarea,
+.page-builder .container{
+	padding:10px;	
+}
+
+.widget-header,
+.post-header,
+
+.widget_nav_menu a,
+.menu a{
+	padding:5px 10px 5px 10px;	
+}
+
+
+/*//pola grida*/
+.post-meta,
+li,
+th,
+td,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.widget_nav_menu .widget-content{
+	padding:0px !important;
+}
+
+.bottom,
+.footer, .footer .container{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+
+/* = widget borders
+-------------------------------------------------------------- */
+.post-header,
+.post-content,
+.post-meta,
+.widget-header,
+.widget-content,
+/*.widget,*/
+.pagination{ border:1px solid yellow; }
+
+
+
+
+
+.main, .header, .upper, .top, .bootom, .copyright, .footer, .header .container, .menu-wrap{
+	background:#212121;
+/*	padding:12px;*/
+	padding-left:10px; 
+	padding-right:10px;
+}
+
+
+
+.sidebar{
+/*		border:1px solid red;*/
+}
+
+
+/* = Test
+-------------------------------------------------------------- */
+.footer {color:#fff;}
+.footer .widget-content{/*background:#fff;*/}
+.footer {background:green;}

@@ -23,7 +23,7 @@
 		function widget( $args, $instance ) {
 			extract( $args );		
 	
-			$title 				= apply_filters('widget_title', empty( $instance['title'] ) ? null : $instance['title'], $instance, $this->id_base);					
+			$title 				= apply_filters('widget_title', empty( $instance['title'] ) ? __( '', 'the-chameleon' ) : $instance['title'], $instance, $this->id_base);					
 	
 			$tag 				= isset ( $instance ['tag'] ) 		? esc_attr ( $instance ['tag'] ) : '';
 			$category 			= isset ( $instance ['category'] ) 	? esc_attr ( $instance ['category'] ) : '';
@@ -31,29 +31,27 @@
 			$posts_per_page 	= isset ( $instance ['posts_per_page'] ) && is_numeric ( $instance ['posts_per_page'] ) ? esc_attr ( $instance ['posts_per_page'] ) : '4';
 			$orderby 			= isset ( $instance ['orderby'] ) 	? $instance ['orderby'] : '';
 			$order 				= isset ( $instance ['order'] ) 	? $instance ['order'] : '';
-			$columns 			= isset ( $instance ['columns'] ) 	? $instance ['columns'] : 'col-1';
-	
-
-			$show_post_title 	= isset ( $instance ['show_post_title'] ) ? $instance ['show_post_title'] : null;
-			$title_length 		= isset ( $instance ['title_length'] ) && is_numeric ( $instance ['title_length'] ) ? $instance ['title_length'] : '';
+			$columns 				= isset ( $instance ['columns'] ) 	? $instance ['columns'] : 'col-1';
+			
+			$show_post_title 	= isset ( $instance ['show_post_title'] ) ? ( bool ) $instance ['show_post_title'] : false;
+			$title_length 		= isset ( $instance ['title_length'] ) && is_numeric ( $instance ['title_length'] ) ? $instance ['title_length'] : 'full_title';
 
 			$meta_pattern 		= isset ( $instance ['meta_pattern'] ) 	  ? esc_attr ( $instance ['meta_pattern'] ) : '';
 
-			$show_post_media 	= isset ( $instance ['show_post_media'] ) ? $instance ['show_post_media'] : null;
+			$show_post_media 	= isset ( $instance ['show_post_media'] ) ? ( bool ) $instance ['show_post_media'] : false;
 			$width 				= isset ( $instance ['width'] ) && is_numeric ( $instance ['width'] ) ? $instance ['width'] : '60';
 			$height 			= isset ( $instance ['height'] ) && is_numeric ( $instance ['height'] ) ? $instance ['height'] : '60';
 
-			$show_post_excerpt 	= isset ( $instance ['show_post_excerpt'] ) ? $instance ['show_post_excerpt'] : null;
-			$length 			= isset ( $instance ['length'] ) && is_numeric ( $instance ['length'] ) ? $instance ['length'] : '0';
-	
-			$show_post_tags 	= isset ( $instance ['show_post_tags'] ) ? $instance ['show_post_tags'] : null;
-		
-			$template 			= isset ( $instance ['template'] ) ? $instance ['template'] : 'recent';
+			$show_post_excerpt 	= isset ( $instance ['show_post_excerpt'] ) ? ( bool ) $instance ['show_post_excerpt'] : false;
+			$length 			= isset ( $instance ['length'] ) && is_numeric ( $instance ['length'] ) ? $instance ['length'] : '100';
 
-			echo $before_widget;
-	
+			$template 			= isset ( $instance ['template'] ) ? $instance ['template'] : 'recent';
 		
-			if ( $title!=" " ) :	echo $before_title . $title . $after_title;  endif;
+			echo $before_widget;
+		
+			if ( $title )
+		
+			echo $before_title . $title . $after_title; 
 
 			   		query_posts( 
 							array( 
@@ -76,60 +74,68 @@
 						
 					<?php 
 				
-					global 	$TheChameleonWidgetData;
-						
-					$TheChameleonWidgetData =
+					global 	$data;	
+					$data =
 						array(
-/*
 							'title_tag' 	=> 'h6',
 							'meta_pattern'  => $meta_pattern,
 							'title_size' 	=> $title_length,
-							'excerpt_size'	=> $length ,*/
-
-							
-							'show_post_title'	=> $show_post_title,
-							'title_length'	 	=> $title_length,
-								
-							'meta_pattern' 		=> $meta_pattern,
-
-							'show_post_media'	=> $show_post_media,
-							'width'				=> $width,
-							'height'			=> $height,
-						
-							'show_post_excerpt'	=> $show_post_excerpt,
-							'length'			=> $length,
-							'show_post_tags'    => $show_post_tags,
-							
+							'excerpt_size'	=> $length ,
 							);
 				
 					$i=0; while ( have_posts() ) : the_post(); ?>
 
 							<?php if( $template == 'recent' ) : ?>
-									<article id="post-<?php the_ID(); ?>" <?php post_class('post-widget'); ?> itemscope itemtype="http://schema.org/Article" style="">
+							
+							
+									<article id="post-<?php the_ID(); ?>" <?php post_class('  post-widget'); ?> itemscope itemtype="http://schema.org/Article" style="">
 
-										<?php $format = get_post_format();
-											if ( false === $format )
-												$format = 'standard';
-												get_template_part( 'widgets/Advanced_Recent_Posts/formats/post', $format ); ?>
-									   </article>
-							<?php elseif ( $template == 'featured' ) : ?>
-								<?php if ($i == 0 ) : ?>
-										<article id="post-<?php the_ID(); ?>" <?php post_class('post-widget'); ?> itemscope itemtype="http://schema.org/Article" style=" ">
-
-											<?php $format = get_post_format();
+										<?php	
+										$format = get_post_format();
+										if ( false === $format )
+											$format = 'standard';
+									
 											
-											 	   if ( false === $format )
-												    $format = 'standard';
-													get_template_part( 'widgets/Advanced_Recent_Posts/formats/post', $format ); ?>
+											get_template_part( 'widgets/Advanced_Recent_Posts/formats/post', $format ); 
+										?>
 
-										</article>
-										<ul style="line-style:none; padding-left:0px; margin-left:0px;">
+									</article>
+	
+							<?php elseif ( $template == 'featured' ) : ?>
+	
+								<?php if ($i == 0 ) : ?>
+		
+									
+											<article id="post-<?php the_ID(); ?>" <?php post_class('  post-widget'); ?> itemscope itemtype="http://schema.org/Article" style=" ">
+
+												<?php	
+												$format = get_post_format();
+												if ( false === $format )
+													$format = 'standard';
+
+														get_template_part( 'widgets/Advanced_Recent_Posts/formats/post', $format ); 
+												?>
+
+											</article>
+
 								<?php else: ?>
 					
-										<li style="list-style-type:none;"><a href="<?php the_permalink(); ?>#post-<?php the_ID(); ?>" itemprop="url"><?php the_title(); ?></a></li>
 					
-							    <?php endif; ?>
-										</ul>
+								
+										<article id="post-<?php the_ID(); ?>" <?php post_class('  post-widget'); ?> itemscope itemtype="http://schema.org/Article" style="">
+
+											<header class="col100 post-title  post-title-widget">
+
+												<h5 itemprop="name"><a href="<?php the_permalink(); ?>#post-<?php the_ID(); ?>" itemprop="url"><?php the_title(); ?></a></h5>
+
+											</header>
+									
+										</article>
+					
+							
+					
+							  <?php endif; ?>
+	
 						<?php endif; ?>
 
 					<?php $i++;	endwhile;
@@ -154,19 +160,17 @@
 			$order 				= isset ( $instance ['order'] ) 	? $instance ['order'] : '';
 			$columns 				= isset ( $instance ['columns'] ) 	? $instance ['columns'] : 'col-1';
 			
-			$show_post_title 	= isset ( $instance ['show_post_title'] ) ? $instance ['show_post_title'] : null;
+			$show_post_title 	= isset ( $instance ['show_post_title'] ) ? ( bool ) $instance ['show_post_title'] : false;
 			$title_length 		= isset ( $instance ['title_length'] ) && is_numeric ( $instance ['title_length'] ) ? $instance ['title_length'] : '';
 
 			$meta_pattern 		= isset ( $instance ['meta_pattern'] ) 	  ? esc_attr ( $instance ['meta_pattern'] ) : '';
 
-			$show_post_media 	= isset ( $instance ['show_post_media'] ) ? $instance ['show_post_media'] : null;
+			$show_post_media 	= isset ( $instance ['show_post_media'] ) ? ( bool ) $instance ['show_post_media'] : false;
 			$width 				= isset ( $instance ['width'] ) && is_numeric ( $instance ['width'] ) ? $instance ['width'] : '60';
 			$height 			= isset ( $instance ['height'] ) && is_numeric ( $instance ['height'] ) ? $instance ['height'] : '60';
 	
-			$show_post_excerpt 	= isset ( $instance ['show_post_excerpt'] ) ? $instance ['show_post_excerpt'] : null;
-			$length 			= isset ( $instance ['length'] ) && is_numeric ( $instance ['length'] ) ? $instance ['length'] : '0';
-
-			$show_post_tags 	= isset ( $instance ['show_post_tags'] ) ? $instance ['show_post_tags'] : null;
+			$show_post_excerpt 	= isset ( $instance ['show_post_excerpt'] ) ? ( bool ) $instance ['show_post_excerpt'] : false;
+			$length 			= isset ( $instance ['length'] ) && is_numeric ( $instance ['length'] ) ? $instance ['length'] : '100';
 
 			$template 			= isset ( $instance ['template'] ) ? $instance ['template'] : 'recent';
 		
@@ -190,20 +194,18 @@
 			$columns 				= isset ( $instance ['columns'] ) 	? $instance ['columns'] : 'col-1';
 
 	
-			$show_post_title 	= isset ( $instance ['show_post_title'] ) ? $instance ['show_post_title'] : null;
+			$show_post_title 	= isset ( $instance ['show_post_title'] ) ? ( bool ) $instance ['show_post_title'] : false;
 			$title_length 		= isset ( $instance ['title_length'] ) && is_numeric ( $instance ['title_length'] ) ? $instance ['title_length'] : '';
 
 			$meta_pattern 		= isset ( $instance ['meta_pattern'] ) 	  ? esc_attr ( $instance ['meta_pattern'] ) : '';
 
-			$show_post_media 	= isset ( $instance ['show_post_media'] ) ?  $instance ['show_post_media'] : null;
+			$show_post_media 	= isset ( $instance ['show_post_media'] ) ? ( bool ) $instance ['show_post_media'] : false;
 			$width 				= isset ( $instance ['width'] ) && is_numeric ( $instance ['width'] ) ? $instance ['width'] : '60';
 			$height 			= isset ( $instance ['height'] ) && is_numeric ( $instance ['height'] ) ? $instance ['height'] : '60';
 	
-			$show_post_excerpt 	= isset ( $instance ['show_post_excerpt'] ) ? $instance ['show_post_excerpt'] : null;
-			$length 			= isset ( $instance ['length'] ) && is_numeric ( $instance ['length'] ) ? $instance ['length'] : '0';
-	
-			$show_post_tags 	= isset ( $instance ['show_post_tags'] ) ? $instance ['show_post_tags'] : null;
-		
+			$show_post_excerpt 	= isset ( $instance ['show_post_excerpt'] ) ? ( bool ) $instance ['show_post_excerpt'] : false;
+			$length 			= isset ( $instance ['length'] ) && is_numeric ( $instance ['length'] ) ? $instance ['length'] : '100';
+
 			$template 			= isset ( $instance ['template'] ) ? $instance ['template'] : 'recent';
 		
 			?>
@@ -290,36 +292,29 @@
 			</select></p>
 
 
-	
-			<p><input id="<?php echo $this->get_field_id('show_post_title'); ?>" name="<?php echo $this->get_field_name('show_post_title'); ?>" type="checkbox" <?php checked( $show_post_title, '1' ); ?> value="1" /> 
-						<label for="<?php echo $this->get_field_id('show_post_title'); ?>"><?php _e('Show Post Title', 'the-chameleon'); ?></label>
-						<br />
-						<small><?php _e('Post title length (characters)', 'the-chameleon'); ?></small>
-						<input id="<?php echo $this->get_field_id('title_length'); ?>" name="<?php echo $this->get_field_name('title_length'); ?>" type="number" step="5" style="width:50px;"  value="<?php echo $title_length; ?>" /><br />	</p>
-	
+			<p><input id="<?php echo $this->get_field_id('show_post_title'); ?>" name="<?php echo $this->get_field_name('show_post_title'); ?>" type="checkbox" <?php checked( $show_post_title ); ?> /> 
+				<label for="<?php echo $this->get_field_id('show_post_title'); ?>"><?php _e('Show Post Title', 'the-chameleon'); ?></label>
+				<br />
+				<small><?php _e('Post title length (characters)', 'the-chameleon'); ?></small>
+				<input id="<?php echo $this->get_field_id('title_length'); ?>" name="<?php echo $this->get_field_name('title_length'); ?>" type="number" step="5" style="width:50px;"  value="<?php echo $title_length; ?>" /><br />	</p>
+				
 			<p><label for="<?php echo $this->get_field_id('meta_pattern'); ?>"><?php echo __( 'Meta Pattern:', 'the-chameleon' ); ?></label>
-				<input class="widefat" id="<?php echo $this->get_field_id('meta_pattern'); ?>" name="<?php echo $this->get_field_name('meta_pattern'); ?>" type="text" value="<?php echo $meta_pattern; ?>" />
-				<i>Example (By %author% on %date% in %category% | %comments%)</i> 
-				</p>
+				<input class="widefat" id="<?php echo $this->get_field_id('meta_pattern'); ?>" name="<?php echo $this->get_field_name('meta_pattern'); ?>" type="text" value="<?php echo $meta_pattern; ?>" /></p>
 
-	
-			<p><input id="<?php echo $this->get_field_id('show_post_media'); ?>" name="<?php echo $this->get_field_name('show_post_media'); ?>" type="checkbox" <?php checked( $show_post_media, '1' ); ?> value="1" /> 			
+
+			<p><input id="<?php echo $this->get_field_id('show_post_media'); ?>" name="<?php echo $this->get_field_name('show_post_media'); ?>" type="checkbox" <?php checked( $show_post_media ); ?> /> 			
 		 	   <label for="<?php echo $this->get_field_id('show_post_media'); ?>"><?php _e('Show Post Media', 'the-chameleon'); ?></label>
 		 	   <br />
-		 	  <!--
 		 	   <small><?php _e('Media size (W-H):', 'the-chameleon'); ?></small>		
-		 	  		 	   <input type="number" step="5" name="<?php echo $this->get_field_name('width'); ?>" value="<?php echo $width; ?>"  style="width:50px;" />px 
-		 	  		 	   <input type="number" step="5" name="<?php echo $this->get_field_name('height'); ?>" value="<?php echo $height; ?>" style="width:50px;" />px-->
-		 	  </p>
+		 	   <input type="number" step="5" name="<?php echo $this->get_field_name('width'); ?>" value="<?php echo $width; ?>"  style="width:50px;" />px 
+		 	   <input type="number" step="5" name="<?php echo $this->get_field_name('height'); ?>" value="<?php echo $height; ?>" style="width:50px;" />px</p>
 
-			<p><input id="<?php echo $this->get_field_id('show_post_excerpt'); ?>" name="<?php echo $this->get_field_name('show_post_excerpt'); ?>" type="checkbox" <?php checked( $show_post_excerpt, '1' ); ?> value="1" /> 			
+			<p><input id="<?php echo $this->get_field_id('show_post_excerpt'); ?>" name="<?php echo $this->get_field_name('show_post_excerpt'); ?>" type="checkbox" <?php checked( $show_post_excerpt ); ?> /> 			
 			<label for="<?php echo $this->get_field_id('show_post_excerpt'); ?>"><?php _e('Show Post Excerpt', 'the-chameleon'); ?></label><br />
 			<small><?php _e('Post excerpt length (characters)', 'the-chameleon'); ?></small>	
 			<input id="<?php echo $this->get_field_id('length'); ?>" name="<?php echo $this->get_field_name('length'); ?>" type="number" step="5" value="<?php echo $length; ?>" style="width:50px;" /></p>	
 				
-			<p><input id="<?php echo $this->get_field_id('show_post_tags'); ?>" name="<?php echo $this->get_field_name('show_post_tags'); ?>" type="checkbox" <?php checked( $show_post_tags, '1' ); ?> value="1" /> 			
-		 	   <label for="<?php echo $this->get_field_id('show_post_tags'); ?>"><?php _e('Show Post Tags', 'the-chameleon'); ?></label></p>
-		
+
 			<p><label for="<?php echo $this->get_field_id('template'); ?>"><?php _e('Template:', 'the-chameleon'); ?></label>
 			<select id="<?php echo $this->get_field_id('template'); ?>" name="<?php echo $this->get_field_name('template'); ?>" class="widefat">
 				<option value="recent" <?php echo 'recent' == $template ? 'selected="selected"' : '' ?>><?php _e('Recent Posts', 'the-chameleon'); ?></option>
