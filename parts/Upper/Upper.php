@@ -27,6 +27,16 @@ namespace TheChameleon{
 		 **/
 		function customize(){
 			
+			
+			$fields[] = array(
+						'name'	  => 'upper_sticky',
+						'type'	  => 'checkbox',
+						'title'	  => __('Sticky', 'the-chameleon'), 
+						'desc'	  => __('Enable sticky upper', 'the-chameleon'),					
+						'default' => null,
+					 );
+					 
+					 
 			$fields[] = array(
 						'name'	  => 'upper_wrap',
 						'type'	  => 'select',

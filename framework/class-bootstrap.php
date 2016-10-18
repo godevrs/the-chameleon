@@ -588,6 +588,13 @@
    	    		global $TheChameleonTerm;
       
    	    		$data = array(
+					
+					
+					'sticky_header'         => !empty( $TheChameleonOption['header_sticky'] ) 		? $TheChameleonOption['header_sticky'] 		: '', 					
+					'primary_menu_sticky'   => !empty( $TheChameleonOption['primary_menu_sticky'] ) ? $TheChameleonOption['primary_menu_sticky'] : '', 	
+					'upper_sticky' 			=> !empty( $TheChameleonOption['upper_sticky'] ) 		? $TheChameleonOption['upper_sticky'] : '', 
+					
+					
    	    			'site_url'				=> site_url(),
       
    	    			'upper_animate'			=> !empty( $TheChameleonOption['upper_animate'] ) 		? $TheChameleonOption['upper_animate'] 		: 'fadeIn',

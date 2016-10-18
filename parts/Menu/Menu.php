@@ -46,6 +46,14 @@ namespace TheChameleon;
 
 
 		$fields[] = array(
+					'name'	  => 'primary_menu_sticky',
+					'type'	  => 'checkbox',
+					'title'	  => __('Sticky', 'the-chameleon'), 
+					'desc'	  => __('Enable sticky Primary menu', 'the-chameleon'),					
+					'default' => null,
+				 );
+				 
+		$fields[] = array(
 					'name'	  => 'primary_menu_wrap',
 					'type'	  => 'select',
 					'title'	  => __('Wrap', 'the-chameleon'), 

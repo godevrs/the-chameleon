@@ -38,8 +38,7 @@ namespace TheChameleon{
 						'name'	  => 'header_sticky',
 						'type'	  => 'checkbox',
 						'title'	  => __('Sticky', 'the-chameleon'), 
-						'desc'	  => __('Choice wrap', 'the-chameleon'),
-						'choices' => $this->config->wraps,						
+						'desc'	  => __('Enable sticky header', 'the-chameleon'),					
 						'default' => null,
 					 );
 			

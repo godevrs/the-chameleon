@@ -40,7 +40,7 @@ jQuery(document).ready(function() {
 		jQuery(this).parent().children("ul.sub-menu").toggle();
 	});
 
-
+	
 	//responsiv menu
 	jQuery( ".widget_nav_menu .widget-content" ).prepend('<i class="fa fa-bars fa-2x responsive-menu-icon"></i>');
 		
@@ -52,42 +52,9 @@ jQuery(document).ready(function() {
 	jQuery('.responsive-menu-icon').click(function() {
 		jQuery(this).parent().children().children( "ul.menu" ).toggle();			
 	});
-
-
-    //Sticky
-	var upper = jQuery('.upper');
-    var origOffsetYUpper = upper.offset().top;
-
-    var header = jQuery('.header');
-    var origOffsetYHeader = header.offset().top;
-
-    var mainMenu = jQuery('.menu-wrap');
-    var origOffsetYMainMenu = mainMenu.offset().top;
-
-    function scroll() {
-        if (jQuery(window).scrollTop() > origOffsetYUpper) {
-            jQuery('.upper').addClass('sticky');
-        } else {
-            jQuery('.upper').removeClass('sticky');
-        }
-
-
-        if (jQuery(window).scrollTop() >= origOffsetYHeader) {
-            jQuery('.header').addClass('sticky');
-        } else {
-            jQuery('.header').removeClass('sticky');
-        }
-
-
-        if (jQuery(window).scrollTop() >= origOffsetYMainMenu) {
-            jQuery('.menu-wrap').addClass('sticky');
-        } else {
-            jQuery('.menu-wrap').removeClass('sticky');
-        }
-    }
-
-    document.onscroll = scroll;
 		
+
+
 	
 	//MESSAGE	
 	jQuery('.message').click(function() {		
@@ -404,6 +371,57 @@ jQuery(document).ready(function() {
 	     });
 	}
 
+
+
+    //Sticky
+	if ( jQuery( '.upper').length ) {
+	  var upper = jQuery('.upper');
+  	  var origOffsetYUpper = upper.offset().top;
+	}
+	
+	if ( jQuery( '.header').length ) {
+  	  var header = jQuery('.header');
+  	  var origOffsetYHeader = header.offset().top;
+	}
+    
+	if ( jQuery( '.menu-wrap').length ) {
+    	var mainMenu = jQuery('.menu-wrap');
+    	var origOffsetYMainMenu = mainMenu.offset().top;
+    }
+    
+    
+    function scroll() {
+		
+	 	if(data.upper_sticky =='1'){
+	        if (jQuery(window).scrollTop() > origOffsetYUpper) {
+	              jQuery('.upper').addClass('sticky');
+	         } else {
+	              jQuery('.upper').removeClass('sticky');
+	         }
+	     }
+
+		if(data.sticky_header =='1'){
+	        if (jQuery(window).scrollTop() >= origOffsetYHeader) {
+	            jQuery('.header').addClass('sticky');
+	        } else {
+	            jQuery('.header').removeClass('sticky');
+	        }
+		}	
+
+    
+		
+		if(data.primary_menu_sticky =='1'){ 
+	        if (jQuery(window).scrollTop() >= origOffsetYMainMenu) {
+               jQuery('.menu-wrap').addClass('sticky');
+            } else {
+               jQuery('.menu-wrap').removeClass('sticky');
+           }
+		}
+       
+    }
+
+    document.onscroll = scroll;
+		
 
 	
 });

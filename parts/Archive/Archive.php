@@ -99,7 +99,7 @@ namespace TheChameleon{
 											'title'	   => __('Theme Options', 'the-chameleon'),						
 											'sections' => array(
 															array(
-																'title'	 	=> __('Archive', 'the-chameleon'),
+																'title'	 	=> __('Blog', 'the-chameleon'),
 																'desc'		=> __('Use this options to set up default archive and blog section.', 'the-chameleon'),
 																'priority'	=> 8,
 																'fileds' 	=> $fields,
