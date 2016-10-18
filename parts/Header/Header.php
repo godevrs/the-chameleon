@@ -33,6 +33,16 @@ namespace TheChameleon{
 		 **/
 		function customize(){
 			
+			
+			$fields[] = array(
+						'name'	  => 'header_sticky',
+						'type'	  => 'checkbox',
+						'title'	  => __('Sticky', 'the-chameleon'), 
+						'desc'	  => __('Choice wrap', 'the-chameleon'),
+						'choices' => $this->config->wraps,						
+						'default' => null,
+					 );
+			
 			$fields[] = array(
 						'name'	  => 'header_wrap',
 						'type'	  => 'select',
