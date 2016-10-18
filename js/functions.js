@@ -35,7 +35,7 @@ jQuery(document).ready(function() {
 		jQuery(this).parent().children("ul.sub-menu").toggle();			
 	});
 
-
+	//soro
 	jQuery('.widget_nav_menu li.menu-item-has-children .open-sub-menu').click(function() {	
 		jQuery(this).parent().children("ul.sub-menu").toggle();
 	});
