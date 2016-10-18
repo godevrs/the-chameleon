@@ -35,20 +35,12 @@ jQuery(document).ready(function() {
 		jQuery(this).parent().children("ul.sub-menu").toggle();			
 	});
 
-	
+	//widget-menu responsive open
 	jQuery('.widget_nav_menu li.menu-item-has-children .open-sub-menu').click(function() {	
 		jQuery(this).parent().children("ul.sub-menu").toggle();
 	});
 
 
-	/*
-	jQuery('li.menu-item-depth-1 .open-sub-menu').click(function() {	
-			jQuery(this).stop(true, true);
-			jQuery('ul.menu-depth-2').not('ul.menu-depth-1').toggle();
-			 return false;				
-		});*/
-
-	
 	//responsiv menu
 	jQuery( ".widget_nav_menu .widget-content" ).prepend('<i class="fa fa-bars fa-2x responsive-menu-icon"></i>');
 		
