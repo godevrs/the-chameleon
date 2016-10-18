@@ -52,6 +52,41 @@ jQuery(document).ready(function() {
 	jQuery('.responsive-menu-icon').click(function() {
 		jQuery(this).parent().children().children( "ul.menu" ).toggle();			
 	});
+
+
+    //Sticky
+	var upper = jQuery('.upper');
+    var origOffsetYUpper = upper.offset().top;
+
+    var header = jQuery('.header');
+    var origOffsetYHeader = header.offset().top;
+
+    var mainMenu = jQuery('.menu-wrap');
+    var origOffsetYMainMenu = mainMenu.offset().top;
+
+    function scroll() {
+        if (jQuery(window).scrollTop() > origOffsetYUpper) {
+            jQuery('.upper').addClass('sticky');
+        } else {
+            jQuery('.upper').removeClass('sticky');
+        }
+
+
+        if (jQuery(window).scrollTop() >= origOffsetYHeader) {
+            jQuery('.header').addClass('sticky');
+        } else {
+            jQuery('.header').removeClass('sticky');
+        }
+
+
+        if (jQuery(window).scrollTop() >= origOffsetYMainMenu) {
+            jQuery('.menu-wrap').addClass('sticky');
+        } else {
+            jQuery('.menu-wrap').removeClass('sticky');
+        }
+    }
+
+    document.onscroll = scroll;
 		
 	
 	//MESSAGE	

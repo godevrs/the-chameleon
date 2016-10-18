@@ -10,6 +10,19 @@
 	
 }
 
+/* = sticky menu 
+-------------------------------------------------------------- */
+.sticky {
+    position:fixed;
+    top:0!important; /*overight top*/
+    width: 100%;
+    z-index: 99999;
+}
+
+.upper-sticky-fix {
+	position: relative;
+}
+
 
 /* = Horizontal Menu  
 -------------------------------------------------------------- */
