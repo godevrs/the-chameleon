@@ -31,19 +31,14 @@ jQuery(document).ready(function() {
 	
 	
 	//main menu responsvise open
-	jQuery('li.main-menu-item .open-sub-menu').click(function() {	
-		jQuery(this).stop(true, true);
-		jQuery('ul.menu-depth-1').toggle();
-		 return false;				
+	jQuery('li.main-menu-item .open-sub-menu').click(function() {
+		jQuery(this).parent().children("ul.sub-menu").toggle();			
 	});
 
 
 	jQuery('.widget_nav_menu li.menu-item-has-children .open-sub-menu').click(function() {	
-		jQuery(this).stop(true, true);
-		jQuery('.widget_nav_menu ul.sub-menu').toggle();
-		 return false;				
+		jQuery(this).parent().children("ul.sub-menu").toggle();
 	});
-
 
 
 	/*
@@ -59,57 +54,13 @@ jQuery(document).ready(function() {
 		
 		
 	//main menu
-	jQuery( ".standard-menu" ).prepend('<i class="fa fa-bars fa-2x responsive-menu-icon"></i>');	
+	jQuery( ".standard-menu" ).prepend('<i class="fa fa-bars fa-2x responsive-menu-icon"></i>');
+
+	//responsiv menu
+	jQuery('.responsive-menu-icon').click(function() {
+		jQuery(this).parent().children().children( "ul.menu" ).toggle();			
+	});
 		
-	//main menu
-	jQuery('.standard-menu .responsive-menu-icon').click(function() {	
-		jQuery( ".standard-menu ul.menu" ).toggle();
-		return false;				
-	});
-		
-		
-	//responsiv menu upper
-	jQuery('#upper .responsive-menu-icon').click(function() {	
-		jQuery( "#upper .widget_nav_menu ul.menu" ).toggle();
-		return false;				
-	});
-
-	//responsiv menu header
-	jQuery('#header .responsive-menu-icon').click(function() {	
-		jQuery( "#header .widget_nav_menu ul.menu" ).toggle();
-		return false;				
-	});
-
-	//responsiv menu top
-	jQuery('#top .responsive-menu-icon').click(function() {	
-		jQuery( "#top .widget_nav_menu ul.menu" ).toggle();
-		return false;				
-	});
-
-	//responsiv menu sidebar
-	jQuery('#sidebar .responsive-menu-icon').click(function() {	
-		jQuery( "#sidebar .widget_nav_menu ul.menu" ).toggle();
-		return false;				
-	});
-
-	//responsiv menu bottom
-	jQuery('#bottom .responsive-menu-icon').click(function() {	
-		jQuery( "#bottom .widget_nav_menu ul.menu" ).toggle();
-		return false;				
-	});
-
-	//responsiv menu footer
-	jQuery('.footer .responsive-menu-icon').click(function() {	
-		jQuery( ".footer .widget_nav_menu ul.menu" ).toggle();
-		return false;				
-	});
-	
-
-	//responsiv menu copyright
-	jQuery('#copyright .responsive-menu-icon').click(function() {	
-		jQuery( "#copyright .widget_nav_menu ul.menu" ).toggle();
-		return false;				
-	});
 	
 	//MESSAGE	
 	jQuery('.message').click(function() {		
