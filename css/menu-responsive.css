@@ -1,0 +1,94 @@
+
+.open-sub-menu{
+	
+	cursor:pointer;
+}
+.open-sub-menu:hover{
+	color:red;
+}
+
+@media (max-width: 799px) {
+	
+	.upper .widget_nav_menu ul.menu li:hover > ul, 
+	.header .widget_nav_menu ul.menu li:hover > ul, 
+	.top .widget_nav_menu ul.menu li:hover > ul, 
+	.copyright .widget_nav_menu ul.menu li:hover > ul, 
+	.horizontal-menu ul li:hover > ul{ 
+		display: none;
+ 
+	}
+
+	.upper .widget_nav_menu ul.menu li:focus > ul, 
+	.header .widget_nav_menu ul.menu li:focus > ul, 
+	.top .widget_nav_menu ul.menu li:focus > ul, 
+	.copyright .widget_nav_menu ul.menu li:focus > ul, 
+	.horizontal-menu ul li:focus > ul{ 
+		display: none;
+ 
+	}
+	
+	.upper .widget_nav_menu ul.menu ul, 
+	.header .widget_nav_menu ul.menu ul, 
+	.top .widget_nav_menu ul.menu ul, 
+	.copyright .widget_nav_menu ul.menu ul, 
+	.horizontal-menu ul ul,
+	.upper .widget_nav_menu ul.menu ul ul, 
+	.header .widget_nav_menu ul.menu ul ul,
+	.top .widget_nav_menu ul.menu ul ul,
+	.copyright .widget_nav_menu ul.menu ul ul,  
+	.horizontal-menu ul ul ul,
+	.upper .widget_nav_menu ul.menu ul ul ul ul ul ul,
+	.header .widget_nav_menu ul.menu ul ul ul ul ul ul,
+	.top .widget_nav_menu ul.menu ul ul ul ul ul ul, 
+	.copyright .widget_nav_menu ul.menu ul ul ul ul ul ul,  
+	.horizontal-menu ul ul ul ul ul ul ul,
+	.upper .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul,
+	.header .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul, 
+	.top .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul,
+	.copyright .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul,  
+	.horizontal-menu ul ul ul ul ul ul ul ul ul ul ul{ 
+		width:100% !important; 	
+	/*	display: none;*/
+		left:0;
+	    position: relative;
+	  
+	}
+	.upper .widget_nav_menu ul.menu ul ul, 
+	.header .widget_nav_menu ul.menu ul ul,
+	.top .widget_nav_menu ul.menu ul ul,
+	.copyright .widget_nav_menu ul.menu ul ul,  
+	.horizontal-menu ul ul ul,
+	.upper .widget_nav_menu ul.menu ul ul ul ul ul ul,
+	.header .widget_nav_menu ul.menu ul ul ul ul ul ul,
+	.top .widget_nav_menu ul.menu ul ul ul ul ul ul, 
+	.copyright .widget_nav_menu ul.menu ul ul ul ul ul ul,  
+	.horizontal-menu ul ul ul ul ul ul ul,
+	.upper .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul,
+	.header .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul, 
+	.top .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul,
+	.copyright .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul,  
+	.horizontal-menu ul ul ul ul ul ul ul ul ul ul ul{
+		
+		width:100% !important; 	
+	/*	display: none;*/	left:0;
+	    position: relative;
+	}
+	
+
+	
+	/*
+	.upper .widget_nav_menu ul.menu li i.open-sub-menu:hover > ul, 
+		.header .widget_nav_menu ul.menu li:hover > ul, 
+		.top .widget_nav_menu ul.menu li:hover > ul, 
+		.copyright .widget_nav_menu ul.menu li:hover > ul, 
+		.horizontal-menu ul li i.open-sub-menu:hover > ul{ 
+			display: block;
+	 
+		}*/
+	
+	
+	/*
+		Show icon
+	*/
+	.open-sub-menu{display:block;}
+}

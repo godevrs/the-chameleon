@@ -7,7 +7,7 @@
 .temp-col-3-60x25x15 .col-item:nth-child(3n+1){
 	padding-right: 5px ;
 	clear:left;
-	background:green;
+	/*background:green;*/
 } 
 
 
@@ -16,7 +16,7 @@
 .temp-col-3-60x25x15 .col-item:nth-child(3n+2){	
 	padding-left: 5px ;	
 	padding-right: 5px ;
-	background:green;
+	/*background:green;*/
 }
 
 
@@ -26,7 +26,7 @@
 .temp-col-3-15x25x60 .col-item:nth-child(3n+3),
 .temp-col-3-60x25x15 .col-item:nth-child(3n+3){	
 	padding-left: 5px ;	
-	background:green;
+	/*background:green;*/
 }
 
 
@@ -34,42 +34,64 @@
 .temp-col-2-30x70 .col-item:nth-child(2n+1),		 
 .temp-col-2-70x30 .col-item:nth-child(2n+1){
 		padding-right: 5px ;
-		background:green;
+		/*background:green;*/
 	
 }
 .temp-col-2-30x70 .col-item:nth-child(2n+2),
 .temp-col-2-70x30 .col-item:nth-child(2n+2){
 	padding-left: 5px ;
-	background:green;
+	/*background:green;*/
 }
 
 
-
-/* = Global Margins
+/* = Wraps
 -------------------------------------------------------------- */
-body{
-	background:black !important;
+/*.main, */.open-sub-menu{
+	padding:10px;	
+	/*background:#212121;*/
 }
-.upper,
-.header,
-.top,
-.menu-wrap,
-.main-content{
-	/*	border:1px solid blue;*/
-}
-
-/* = Post
--------------------------------------------------------------- */
-
-
-.pagination,.post-content. .widget, section.post-content-single{
-	border:1px solid yellow !important;
-}
-.post-media{ margin-bottom:10px !important;  }
+/*
+.header, 
+.header .container, 
+.upper, 
+.upper .container,*/
+ 
+/*.top, */
+/*
+.bootom,
+.bootom .container, */
 
 /*
-	widgets margins
-*/
+.copyright, 
+.footer, 
+
+.menu-wrap,
+.menu-wrap .container
+{
+	
+
+	padding-left:10px; 
+	padding-right:10px;
+}*/
+
+
+
+
+/*
+.bottom,
+.footer, .footer .container{
+	padding-left:10px;
+	padding-right:10px;
+}*/
+
+
+
+
+
+
+
+/* = Margines
+-------------------------------------------------------------- */
 .sidebar .widget,
 .bottom .widget,
 .footer .widget,
@@ -78,109 +100,210 @@ body{
 .pagination,
 label,
 input,
-textarea{	
+textarea,
+.widget_advanced_recent_posts article{	
 	margin-bottom:10px;
 }
 
+.widget_advanced_recent_posts{
+		padding-top:10px;
+}
+
+.aligncenter, div.aligncenter{
+	margin:auto auto 10px auto !important;
+}
+
+.comment-form input{
+	margin-bottom:0px;
+}
+.comments h4{
+	padding:10px !important;
+
+	}
+
+
+/* = Padding / padding
+-------------------------------------------------------------- */
+.widget-header,
+.widget-content,
+.post-header,
+.post-meta,
+.post-content,
+
+section.comment-respond,
+
+.page-content,
+.page-builder,
+.page-builder .container,
+.pagination,
+input,
+textarea{
+	padding:10px;	
+}
+
+
+/* = widget margin = bootom, footer top padding
+-------------------------------------------------------------- */
 .bottom,
 .footer {
 	padding-top:10px;
 }
 
 
-/*
-input:last-child{
-	margin-bottom:0px;	
-}
-*/
-
-/* = Paddings - pola od girda
--------------------------------------------------------------- */
-/*
-.header,
-.top
-{
-	padding-top:10px;
-	padding-bottom:10px;
-	background:#eaeaea;
-}*/
-
-
-.widget-content,
-.post-content,
-.post-meta,
-.pagination,
-input,
-textarea,
-.page-builder .container{
-	padding:10px;	
+label{	
+	padding-bottom:10px;	
 }
 
-.widget-header,
-.post-header,
-
-.widget_nav_menu a,
-.menu a{
-	padding:5px 10px 5px 10px;	
-}
-
-
-/*//pola grida*/
-.post-meta,
-li,
-th,
-td,
-h1,
-h2,
-h3,
-h4,
-h5,
-h5{
-	padding-top:5px;
-	padding-bottom:5px;
-}
-
-.widget_nav_menu .widget-content{
-	padding:0px !important;
-}
-
-.bottom,
-.footer, .footer .container{
+.comments li{
 	padding-left:10px;
 	padding-right:10px;
 }
 
 
-/* = widget borders
+/* = Elements /halp padding
 -------------------------------------------------------------- */
+.post-meta,
+
+.page-content li,
+.page-content th,
+.page-content td,
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5,
+.page-content h6,
+
+.post-content li,
+.post-content th,
+.post-content td,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6,
+
+.widget-content li:not(.menu-item) ,
+.widget-content th,
+.widget-content td,
+.widget-content h1,
+.widget-content h2,
+.widget-content h3,
+.widget-content h4,
+.widget-content h5,
+.widget-content h6,
+
+section.comment-respond li,
+section.comment-respond th,
+section.comment-respond td,
+section.comment-respond h1,
+section.comment-respond h2,
+section.comment-respond h3,
+section.comment-respond h4,
+section.comment-respond h5,
+section.comment-respond h6,
+section.comment-respond p,
+
+
+
+.comments li,
+.comments th,
+.comments td,
+.comments h1,
+.comments h2,
+.comments h3,
+.comments h4,
+.comments h5,
+.comments h6
+{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+
+
+
+
+/* == IMPORTANTS 
+-------------------------------------------------------------- */
+
+
+/* = Widget Menu padding 0 
+-------------------------------------------------------------- */
+.widget_nav_menu .widget-content{
+	padding:0px !important;
+}
+.widget_nav_menu a,
+.menu a{
+	padding:5px 10px 5px 10px;	
+}
+
+/* = Widget Search  margin null
+-------------------------------------------------------------- */
+.widget_search input{
+	margin-bottom:0 !important;
+	
+}
+
+/* = Widget Search padding widget-content  null
+-------------------------------------------------------------- */
+.widget_search .widget-content,
+.widget_search label{
+	padding-bottom:0px !important;
+}
+
+
+
+
+
+
+
+/* = Test
+-------------------------------------------------------------- */
+
+/*
 .post-header,
 .post-content,
 .post-meta,
 .widget-header,
 .widget-content,
-/*.widget,*/
 .pagination{ border:1px solid yellow; }
-
-
-
-
-
-.main, .header, .upper, .top, .bootom, .copyright, .footer, .header .container, .menu-wrap{
-	background:#212121;
-/*	padding:12px;*/
-	padding-left:10px; 
-	padding-right:10px;
-}
-
-
-
 .sidebar{
-/*		border:1px solid red;*/
+
+}
+.footer {color:#fff;}
+.footer .widget-content{}
+.footer {background:green;}
+
+.pagination,
+.post-content, 
+.widget-content, 
+section.post-content-single,
+section.comment-respond,
+.comments li{
+	border:1px solid yellow !important;
 }
 
+body{
+	background:black !important;
+}
+.upper,
+.header,
+.top,
+.menu-wrap,
+.main-content{
 
-/* = Test
--------------------------------------------------------------- */
-.footer {color:#fff;}
-.footer .widget-content{/*background:#fff;*/}
-.footer {background:green;}
+}
+.menu a{border:1px solid yellow !important; background:#fff; padding:20px;}
+
+.menu-item-has-children a{border:1px solid green !important;}
+
+.sub-menu li a{border:1px solid yellow !important; background:#000; }
+
+
+.sub-menu li .sub-menu a{border:1px solid yellow !important; background:green; }
+.sub-menu li .sub-menu li .sub-menu a{border:1px solid yellow !important; background:yellow; }
+.sub-menu li .sub-menu li .sub-menu li .sub-menu a{border:1px solid yellow !important; background:blue; }*/
+
+

@@ -23,19 +23,25 @@ input + label {
 input:not([type=submit]):not([type=file]),
 textarea {
 	line-height: 1;
-	background-color:transparent;
+	background-color:#fff;
   	max-width: 100%;
 	min-width:250px;
+}
+
+input[type='radio'], 
+input[type='checkbox'],
+input[type='number']{
+	min-width:auto !important;	/*reste min-width:250px;*/
 }
 
 input[type='submit'], 
 input[type='button']{
 	line-height: 1;
 	cursor:pointer;
-	background-color:transparent;
+	/*background-color:transparent;*/
 }
 
 select{
-	background-color:transparent;
+	background-color:#fff;
 	max-width:95%;
 }

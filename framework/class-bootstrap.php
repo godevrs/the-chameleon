@@ -757,9 +757,8 @@
 				
 				
 				//skin
-			/*
 				wp_register_style( 'the-chameleon-skin', $TheChameleonOption['skin'], array('the-chameleon') );
-							wp_enqueue_style( 'the-chameleon-skin' );*/
+				wp_enqueue_style( 'the-chameleon-skin' );
 					
 			endif;
 		

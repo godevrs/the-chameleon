@@ -8,22 +8,26 @@
 --------------------------------------------------------------*/ 
 .main-content-loop .post-header-loop {
    
-   padding-left: 0px; 
+   /*padding-left: 0px; */
 }
 /* = loop Post Meta Design
 --------------------------------------------------------------*/ 
 .main-content-loop .post-meta-loop {
    
+ /*
    padding-top: 0px; 
-   padding-bottom: 10px; 
-   padding-left: 0px; 
+    padding-bottom: 10px; 
+    padding-left: 0px; */
+ 
 }
 /* = loop Post Content Design
 --------------------------------------------------------------*/ 
 .main-content-loop .post-content-loop {
    
+/*
    padding-top: 0px; 
-   padding-left: 0px; 
+   padding-left: 0px; */
+
 }
 /* = loop Post Meta p Typo
 --------------------------------------------------------------*/ 

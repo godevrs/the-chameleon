@@ -11,7 +11,8 @@
 .col-1 .post:nth-child(1n+1),
 .col-1 .widget:nth-child(1n+1),
 .col-1 .col-item:nth-child(1n+1){	
- 
+	padding-left: 0 ;	
+	padding-right: 0 ;
 }
 
 
@@ -35,13 +36,14 @@
 .col-2 .post:nth-child(2n+1),
 .col-2 .widget:nth-child(2n+1),
 .col-2 .col-item:nth-child(2n+1){
-
+	padding-right: 10px ;
 	clear:left;
 } 
 .col-2 .post:nth-child(2n+2),
 .col-2 .widget:nth-child(2n+2),
 .col-2 .col-item:nth-child(2n+2){	
-
+	padding-left: 10px ;	
+/*	padding-right: 10px ;*/
 }
 
 
@@ -71,6 +73,7 @@
 .col-2-30x70 .col-item:nth-child(2n+1),
 .temp-col-2-30x70 .col-item:nth-child(2n+1) {
 	width:30% ;
+	padding-right: 10px;
 	clear:left;
 } 
 .col-2-30x70 .post:nth-child(2n+2),
@@ -78,6 +81,8 @@
 .col-2-30x70 .col-item:nth-child(2n+2),
 .temp-col-2-30x70 .col-item:nth-child(2n+2){	
 	width:70% ;
+	padding-left: 10px ;	
+/*	padding-right: 10px ;*/
 }
 
 
@@ -96,13 +101,16 @@
 .col-2-20x80 .widget:nth-child(2n+1),
 .temp-col-2-20x80 .col-item:nth-child(2n+1) {
 	width:20% ;
+	padding-right: 10px;
 	clear:left;
 } 
 .col-2-20x80 .post:nth-child(2n+2),
 .col-2-20x80 .col-item2:nth-child(2n+2),
 .col-2-20x80 .widget:nth-child(2n+2),
 .temp-col-2-20x80 .col-item:nth-child(2n+2){	
-	width:80% ;	
+	width:80% ;
+	padding-left: 10px ;	
+/*	padding-right: 10px ;*/
 }
 
 
@@ -130,6 +138,7 @@
 .col-2-70x30 .col-item:nth-child(2n+1), 
 .temp-col-2-70x30 .col-item:nth-child(2n+1){
 	width:70% ;
+	padding-right: 10px ;
 	clear:left;
 } 
 .col-2-70x30 .post:nth-child(2n+2),
@@ -137,6 +146,7 @@
 .col-2-70x30 .col-item:nth-child(2n+2),
 .temp-col-2-70x30 .col-item:nth-child(2n+2){	
 	width:30% ;
+	padding-left: 10px ;	
 }
 
 
@@ -160,14 +170,44 @@
 	float:left ;	
 }
 
+.col-3 .post:nth-child(3n+1),
+.col-3 .widget:nth-child(3n+1),
+.col-3 .col-item:nth-child(3n+1){	
+	padding-right: 10px ;
+
+	/*	padding-left: 0px ;*/
+	clear:left;
+} 
+
+.col-3 .post:nth-child(3n+2),
+.col-3 .widget:nth-child(3n+2),
+.col-3 .col-item:nth-child(3n+2){	
+	padding-left: 10px ;	
+	padding-right: 10px ;
+}
+
+.col-3 .post:nth-child(3n+3),
+.col-3 .widget:nth-child(3n+3),
+.col-3 .col-item:nth-child(3n+3){	
+	padding-left: 10px ;	
+}
+
 /* =  Columns 3 15x60x25% 
 -------------------------------------------------------------- */
+.col-3-15x60x25 .post,
+.col-3-15x60x25 .widget,
+.col-3-15x60x25 .col-item, 
+.temp-col-3-15x60x25 .col-item{
+	height:100%;
+	float:left ;	
+}
 
 .col-3-15x60x25 .post:nth-child(3n+1),
 .col-3-15x60x25 .widget:nth-child(3n+1),
 .col-3-15x60x25 .col-item:nth-child(3n+1), 
 .temp-col-3-15x60x25 .col-item:nth-child(3n+1){	
 	width:15% ;
+	padding-right: 10px ;
 	clear:left;
 } 
 
@@ -176,14 +216,16 @@
 .col-3-15x60x25 .col-item:nth-child(3n+2),
 .temp-col-3-15x60x25 .col-item:nth-child(3n+2){
 	width:60% ;	
-
+	padding-left: 10px ;	
+	padding-right: 10px ;
 }
 
 .col-3-15x60x25 .post:nth-child(3n+3),
 .col-3-15x60x25 .widget:nth-child(3n+3),
 .col-3-15x60x25 .col-item:nth-child(3n+3),
 .temp-col-3-15x60x25 .col-item:nth-child(3n+3){
-	width:25% ;		
+	width:25% ;	
+	padding-left: 10px ;	
 }
 
 
@@ -203,6 +245,7 @@
 .col-3-15x25x60 .col-item:nth-child(3n+1), 
 .temp-col-3-15x25x60 .col-item:nth-child(3n+1){	
 	width:15% ;
+	padding-right: 10px ;
 	clear:left;
 } 
 
@@ -211,13 +254,16 @@
 .col-3-15x25x60 .col-item:nth-child(3n+2),
 .temp-col-3-15x25x60 .col-item:nth-child(3n+2){
 	width:25% ;	
+	padding-left: 10px ;	
+	padding-right: 10px ;
 }
 
 .col-3-15x25x60 .post:nth-child(3n+3),
 .col-3-15x25x60 .widget:nth-child(3n+3),
 .col-3-15x25x60 .col-item:nth-child(3n+3),
 .temp-col-3-15x25x60 .col-item:nth-child(3n+3){
-	width:60% ;		
+	width:60% ;	
+	padding-left: 10px ;	
 }
 
 
@@ -236,6 +282,7 @@
 .col-3-60x25x15 .col-item:nth-child(3n+1), 
 .temp-col-3-60x25x15 .col-item:nth-child(3n+1){	
 	width:60% ;
+	padding-right: 10px ;
 	clear:left;
 } 
 
@@ -244,13 +291,16 @@
 .col-3-60x25x15 .col-item:nth-child(3n+2),
 .temp-col-3-60x25x15 .col-item:nth-child(3n+2){
 	width:25% ;	
+	padding-left: 10px ;	
+	padding-right: 10px ;
 }
 
 .col-3-60x25x15 .post:nth-child(3n+3),
 .col-3-60x25x15 .widget:nth-child(3n+3),
 .col-3-60x25x15 .col-item:nth-child(3n+3),
 .temp-col-3-60x25x15 .col-item:nth-child(3n+3){
-	width:15% ;		
+	width:15% ;	
+	padding-left: 10px ;	
 }
 
 
@@ -265,6 +315,30 @@
 	float:left ;	
 }
 
+.col-4 .post:nth-child(4n+1),
+.col-4 .widget:nth-child(4n+1),
+.col-4 .col-item:nth-child(4n+1){	
+	padding-right: 10px ;
+	clear:left ;
+} 
+
+.col-4 .post:nth-child(4n+2),
+.col-4 .widget:nth-child(4n+2),
+.col-4 .col-item:nth-child(4n+2),
+.col-4 .post:nth-child(4n+3),
+.col-4 .widget:nth-child(4n+3),
+.col-4 .col-item:nth-child(4n+3){	
+	padding-left: 10px ;	
+	padding-right: 10px ;
+}
+
+
+.col-4 .post:nth-child(4n+4),
+.col-4 .widget:nth-child(4n+4),
+.col-4 .col-item:nth-child(4n+4){	
+	padding-left: 10px ;	
+}
+
 /* =  Columns 5 25 x 25 x 25 x 25% 
 -------------------------------------------------------------- */
 .col-5 .post,
@@ -274,7 +348,30 @@
 	height:100%;
 	float:left ;	
 }
+.col-5 .post:nth-child(5n+1),
+.col-5 .widget:nth-child(5n+1),
+.col-5 .col-item:nth-child(5n+1){	
+	padding-right: 10px ;
+	clear:left;
+} 
+.col-5 .post:nth-child(5n+2),
+.col-5 .widget:nth-child(5n+2),
+.col-5 .col-item:nth-child(5n+2),
+.col-5 .post:nth-child(5n+3),
+.col-5 .widget:nth-child(5n+3),
+.col-5 .col-item:nth-child(5n+3),
+.col-5 .post:nth-child(5n+4),
+.col-5 .widget:nth-child(5n+4),
+.col-5 .col-item:nth-child(5n+4){	
+	padding-left: 10px ;	
+	padding-right: 10px ;
+}
 
+.col-5 .post:nth-child(5n+5),
+.col-5 .widget:nth-child(5n+5),
+.col-5 .col-item:nth-child(5n+5){	
+	padding-left: 10px ;	
+}
 
 /* =  Columns 6 16.5 
 -------------------------------------------------------------- */
@@ -285,133 +382,29 @@
 	height:100%;
 	float:left ;	
 }
-
-
-	
-
-
-		
-	.col-3 .post:nth-child(3n+1),
-	.col-3 .widget:nth-child(3n+1),
-	.col-3 .col-item:nth-child(3n+1),
-	.col-3-15x60x25 .post:nth-child(3n+1),
-	.col-3-15x60x25 .widget:nth-child(3n+1),
-	.col-3-15x60x25 .col-item:nth-child(3n+1), 	
-	.col-3-15x25x60 .post:nth-child(3n+1),
-	.col-3-15x25x60 .widget:nth-child(3n+1),
-	.col-3-15x25x60 .col-item:nth-child(3n+1), 
-	.col-3-60x25x15 .post:nth-child(3n+1),
-	.col-3-60x25x15 .widget:nth-child(3n+1),
-	.col-3-60x25x15 .col-item:nth-child(3n+1), 
-	.col-4 .post:nth-child(4n+1),
-	.col-4 .widget:nth-child(4n+1),
-	.col-4 .col-item:nth-child(4n+1),
-	.col-5 .post:nth-child(5n+1),
-	.col-5 .widget:nth-child(5n+1),
-	.col-5 .col-item:nth-child(5n+1),
-	.col-6 .post:nth-child(6n+1),
-	.col-6 .widget:nth-child(6n+1),
-	.col-6 .col-item:nth-child(6n+1){
-		padding-right: 10px ;
-		clear:left;
-	} 
-
-	.col-3 .post:nth-child(3n+2),
-	.col-3 .widget:nth-child(3n+2),
-	.col-3 .col-item:nth-child(3n+2),
-	.col-3-15x60x25 .post:nth-child(3n+2),
-	.col-3-15x60x25 .widget:nth-child(3n+2),
-	.col-3-15x60x25 .col-item:nth-child(3n+2),
-	.col-3-15x25x60 .post:nth-child(3n+2),
-	.col-3-15x25x60 .widget:nth-child(3n+2),
-	.col-3-15x25x60 .col-item:nth-child(3n+2),
-	.col-3-60x25x15 .post:nth-child(3n+2),
-	.col-3-60x25x15 .widget:nth-child(3n+2),
-	.col-3-60x25x15 .col-item:nth-child(3n+2),
-	.col-4 .post:nth-child(4n+2),
-	.col-4 .widget:nth-child(4n+2),
-	.col-4 .col-item:nth-child(4n+2),
-	.col-4 .post:nth-child(4n+3),
-	.col-4 .widget:nth-child(4n+3),
-	.col-4 .col-item:nth-child(4n+3),
-	.col-5 .post:nth-child(5n+2),
-	.col-5 .widget:nth-child(5n+2),
-	.col-5 .col-item:nth-child(5n+2),
-	.col-5 .post:nth-child(5n+3),
-	.col-5 .widget:nth-child(5n+3),
-	.col-5 .col-item:nth-child(5n+3),
-	.col-5 .post:nth-child(5n+4),
-	.col-5 .widget:nth-child(5n+4),
-	.col-5 .col-item:nth-child(5n+4),
-	.col-6 .post:nth-child(6n+2),
-	.col-6 .widget:nth-child(6n+2),
-	.col-6 .col-item:nth-child(6n+2),
-	.col-6 .post:nth-child(6n+3),
-	.col-6 .widget:nth-child(6n+3),
-	.col-6 .col-item:nth-child(6n+3),
-	.col-6 .post:nth-child(6n+4),
-	.col-6 .widget:nth-child(6n+4),
-	.col-6 .col-item:nth-child(6n+4),
-	.col-6 .post:nth-child(6n+5),
-	.col-6 .widget:nth-child(6n+5),
-	.col-6 .col-item:nth-child(6n+5){	
-
-		padding-left: 5px ;	
-		padding-right: 5px ;
-	
-	}
-
-
-	.col-3 .post:nth-child(3n+3),
-	.col-3 .widget:nth-child(3n+3),
-	.col-3 .col-item:nth-child(3n+3),
-	.col-3-15x60x25 .post:nth-child(3n+3),
-	.col-3-15x60x25 .widget:nth-child(3n+3),
-	.col-3-15x60x25 .col-item:nth-child(3n+3),
-	.col-3-15x25x60 .post:nth-child(3n+3),
-	.col-3-15x25x60 .widget:nth-child(3n+3),
-	.col-3-15x25x60 .col-item:nth-child(3n+3),
-	.col-3-60x25x15 .post:nth-child(3n+3),
-	.col-3-60x25x15 .widget:nth-child(3n+3),
-	.col-3-60x25x15 .col-item:nth-child(3n+3),
-	.col-4 .post:nth-child(4n+4),
-	.col-4 .widget:nth-child(4n+4),
-	.col-4 .col-item:nth-child(4n+4),
-	.col-5 .post:nth-child(5n+5),
-	.col-5 .widget:nth-child(5n+5),
-	.col-5 .col-item:nth-child(5n+5),
-	.col-6 .post:nth-child(6n+6),
-	.col-6 .widget:nth-child(6n+6),
-	.col-6 .col-item:nth-child(6n+6){	
-		padding-left: 10px ;	
-	}
-	
-	
-	
-	/*
-		Two columnes
-	*/
-	.col-2 .post:nth-child(2n+1),
-	.col-2 .widget:nth-child(2n+1),
-	.col-2 .col-item:nth-child(2n+1),		
-	.col-2-30x70 .post:nth-child(2n+1),
-	.col-2-30x70 .widget:nth-child(2n+1),
-	.col-2-30x70 .col-item:nth-child(2n+1),		
-	.col-2-70x30 .post:nth-child(2n+1),
-	.col-2-70x30 .widget:nth-child(2n+1),
-	.col-2-70x30 .col-item:nth-child(2n+1){
-		padding-right: 5px ;
-		
-	}
-	
-	.col-2 .post:nth-child(2n+2),
-	.col-2 .widget:nth-child(2n+2),
-	.col-2 .col-item:nth-child(2n+2),
-	.col-2-30x70 .post:nth-child(2n+2),
-	.col-2-30x70 .widget:nth-child(2n+2),
-	.col-2-30x70 .col-item:nth-child(2n+2),
-	.col-2-70x30 .post:nth-child(2n+2),
-	.col-2-70x30 .widget:nth-child(2n+2),
-	.col-2-70x30 .col-item:nth-child(2n+2){
-		padding-left: 5px ;		
-	}
+.col-6 .post:nth-child(6n+1),
+.col-6 .widget:nth-child(6n+1),
+.col-6 .col-item:nth-child(6n+1){	
+	padding-right: 10px ;
+	clear:left;
+} 
+.col-6 .post:nth-child(6n+2),
+.col-6 .widget:nth-child(6n+2),
+.col-6 .col-item:nth-child(6n+2),
+.col-6 .post:nth-child(6n+3),
+.col-6 .widget:nth-child(6n+3),
+.col-6 .col-item:nth-child(6n+3),
+.col-6 .post:nth-child(6n+4),
+.col-6 .widget:nth-child(6n+4),
+.col-6 .col-item:nth-child(6n+4),
+.col-6 .post:nth-child(6n+5),
+.col-6 .widget:nth-child(6n+5),
+.col-6 .col-item:nth-child(6n+5){	
+	padding-left: 10px ;	
+	padding-right: 10px ;
+}
+.col-6 .post:nth-child(6n+6),
+.col-6 .widget:nth-child(6n+6),
+.col-6 .col-item:nth-child(6n+6){	
+	padding-left: 10px ;	
+}

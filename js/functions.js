@@ -25,21 +25,91 @@ jQuery(document).ready(function() {
 		window.location.href = url;				
 	});
 	
-	//responsiv menu
-	jQuery( ".widget_nav_menu" ).append('<i class="fa fa-bars fa-2x responsive-menu-icon"></i>');
 	
-	//hide menu on tablet and mobile
-	var document_width = jQuery( document ).width();
-	if(document_width<800 ){
-		jQuery( ".widget_nav_menu ul" ).toggle();
-	}
-		
-	//responsiv menu
-	jQuery('.responsive-menu-icon').click(function() {	
-		jQuery( ".widget_nav_menu ul" ).toggle();	
-				
+	//add icon for open respoinsive menu
+	jQuery( "li.menu-item-has-children" ).prepend('<i class="fa fa-chevron-down open-sub-menu"  style="position:absolute; right:0px;" aria-hidden="true"></i>');
+	
+	
+	//main menu responsvise open
+	jQuery('li.main-menu-item .open-sub-menu').click(function() {	
+		jQuery(this).stop(true, true);
+		jQuery('ul.menu-depth-1').toggle();
+		 return false;				
 	});
 
+
+	jQuery('.widget_nav_menu li.menu-item-has-children .open-sub-menu').click(function() {	
+		jQuery(this).stop(true, true);
+		jQuery('.widget_nav_menu ul.sub-menu').toggle();
+		 return false;				
+	});
+
+
+
+	/*
+	jQuery('li.menu-item-depth-1 .open-sub-menu').click(function() {	
+			jQuery(this).stop(true, true);
+			jQuery('ul.menu-depth-2').not('ul.menu-depth-1').toggle();
+			 return false;				
+		});*/
+
+	
+	//responsiv menu
+	jQuery( ".widget_nav_menu .widget-content" ).prepend('<i class="fa fa-bars fa-2x responsive-menu-icon"></i>');
+		
+		
+	//main menu
+	jQuery( ".standard-menu" ).prepend('<i class="fa fa-bars fa-2x responsive-menu-icon"></i>');	
+		
+	//main menu
+	jQuery('.standard-menu .responsive-menu-icon').click(function() {	
+		jQuery( ".standard-menu ul.menu" ).toggle();
+		return false;				
+	});
+		
+		
+	//responsiv menu upper
+	jQuery('#upper .responsive-menu-icon').click(function() {	
+		jQuery( "#upper .widget_nav_menu ul.menu" ).toggle();
+		return false;				
+	});
+
+	//responsiv menu header
+	jQuery('#header .responsive-menu-icon').click(function() {	
+		jQuery( "#header .widget_nav_menu ul.menu" ).toggle();
+		return false;				
+	});
+
+	//responsiv menu top
+	jQuery('#top .responsive-menu-icon').click(function() {	
+		jQuery( "#top .widget_nav_menu ul.menu" ).toggle();
+		return false;				
+	});
+
+	//responsiv menu sidebar
+	jQuery('#sidebar .responsive-menu-icon').click(function() {	
+		jQuery( "#sidebar .widget_nav_menu ul.menu" ).toggle();
+		return false;				
+	});
+
+	//responsiv menu bottom
+	jQuery('#bottom .responsive-menu-icon').click(function() {	
+		jQuery( "#bottom .widget_nav_menu ul.menu" ).toggle();
+		return false;				
+	});
+
+	//responsiv menu footer
+	jQuery('.footer .responsive-menu-icon').click(function() {	
+		jQuery( ".footer .widget_nav_menu ul.menu" ).toggle();
+		return false;				
+	});
+	
+
+	//responsiv menu copyright
+	jQuery('#copyright .responsive-menu-icon').click(function() {	
+		jQuery( "#copyright .widget_nav_menu ul.menu" ).toggle();
+		return false;				
+	});
 	
 	//MESSAGE	
 	jQuery('.message').click(function() {		

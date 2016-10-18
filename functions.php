@@ -4,7 +4,7 @@
 	
 	//PHP check
 	if (!\is_admin() ):
-		if (PHP_VERSION_ID < 50600) :
+		if (PHP_VERSION_ID < 50509) :
 			echo "The Chameleon theme require min PHP 5.6";
 			exit;
 		endif;

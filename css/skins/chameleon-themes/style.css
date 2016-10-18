@@ -10,7 +10,7 @@ Category: bussines
 */
 
 @import "fonts/fonts.css";
-@import "grid/grid.css";
+/*@import "grid/grid.css";*/
 @import "body/body.css";
 @import "upper/upper.css";
 @import "header/header.css";

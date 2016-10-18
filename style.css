@@ -19,12 +19,13 @@ The Chameleon is distributed under the terms of the GNU GPL
 @import "css/columns.css";
 @import "css/layout.css";
 @import "css/body.css";
-@import "css/media.css";
+/*@import "css/media.css";*/
 @import "css/form.css"; 
 @import "css/container.css"; 	/*wrap width*/
 @import "css/upper.css";
 @import "css/header.css";
 @import "css/menu.css";
+@import "css/menu-responsive.css";
 @import "css/top.css"; 			
 @import "css/main.css"; 
 @import "css/post.css"; 	
