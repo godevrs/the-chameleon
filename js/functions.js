@@ -35,20 +35,12 @@ jQuery(document).ready(function() {
 		jQuery(this).parent().children("ul.sub-menu").toggle();			
 	});
 
-
+	//widget-menu responsive open
 	jQuery('.widget_nav_menu li.menu-item-has-children .open-sub-menu').click(function() {	
 		jQuery(this).parent().children("ul.sub-menu").toggle();
 	});
 
 
-	/*
-	jQuery('li.menu-item-depth-1 .open-sub-menu').click(function() {	
-			jQuery(this).stop(true, true);
-			jQuery('ul.menu-depth-2').not('ul.menu-depth-1').toggle();
-			 return false;				
-		});*/
-
-	
 	//responsiv menu
 	jQuery( ".widget_nav_menu .widget-content" ).prepend('<i class="fa fa-bars fa-2x responsive-menu-icon"></i>');
 		
@@ -60,6 +52,41 @@ jQuery(document).ready(function() {
 	jQuery('.responsive-menu-icon').click(function() {
 		jQuery(this).parent().children().children( "ul.menu" ).toggle();			
 	});
+
+
+    //Sticky
+	var upper = jQuery('.upper');
+    var origOffsetYUpper = upper.offset().top;
+
+    var header = jQuery('.header');
+    var origOffsetYHeader = header.offset().top;
+
+    var mainMenu = jQuery('.menu-wrap');
+    var origOffsetYMainMenu = mainMenu.offset().top;
+
+    function scroll() {
+        if (jQuery(window).scrollTop() > origOffsetYUpper) {
+            jQuery('.upper').addClass('sticky');
+        } else {
+            jQuery('.upper').removeClass('sticky');
+        }
+
+
+        if (jQuery(window).scrollTop() >= origOffsetYHeader) {
+            jQuery('.header').addClass('sticky');
+        } else {
+            jQuery('.header').removeClass('sticky');
+        }
+
+
+        if (jQuery(window).scrollTop() >= origOffsetYMainMenu) {
+            jQuery('.menu-wrap').addClass('sticky');
+        } else {
+            jQuery('.menu-wrap').removeClass('sticky');
+        }
+    }
+
+    document.onscroll = scroll;
 		
 	
 	//MESSAGE	
