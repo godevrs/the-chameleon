@@ -69,7 +69,6 @@
 						'col-3'		  	 => __( '3 Columns', 'the-chameleon' ),
 						'col-3-60x25x15' => __( '3 Columns 60x25x15%', 'the-chameleon' ),
 						'col-3-15x25x60' => __( '3 Columns 15x25x60%', 'the-chameleon' ),
-						'col-3-15x60x25' => __( '4 Columns 15x60x25%', 'the-chameleon' ),
 						'col-4'		  	 => __( '4 Columns', 'the-chameleon' ),
 						'col-5'		  	 => __( '5 Columns', 'the-chameleon' ),
 						'col-6'		  	 => __( '6 Columns', 'the-chameleon' )
