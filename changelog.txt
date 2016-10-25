@@ -4,6 +4,10 @@
 ==========================================================================================
                  The Chameleon WordPress Theme Change Log
 ==========================================================================================
+Version 3.1.4 - Released -Okt-25
+-----------------------------------
+- fixed responsive menus
+- fixed responsive layout
 
 Version 3.1.3 - Released -Apr-16
 -----------------------------------
@@ -11,7 +15,7 @@ Version 3.1.3 - Released -Apr-16
 - css forms fix
 - change page builder options
 - responsive menu fix
-- 
+
 
 Version 3.1.2 - Released 19-Apr-16
 -----------------------------------

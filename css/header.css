@@ -1,7 +1,8 @@
 /* = Header 
 -------------------------------------------------------------- */
-.header .widget .widget-header  {display:none !important;} /*remove title form widgets in header*/
-
+.header .widget .widget-header  {
+	display:none !important; /*remove title form widgets in header*/
+}
 
 
 /* = Logo reset all css 
@@ -17,4 +18,15 @@ a:hover img.logo {
     -moz-box-shadow: 0px 0px 0px #fff !important; /*remove box-shadow*/
     -webkit-box-shadow: 0px 0px 0px #fff !important;  /*remove box-shadow*/
     box-shadow: 0px 0px 0px #fff !important;  /*remove box-shadow*/
+}
+
+/* = Logo responsive resize  
+-------------------------------------------------------------- */
+@media (max-width: 775px) {
+	.header.sticky img.logo{
+		max-width:auto !important;
+		max-height:auto !important;	
+		height:40px !important;
+	}
+	
 }
