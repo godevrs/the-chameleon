@@ -576,18 +576,25 @@
 		 *
 		 **/
    	    function scripts_and_styles(){
-      
+			
+    		global $TheChameleonMeta;
+    		global $TheChameleonOption;
+    		global $TheChameleonTerm;
+			
    	    	//style
    	    	wp_enqueue_style( 'the-chameleon', get_stylesheet_uri() );
       			
 			include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 			if ( !is_plugin_active( 'the-chameleon-css-generator/the-chameleon-css-generator.php' ) ) :
-							
+				
+			
 				if ( isset( $_COOKIE['theskin'] ) ) :
 								
 					$TheChameleonOption['skin'] = $_COOKIE['theskin'] ;
 					
 				endif;
+			
+				
 				
 				//skin
 				wp_register_style( 'the-chameleon-skin', $TheChameleonOption['skin'], array('the-chameleon') );
@@ -598,9 +605,7 @@
 			
 			//responsive style
    	    	wp_enqueue_style( 'the-chameleon-responsove', get_template_directory_uri().'/css/responsove.css', array('the-chameleon') );
-   	    
-		
-			if ( !is_admin() ) :	
+   	    	if ( !is_admin() ) :	
       
    	    		//functions			
    	    		wp_enqueue_script( 'the-chameleon-functions', get_template_directory_uri()  .'/js/functions.js', array( 'jquery' ), '1.0.0'  );
@@ -769,7 +774,10 @@
       
       
    	    	endif;
-   
+      
+   	    
+      
+      
    	    }
 
 	 	/**
