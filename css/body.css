@@ -12,7 +12,19 @@ p {
 
 }
 
+/* = Container - site width 
+-------------------------------------------------------------- */
+.container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+}
+
+/* = Headings
+-------------------------------------------------------------- */
 h1{font-size:200%;}
+
 /* = link
 -------------------------------------------------------------- */
 a, 
@@ -79,7 +91,6 @@ dd{
 	padding-left:5%;
 }
 
-
 /* =  Forms 
 -------------------------------------------------------------- */
 input:required,
@@ -105,24 +116,28 @@ input + label {
 input:not([type=submit]):not([type=file]),
 textarea {
 	line-height: 1;
-	background-color:#fff;
   	max-width: 100%;
-	min-width:100%;
+	min-width:250px;
+	background-color:#fff;
+}
+
+input[type='radio'], 
+input[type='checkbox'],
+input[type='number']{
+	min-width:auto !important;	/*reste min-width:250px;*/
 }
 
 input[type='submit'], 
 input[type='button']{
 	line-height: 1;
 	cursor:pointer;
-
 }
 
 select{
-	background-color:#fff;
 	max-width:95%;
 	min-width:100%;
+	background-color:#fff;
 }
-
 /* = Table
 -------------------------------------------------------------- */
 table{
@@ -203,4 +218,23 @@ li.comment ol li{
 .widget_text ol ol,
 li.comment ol ol{
     list-style-type: lower-alpha;
+}
+
+/* = Colone 100% 
+-------------------------------------------------------------- */
+.col100{
+	float:left; 
+	width:100%;
+}
+
+/* = hidden
+-------------------------------------------------------------- */
+.hidden{
+     opacity:0 !important;
+}
+
+/* = visible
+-------------------------------------------------------------- */
+.visible{
+     opacity:1 !important;
 }

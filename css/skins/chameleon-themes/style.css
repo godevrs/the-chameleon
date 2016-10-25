@@ -10,7 +10,6 @@ Category: bussines
 */
 
 @import "fonts/fonts.css";
-/*@import "grid/grid.css";*/
 @import "body/body.css";
 @import "upper/upper.css";
 @import "header/header.css";
@@ -19,7 +18,6 @@ Category: bussines
 @import "main/main.css";
 @import "loop/loop.css";
 @import "post/post.css";
-@import "sidebar/sidebar.css";
 @import "page/page.css";
 @import "page_builder_section_1/page_builder_section_1.css";
 @import "page_builder_section_2/page_builder_section_2.css";

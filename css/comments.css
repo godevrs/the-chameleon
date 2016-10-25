@@ -4,32 +4,16 @@ ul.comments-list li.comment {
 	float:left; 
 	width:100%; 
 	min-height:85px; 
-/*	background-color:black; */
 	list-style-type: none; 
-/*	padding:10px;*/
 }
-ul.comments-list li.comment:nth-child(2n+2){
-/*	background-color:red;*/
-}
+ul.comments-list li.comment:nth-child(2n+2){}
 /*.comment-author  img.avatar{float:left; margin-right:10px;}*/
 a.comment-reply-link{float:right;}
-
-.form-allowed-tags code{
-/*
-	font-size:10px; 
-	line-height:14px; */
-
-}
-
-
-
+.form-allowed-tags code{}
 form.comment-form label{
 	display:none;
 }
 form.comment-form #comment{
 	width:100%;
 }
-
-.comment-reply-title{
-/*	display:none;*/
-}
+.comment-reply-title{}

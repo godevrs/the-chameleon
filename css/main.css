@@ -25,6 +25,7 @@
 	
 	
 	
-	.page-content, .page-content p{
-		   word-wrap: break-word;text-wrap:normal;
-	}
+.page-content, .page-content p{
+	 word-wrap: break-word;
+	text-wrap:normal;
+}
