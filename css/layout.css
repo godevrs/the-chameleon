@@ -1,51 +1,9 @@
-
-
-
 /* = Wraps
 -------------------------------------------------------------- */
-/*.main, */.open-sub-menu{
+.open-sub-menu{
 	padding:10px;	
-	/*background:#212121;*/
+
 }
-/*
-.header, 
-.header .container, 
-.upper, 
-.upper .container,*/
- 
-/*.top, */
-/*
-.bootom,
-.bootom .container, */
-
-/*
-.copyright, 
-.footer, 
-
-.menu-wrap,
-.menu-wrap .container
-{
-	
-
-	padding-left:10px; 
-	padding-right:10px;
-}*/
-
-
-
-
-/*
-.bottom,
-.footer, .footer .container{
-	padding-left:10px;
-	padding-right:10px;
-}*/
-
-
-
-
-
-
 
 /* = Margines
 -------------------------------------------------------------- */
@@ -98,14 +56,12 @@ textarea{
 	padding:10px;	
 }
 
-
 /* = widget margin = bootom, footer top padding
 -------------------------------------------------------------- */
 .bottom,
 .footer {
 	padding-top:10px;
 }
-
 
 label{	
 	padding-bottom:10px;	
@@ -206,13 +162,8 @@ section.comment-respond p,
 
 
 
-
-
-
-
 /* = Test
 -------------------------------------------------------------- */
-
 /*
 .post-header,
 .post-content,
@@ -247,12 +198,8 @@ body{
 
 }
 .menu a{border:1px solid yellow !important; background:#fff; padding:20px;}
-
 .menu-item-has-children a{border:1px solid green !important;}
-
 .sub-menu li a{border:1px solid yellow !important; background:#000; }
-
-
 .sub-menu li .sub-menu a{border:1px solid yellow !important; background:green; }
 .sub-menu li .sub-menu li .sub-menu a{border:1px solid yellow !important; background:yellow; }
 .sub-menu li .sub-menu li .sub-menu li .sub-menu a{border:1px solid yellow !important; background:blue; }*/

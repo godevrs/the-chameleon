@@ -9,7 +9,9 @@ h1, h2, h3, h4, h5, h6,
 
 .footer *{text-align:center;}
 
+/*
 .footer .widget_nav_menu ul.menu li,
-.footer .widget_nav_menu ul.menu li a {display:inline !important; width:auto !importan;}
+.footer .widget_nav_menu ul.menu li a {display:inline !important; width:auto !important;}*/
+
 
 .footer .widget_social_networks .widget-header{display:none;}

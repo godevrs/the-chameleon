@@ -15,14 +15,10 @@
 
 /* = Widget Advanced Recent Posts
 -------------------------------------------------------------- */
-.widget_advanced_recent_posts .widget-header{
-/*	display:none;*/
-}
+.widget_advanced_recent_posts .widget-header{}
 .widget_advanced_recent_posts, 
 .widget_advanced_recent_posts .widget-content{ }
-.widget_advanced_recent_posts .post-header{
-/*	padding:5px 10px 5px 10px;*/
-}
+.widget_advanced_recent_posts .post-header{}
 
 /* = Widget Nav Menu 
 -------------------------------------------------------------- */
@@ -44,7 +40,7 @@
 .bottom .widget_nav_menu ul.menu li.current-menu-parent ul,
 .footer .widget_nav_menu ul.menu li.current-menu-item ul,
 .footer .widget_nav_menu ul.menu li.current-menu-parent ul{
-	visibility:visible; 
+	/*visibility:visible; */
 	display:block;
 }	
 
@@ -52,7 +48,7 @@
 .sidebar .widget_nav_menu ul.menu li ul,
 .bottom .widget_nav_menu ul.menu li ul,
 .footer .widget_nav_menu ul.menu li ul{ 
-	visibility:hidden; 
+/*	visibility:hidden; */
 	display:none; 
 }	
 	
@@ -74,7 +70,6 @@ label.screen-reader-text {
     display: none; 
 }
 
-
 /* = Widget Elements, Widget Slider
 -------------------------------------------------------------- */
 .widget_elements .widget-title,
@@ -85,6 +80,5 @@ label.screen-reader-text {
 /* = Widget Featured Content
 -------------------------------------------------------------- */
 .widget_featured_content .widget-header{
-	
 	display:none; /* remove header from featured content widget*/
 }

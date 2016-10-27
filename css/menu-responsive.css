@@ -1,13 +1,7 @@
 
-.open-sub-menu{
-	
-	cursor:pointer;
-}
-.open-sub-menu:hover{
-	color:red;
-}
 
-@media (max-width: 800px) {
+
+@media (max-width: 850px) {
 	
 	.upper .widget_nav_menu ul.menu li:hover > ul, 
 	.header .widget_nav_menu ul.menu li:hover > ul, 
@@ -15,7 +9,6 @@
 	.copyright .widget_nav_menu ul.menu li:hover > ul, 
 	.horizontal-menu ul li:hover > ul{ 
 		display: none;
- 
 	}
 
 	.upper .widget_nav_menu ul.menu li:focus > ul, 
@@ -24,7 +17,6 @@
 	.copyright .widget_nav_menu ul.menu li:focus > ul, 
 	.horizontal-menu ul li:focus > ul{ 
 		display: none;
- 
 	}
 	
 	.upper .widget_nav_menu ul.menu ul, 
@@ -47,11 +39,9 @@
 	.top .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul,
 	.copyright .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul,  
 	.horizontal-menu ul ul ul ul ul ul ul ul ul ul ul{ 
-		width:100% !important; 	
-	/*	display: none;*/
+		width:100% !important; 		
 		left:0;
-	    position: relative;
-	  
+	    position: relative;	  
 	}
 	.upper .widget_nav_menu ul.menu ul ul, 
 	.header .widget_nav_menu ul.menu ul ul,
@@ -67,28 +57,12 @@
 	.header .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul, 
 	.top .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul,
 	.copyright .widget_nav_menu ul.menu ul ul ul ul ul ul ul ul ul ul,  
-	.horizontal-menu ul ul ul ul ul ul ul ul ul ul ul{
-		
+	.horizontal-menu ul ul ul ul ul ul ul ul ul ul ul{	
 		width:100% !important; 	
-	/*	display: none;*/	left:0;
+		left:0;
 	    position: relative;
 	}
 	
-
-	
-	/*
-	.upper .widget_nav_menu ul.menu li i.open-sub-menu:hover > ul, 
-		.header .widget_nav_menu ul.menu li:hover > ul, 
-		.top .widget_nav_menu ul.menu li:hover > ul, 
-		.copyright .widget_nav_menu ul.menu li:hover > ul, 
-		.horizontal-menu ul li i.open-sub-menu:hover > ul{ 
-			display: block;
-	 
-		}*/
-	
-	
-	/*
-		Show icon
-	*/
+	/*Show icon*/
 	.open-sub-menu{display:block;}
 }

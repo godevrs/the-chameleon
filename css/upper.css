@@ -1,4 +1,6 @@
 /* = Upper 
 -------------------------------------------------------------- */
-.upper .widget .widget-header {display:none !important;} /*remove title form widgets in upper*/
+.upper .widget .widget-header {
+	display:none !important; /*remove title form widgets in upper*/
+}
 
