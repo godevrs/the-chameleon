@@ -238,3 +238,20 @@ li.comment ol ol{
 .visible{
      opacity:1 !important;
 }
+/* = Text left
+-------------------------------------------------------------- */
+.text-left,
+.text-left *,
+.algin-left *{text-align:left;}
+
+/* = Text right
+-------------------------------------------------------------- */
+.text-right,
+.text-right *,
+.algin-right *{text-align:right;}
+
+/* = Text center
+-------------------------------------------------------------- */
+.text-center,
+.text-center *,
+.algin-center *{text-align:center;}
