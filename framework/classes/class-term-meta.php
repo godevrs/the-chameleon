@@ -259,9 +259,9 @@
     		
 			//change html tags ..of action edit or add
     		$action = !empty($_GET['action']) ? $_GET['action'] : '';
-    		$tag    = ($action=="edit") ? 'tr' : 'div';
-    		$tag1   = ($action=="edit") ? 'td' : 'div';
-    		$tag2   = ($action=="edit") ? 'th' : 'div';
+    		$tag    = ($action=="edit") ? 'tr' : 'tr';
+    		$tag1   = ($action=="edit") ? 'td' : 'td';
+    		$tag2   = ($action=="edit") ? 'th' : 'th';
     		?>
     	
     
@@ -296,9 +296,9 @@
 		{
     			//change html tags ..of action edit or add
     			$action = !empty($_GET['action']) ? $_GET['action'] : '';
-    			$tag    = ($action=="edit") ? 'tr' : 'div';
-    			$tag1   = ($action=="edit") ? 'td' : 'div';
-    			$tag2   = ($action=="edit") ? 'th' : 'div';  ?>
+    			$tag    = ($action=="edit") ? 'tr' : 'tr';
+    			$tag1   = ($action=="edit") ? 'td' : 'td';
+    			$tag2   = ($action=="edit") ? 'th' : 'th';  ?>
     		
     	
     		<<?php echo $tag ?>  class="form-field term-<?php echo esc_attr ( $name ) ?>-wrap">
@@ -311,7 +311,43 @@
     	<?php	
     	}
     	
- 
+ 	   
+	   
+	   	/**
+    	 * 	Selectbox for meta view
+    	 *
+    	 * @author Goran Petrovic
+    	 * @since 1.0
+    	 *
+		 * @var string $name input id and name
+		 * @var string $value default value
+		 * @var array $value select box options array( value =>  title )
+		 * @var string $label title for label
+		 * @var string $desc desription 
+		 * @var array $attr field attributes in array(name => value)
+         *
+    	 * @return html
+    	 **/
+    	static function wp_image( $name = '', $value = '', $choices = array(), $label = '', $desc = '', $attr= array())
+		{
+    			//change html tags ..of action edit or add
+    			$action = !empty($_GET['action']) ? $_GET['action'] : '';
+    			$tag    = ($action=="edit") ? 'tr' : 'div';
+    			$tag1   = ($action=="edit") ? 'td' : 'div';
+    			$tag2   = ($action=="edit") ? 'th' : 'div';  ?>
+    		
+    	
+    		<<?php echo $tag ?>  class="form-field term-<?php echo esc_attr ( $name ) ?>-wrap">
+    			<<?php echo $tag2 ?> scope="row"><label for="<?php echo esc_attr( $name ) ?>"><?php echo esc_attr( $label ); ?></label></<?php echo $tag2 ?>>						
+    			<<?php echo $tag1 ?>><?php echo Form::wp_image($name, $value, $choices, $attr ) ?>
+    	        	<?php echo self::desc($desc) ?>
+    			</<?php echo $tag1 ?>>
+    		</<?php echo $tag ?> >
+    	
+    	<?php	
+    	}
+    	
+		
        	/**
     	 * 	Desctiption for fileds 
     	 *

@@ -192,6 +192,9 @@
 			return $this->values['animate_durations'] = 
 					array(
 						''			 => __( 'Duration', 'the-chameleon' ), 
+						'animated04' =>'0.4 secund',
+						'animated05' =>'0.5 secund',
+						'animated06' =>'0.6 secund',
 						'animated07' =>'0.7 secund',
 						'animated08' =>'0.8 secund',
 						'animated09' =>'0.9 secund',

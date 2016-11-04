@@ -61,6 +61,16 @@ namespace TheChameleon{
 						'default' => 'col-1',
 					 );
 		
+ 			$fields[] = array(
+ 						'name'	  => 'archive_meta',
+ 						'type'	  => 'text',
+ 						'title'	  => __('Meta Pattern', 'the-chameleon'),
+						'desc'	  => __('The Meta is an option to define how to display meta appearance details with help of patterns. The available options are %author%, %date%, %category%, %comments% or to enter off and unplug meta completely. Example Example ( By %author% on %date% in %category% | %comments% ).', 'the-chameleon'),
+ 						'default' => 'By %author% on %date% in %category% | %comments%',
+ 					 );
+
+
+		
 					
 			$fields[] = array(
 						'name'	  => 'archive_animate',
@@ -236,7 +246,7 @@ namespace TheChameleon{
 								'type'	  => 'text',
 								'title'	  => __('Post Meta Pattern','the-chameleon'), 
 								'default' => 'By %author% on %date% in %category% | %comments%',
-								'desc'	  => __('The Meta is an option to define hoe to display meta appearance details with help of patterns. The available options are %author%, %date%, %category%, %comments% or to enter off and unplug meta completely. Example Example ( By %author% on %date% in %category% | %comments% ).', 'the-chameleon'),
+								'desc'	  => __('The Meta is an option to define how to display meta appearance details with help of patterns. The available options are %author%, %date%, %category%, %comments% or to enter off and unplug meta completely. Example Example ( By %author% on %date% in %category% | %comments% ).', 'the-chameleon'),
 							 	'attr'	  => array('style'=>'width:100%'), 
 							);	
 

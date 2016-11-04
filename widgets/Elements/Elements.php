@@ -26,6 +26,7 @@
 			$element 	= isset ( $instance ['element'] ) 	? esc_attr ( $instance ['element'] ) 	: 'logo';		
 			$delimiter  = isset ( $instance ['delimiter'] ) ? esc_attr ( $instance ['delimiter'] ) 	: '»';
 			$logo 		= isset ( $instance ['logo'] ) 		? esc_url( $instance ['logo'] )   		: get_template_directory_uri().'/img/logo.png';
+			$logo_sticky= isset ( $instance ['logo_sticky'] ) ? esc_url( $instance ['logo_sticky'] ): get_template_directory_uri().'/img/logo.png';
 			$logo_type  = isset ( $instance ['logo_type'] ) ? esc_attr ( $instance ['logo_type'] )	: 'image';
 			$copyright  = isset ( $instance ['copyright'] ) ? $instance ['copyright'] 				: 'Copyright &copy; %year% '.get_bloginfo('name').'. Generate by <a href="http://www.chameleonthemes.net">The Chameleon</a>';				
 
@@ -43,7 +44,8 @@
 					
 					if ( $logo_type == "image" ) : ?>
 						<figure class="logo">
-							<a href="<?php echo site_url(); ?>"><img src="<?php echo esc_url( $logo ) ?>" alt="<?php echo $logo_text ?>" class="logo"/></a>
+							<a href="<?php echo site_url(); ?>"><img src="<?php echo esc_url( $logo ) ?>" alt="<?php echo $logo_text ?>" class="logo logo_no_sticky"/></a>
+							<a href="<?php echo site_url(); ?>"><img src="<?php echo esc_url( $logo_sticky ) ?>" alt="<?php echo $logo_text ?>" class="logo logo_sticky"/></a>
 						</figure>
 				<?php else :
 			
@@ -94,6 +96,8 @@
 			$element 	= isset ( $instance ['element'] ) 	? esc_attr ( $instance ['element'] ) 	: 'logo';
 			$delimiter 	= isset ( $instance ['delimiter'] ) ? esc_attr ( $instance ['delimiter'] )  : '»';	
 			$logo 		= isset ( $instance ['logo'] ) 		? esc_url( $instance ['logo'] )  		: get_template_directory_uri().'/img/logo.png';
+			$logo_sticky= isset ( $instance ['logo_sticky'] )? esc_url( $instance ['logo_sticky'] ) : get_template_directory_uri().'/img/logo.png';
+			
 			$logo_type  = isset ( $instance ['logo_type'] ) ? esc_attr( $instance ['logo_type'] ) 	: 'image';
 			$copyright  = isset ( $instance ['copyright'] ) ? $instance ['copyright'] 				: 'Copyright &copy; %year% '.get_bloginfo('name').'. Generate by <a href="http://www.chameleonthemes.net">The Chameleon</a>';	
 
@@ -108,6 +112,7 @@
 			$element 	= isset ( $instance ['element'] ) 	? esc_attr ( $instance ['element'] ) 	: 'logo';
 			$delimiter 	= isset ( $instance ['delimiter'] ) ? esc_attr ( $instance ['delimiter'] ) 	: '»';
 			$logo 		= isset ( $instance ['logo'] ) 		? esc_url( $instance ['logo'] )			: get_template_directory_uri().'/img/logo.png';
+			$logo_sticky= isset ( $instance ['logo_sticky'] ) ? esc_url( $instance ['logo_sticky'] )  		: get_template_directory_uri().'/img/logo.png';
 			$logo_type  = isset ( $instance ['logo_type'] ) ? esc_attr( $instance ['logo_type'] ) 	: 'image';
 			$copyright  = isset ( $instance ['copyright'] ) ? $instance ['copyright'] 				: 'Copyright &copy; %year% '.get_bloginfo('name').'. Generate by <a href="http://www.chameleonthemes.net">The Chameleon</a>';
 			
@@ -149,6 +154,10 @@
 
 			<p><label for="<?php echo $this->get_field_id('logo'); ?>"><?php echo __( 'Logo:', 'the-chameleon' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id('logo'); ?>" name="<?php echo $this->get_field_name('logo'); ?>" type="url" value="<?php echo esc_url( $logo ); ?>" placeholder="Enter your logo url" /></p>
+
+			<p><label for="<?php echo $this->get_field_id('logo_sticky'); ?>"><?php echo __( 'Logo Sticky:', 'the-chameleon' ); ?></label>
+			<input class="widefat" id="<?php echo $this->get_field_id('logo_sticky'); ?>" name="<?php echo $this->get_field_name('logo_sticky'); ?>" type="url" value="<?php echo esc_url( $logo_sticky ); ?>" placeholder="Enter your logo url" /></p>
+			
 
 	
 			<p><label for="<?php echo $this->get_field_id('copyright'); ?>"><?php _e('Copyright:', 'the-chameleon'); ?> <br /> <textarea

@@ -41,7 +41,7 @@
 	 	endif; 
 	?>
 	<!-- Post Tags -->
-	<?php echo get_the_term_list( $post->ID, 'post_tag', '<span itemprop="keywords"><i class="fa fa-tags"></i> ', ', ', '</span>' ); ?>
+	<?php echo get_the_term_list( $post->ID, 'post_tag', '<span itemprop="keywords"><span><i class="fa fa-tags"></i></span><span>', ',</span><span> ', '</span></span>' ); ?>	
 			
 </section>	
 </article>

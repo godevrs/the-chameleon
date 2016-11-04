@@ -23,6 +23,20 @@
 }
 
 
+/* = menu awesome icon
+-------------------------------------------------------------- */
+.fa a {
+	padding-left: 2em;
+}
+
+.fa::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+}
+
+
 /* = Horizontal Menu  
 -------------------------------------------------------------- */
 .upper .widget_nav_menu ul.menu,

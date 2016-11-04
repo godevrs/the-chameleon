@@ -1,7 +1,16 @@
 /* = Horizontal Menu  
 -------------------------------------------------------------- */
 /*@media handheld, only screen and (max-width: 960px) { 	*/
-@media (max-width: 1199px) {	
+
+@media (max-width: 1250px) {	
+
+	.container{
+        width: 100% !important;
+    }
+		
+}	
+
+@media (max-width: 1200px) {	
 
 	.container{
         width: 100% !important;

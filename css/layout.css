@@ -72,11 +72,9 @@ label{
 	padding-right:10px;
 }
 
-
 /* = Elements /halp padding
 -------------------------------------------------------------- */
 .post-meta,
-
 .page-content li,
 .page-content th,
 .page-content td,
@@ -86,7 +84,6 @@ label{
 .page-content h4,
 .page-content h5,
 .page-content h6,
-
 .post-content li,
 .post-content th,
 .post-content td,
@@ -96,8 +93,7 @@ label{
 .post-content h4,
 .post-content h5,
 .post-content h6,
-
-.widget-content li:not(.menu-item) ,
+.widget-content li:not(.menu-item),
 .widget-content th,
 .widget-content td,
 .widget-content h1,
@@ -106,7 +102,6 @@ label{
 .widget-content h4,
 .widget-content h5,
 .widget-content h6,
-
 section.comment-respond li,
 section.comment-respond th,
 section.comment-respond td,
@@ -117,9 +112,6 @@ section.comment-respond h4,
 section.comment-respond h5,
 section.comment-respond h6,
 section.comment-respond p,
-
-
-
 .comments li,
 .comments th,
 .comments td,
@@ -128,13 +120,10 @@ section.comment-respond p,
 .comments h3,
 .comments h4,
 .comments h5,
-.comments h6
-{
+.comments h6{
 	padding-top:5px;
 	padding-bottom:5px;
 }
-
-
 
 /* = Widget Menu padding 0 
 -------------------------------------------------------------- */
@@ -150,7 +139,6 @@ section.comment-respond p,
 -------------------------------------------------------------- */
 .widget_search input{
 	margin-bottom:0 !important;
-	
 }
 
 /* = Widget Search padding widget-content  null
@@ -159,6 +147,14 @@ section.comment-respond p,
 .widget_search label{
 	padding-bottom:0px !important;
 }
+
+@media (max-width: 479px) {
+	.widget-content{padding:10px !important;}
+	.page-builder{padding-left:0px !important; padding-right:0px !important; padding-top:10px !important; padding-bottom:10px !important;}
+	.widget{margin-bottom:10px !important;}
+}
+
+
 
 
 

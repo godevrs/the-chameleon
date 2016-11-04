@@ -1,5 +1,7 @@
 jQuery(document).ready(function() {
 	
+
+	
 	/*-------------------------------------------------*/
    /* =  preloader
    /*-------------------------------------------------*/
@@ -401,7 +403,7 @@ jQuery(document).ready(function() {
 	     }
 
 		if(data.sticky_header =='1'){
-	        if (jQuery(window).scrollTop() >= origOffsetYHeader) {
+	        if (jQuery(window).scrollTop() > origOffsetYHeader) {
 	            jQuery('.header').addClass('sticky');
 	        } else {
 	            jQuery('.header').removeClass('sticky');

@@ -20,13 +20,14 @@ a:hover img.logo {
     box-shadow: 0px 0px 0px #fff !important;  /*remove box-shadow*/
 }
 
-/* = Logo responsive resize  
--------------------------------------------------------------- */
-@media (max-width: 775px) {
-	.header.sticky img.logo{
-		max-width:auto !important;
-		max-height:auto !important;	
-		height:40px !important;
-	}
-	
+.header .logo_sticky{
+	display:none;
 }
+
+.header.sticky .logo_no_sticky{
+	display:none;
+}
+.header.sticky .logo_sticky{
+	display:block;
+}
+

@@ -429,7 +429,7 @@
 
 /* =  Responsive 
 -------------------------------------------------------------- */
-@media (max-width: 1199px) {
+@media (max-width: 850px) {
 		
 	.temp-col-3-15x60x25 .col-item:nth-child(3n+1),		
 	.temp-col-3-15x25x60 .col-item:nth-child(3n+1),	
