@@ -285,7 +285,7 @@ namespace TheChameleon{
 			
 			return $this->term_options = array(
 				
-											'term_type'	=> array('category', 'post_tags', 'portfolios'),						
+											'term_type'	=> array('category', 'post_tag', 'portfolios'),						
 											'fileds' 	=>  $fields,
 
 										);//panel  - Front Page

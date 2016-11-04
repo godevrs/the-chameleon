@@ -332,9 +332,9 @@
 		{
     			//change html tags ..of action edit or add
     			$action = !empty($_GET['action']) ? $_GET['action'] : '';
-    			$tag    = ($action=="edit") ? 'tr' : 'div';
-    			$tag1   = ($action=="edit") ? 'td' : 'div';
-    			$tag2   = ($action=="edit") ? 'th' : 'div';  ?>
+    			$tag    = ($action=="edit") ? 'tr' : 'tr';
+    			$tag1   = ($action=="edit") ? 'td' : 'td';
+    			$tag2   = ($action=="edit") ? 'th' : 'th';  ?>
     		
     	
     		<<?php echo $tag ?>  class="form-field term-<?php echo esc_attr ( $name ) ?>-wrap">
