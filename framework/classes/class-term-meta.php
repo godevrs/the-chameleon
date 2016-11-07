@@ -144,7 +144,7 @@
 			global $TheChameleonTerm;
 
 			if ( is_category() or is_tax() or is_archive() or is_tag() or is_main_query() ) :
-
+			
 				//if not main query
 				$get_term_options_value = array();
 				if( is_object( get_queried_object() ) ) :

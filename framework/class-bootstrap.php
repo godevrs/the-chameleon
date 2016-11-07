@@ -523,17 +523,17 @@
 				}
 
 				if ( $echo ):
-					echo $new_excerpt.'<a href="' . get_permalink( $post->ID ) . '"> [...]</a>';
+					echo '<p>'.$new_excerpt.'<a href="' . get_permalink( $post->ID ) . '"> [...]</a></p>';
 				else:
-					return $new_excerpt.'<a href="' . get_permalink( $post->ID ) . '"> [...]</a>';
+					return '<p>'.$new_excerpt.'<a href="' . get_permalink( $post->ID ) . '"> [...]</a></p>';
 				endif;
 
 			} else {
 
 				if ( $echo ):	
-					echo $excerpt; 	
+					echo '<p>'.$excerpt.'</p>'; 	
 				else: 
-					return $excerpt;	
+					return '<p>'.$excerpt.'</p>';	
 				endif;
 
 			}

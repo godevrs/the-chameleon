@@ -255,3 +255,13 @@ li.comment ol ol{
 .text-center,
 .text-center *,
 .algin-center *{text-align:center;}
+
+/* = Text center
+-------------------------------------------------------------- */
+.upper .logo_sticky,
+.top .logo_sticky,
+.sidebar .logo_sticky,
+.main .logo_sticky,
+.bottom .logo_sticky,
+.footer .logo_sticky,
+.copyright .logo_sticky{display:none;}

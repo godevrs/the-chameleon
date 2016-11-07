@@ -25,6 +25,9 @@ namespace TheChameleon{
 		}
 
 		
+		
+		
+		
 		/**
 		 * 	Set customize options 
 		 *

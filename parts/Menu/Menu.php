@@ -62,17 +62,19 @@ namespace TheChameleon;
 					'default' => 'normal',
 				 );
 
+	/*
 		$fields[] = array(
-					'name'	  => 'primary_menu_type',
-					'type'	  => 'select',
-					'title'	  => __('Type', 'the-chameleon'),  
-					'desc'	  => __('Choice type of the primary menu.', 'the-chameleon'), 
-					'choices' => array(
-						        		'header'	=> __( 'The menu below the header', 'the-chameleon'),
-						        		'header-c'	=> __( 'Without the menu', 'the-chameleon'),
-								         ),
-					'default' => 'header',
-				 );
+						'name'	  => 'primary_menu_type',
+						'type'	  => 'select',
+						'title'	  => __('Type', 'the-chameleon'),  
+						'desc'	  => __('Choice type of the primary menu.', 'the-chameleon'), 
+						'choices' => array(
+							        		'header'	=> __( 'The menu below the header', 'the-chameleon'),
+							        		'header-c'	=> __( 'Without the menu', 'the-chameleon'),
+									         ),
+						'default' => 'header',
+					 );*/
+	
 
 
 		return $this->customize = 

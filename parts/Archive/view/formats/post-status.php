@@ -1,6 +1,17 @@
 <?php
 	global $TheChameleon; 	
 	global $TheChameleonTermOption;
+	global $TheChameleonOption;
+	
+	/*Define meta for blog or taxs*/		
+	if ( is_home() ) :	
+		$meta_pattern  = $TheChameleonOption['archive_meta'];								
+	elseif ( is_category() or is_tax() or is_archive() or is_search() or is_tag()  ):							
+		$meta_pattern  = $TheChameleonTermOption['post_meta'];						
+	else:			
+		$meta_pattern  = $TheChameleonTermOption['post_meta'];							
+	endif; 
+		
 ?>
  <article id="post-<?php the_ID(); ?>" <?php post_class('col100 post-loop'); ?> itemscope itemtype="http://schema.org/Article">
 	
@@ -15,10 +26,10 @@
 	
 		<h2 itemprop="name" style="display:inline-block;"><a href="<?php the_permalink(); ?>#post-<?php the_ID(); ?>" itemprop="url"><?php echo $TheChameleon->get_meta_view( '%author%' ); ?></a></h2>
 
-		<?php if ( $TheChameleonTermOption['post_meta'] != 'hide' or $TheChameleonTermOption['post_meta'] == '' ) : ?>		
+		<?php if ( $meta_pattern != 'hide' or $meta_pattern == '' ) : ?>		
 			<!-- Post Meta -->	
 		      <br />
-	   	      <?php echo $TheChameleon->get_meta_view( $TheChameleonTermOption['post_meta'] ); ?>		   																		
+	   	      <?php echo $TheChameleon->get_meta_view( $meta_pattern ); ?>		   																		
 		<?php endif; ?>
 
 	</header>

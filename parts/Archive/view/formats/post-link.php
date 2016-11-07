@@ -1,6 +1,17 @@
 <?php
 	global $TheChameleon; 	
 	global $TheChameleonTermOption;
+	global $TheChameleonOption;
+	
+	/*Define meta for blog or taxs*/		
+	if ( is_home() ) :	
+		$meta_pattern  = $TheChameleonOption['archive_meta'];								
+	elseif ( is_category() or is_tax() or is_archive() or is_search() or is_tag()  ):							
+		$meta_pattern  = $TheChameleonTermOption['post_meta'];						
+	else:			
+		$meta_pattern  = $TheChameleonTermOption['post_meta'];							
+	endif; 
+		
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('col100 post-loop'); ?> itemscope itemtype="http://schema.org/Article">

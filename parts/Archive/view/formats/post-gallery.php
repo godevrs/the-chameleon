@@ -1,8 +1,17 @@
 <?php
-	global $TheChameleon, $post; 	
+	global $TheChameleon; 	
 	global $TheChameleonTermOption;
+	global $TheChameleonOption; 
 	
-	
+	/*Define meta for blog or taxs*/		
+	if ( is_home() ) :	
+		$meta_pattern  = $TheChameleonOption['archive_meta'];								
+	elseif ( is_category() or is_tax() or is_archive() or is_search() or is_tag()  ):							
+		$meta_pattern  = $TheChameleonTermOption['post_meta'];						
+	else:			
+		$meta_pattern  = $TheChameleonTermOption['post_meta'];							
+	endif; 
+
 	// Use full size gallery images for the next gallery shortcode: 
 	add_filter( 'shortcode_atts_gallery', 'the_chameleon_shortcode_atts_gallery' );
 
@@ -28,10 +37,10 @@
 	</header>
 <?php endif; ?>
 
-<?php if ( $TheChameleonTermOption['post_meta'] != 'hide' or $TheChameleonTermOption['post_meta'] == '' ) : ?>		
+<?php if ( $meta_pattern != 'hide' or $meta_pattern == '' ) : ?>		
 	<!-- Post Meta -->
 	<section class="col100 post-meta  post-meta-loop">											
-   	  <?php echo $TheChameleon->get_meta_view( $TheChameleonTermOption['post_meta'] ); ?>		   				
+   	  <?php echo $TheChameleon->get_meta_view( $meta_pattern); ?>		   				
    	</section>															
 <?php endif; ?>
                                          

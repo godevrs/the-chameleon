@@ -1,0 +1,1 @@
+ <?php the_widget( 'TheChameleon_Elements_Widget' ); ?> 

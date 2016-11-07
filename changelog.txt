@@ -4,6 +4,14 @@
 ==========================================================================================
                  The Chameleon WordPress Theme Change Log
 ==========================================================================================
+
+
+Version 3.2.4 - Released -Nov-7
+-----------------------------------
+- remove customize option for display menu, fixed display menu
+- fixed Blog customize options
+- add customize option for post top section 
+
 Version 3.1.4 - Released -Okt-25
 -----------------------------------
 - fixed responsive menus

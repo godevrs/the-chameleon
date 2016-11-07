@@ -15,7 +15,7 @@
 																	'id'	  => 'footer-content',				
 															        'tag'	  => 'section',
 															        'class'	  => $TheChameleonOption['footer_col'],	
-															        'part'	  => 'Widgets',
+															        'part'	  => is_active_sidebar( 'Footer' ) ? 'Widgets' : 'Footer',
 															        'setting' => array( 'sidebar' => 'Footer' )																										
 															        ),
 																),

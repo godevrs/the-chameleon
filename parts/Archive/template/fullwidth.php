@@ -9,7 +9,7 @@
 	/*Define columns for blog and taxs*/
 	if ( is_category() or is_tax() or is_archive() or is_search() or is_tag() ) :	
 		$col  = $TheChameleonTerm['columns'];							
-	elseif ( is_blog_installed() ):							
+	elseif ( is_home()  ):							
 		$col  = $TheChameleonOption['archive_col'];						
 	else:			
 		$col  = $TheChameleonTerm['columns'];							

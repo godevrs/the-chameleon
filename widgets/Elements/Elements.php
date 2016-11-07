@@ -28,7 +28,7 @@
 			$logo 		= isset ( $instance ['logo'] ) 		? esc_url( $instance ['logo'] )   		: get_template_directory_uri().'/img/logo.png';
 			$logo_sticky= isset ( $instance ['logo_sticky'] ) ? esc_url( $instance ['logo_sticky'] ): get_template_directory_uri().'/img/logo.png';
 			$logo_type  = isset ( $instance ['logo_type'] ) ? esc_attr ( $instance ['logo_type'] )	: 'image';
-			$copyright  = isset ( $instance ['copyright'] ) ? $instance ['copyright'] 				: 'Copyright &copy; %year% '.get_bloginfo('name').'. Generate by <a href="http://www.chameleonthemes.net">The Chameleon</a>';				
+			$copyright  = isset ( $instance ['copyright'] ) ? $instance ['copyright'] 				: 'Copyright &copy; %year% '.get_bloginfo('name').'. <a href="https://chameleonthemes.net">The Chameleon</a> Theme. Powered by <a href="http://wordpress.org">WordPress</a>.';			
 
 			echo $before_widget;
 		
@@ -99,7 +99,7 @@
 			$logo_sticky= isset ( $instance ['logo_sticky'] )? esc_url( $instance ['logo_sticky'] ) : get_template_directory_uri().'/img/logo.png';
 			
 			$logo_type  = isset ( $instance ['logo_type'] ) ? esc_attr( $instance ['logo_type'] ) 	: 'image';
-			$copyright  = isset ( $instance ['copyright'] ) ? $instance ['copyright'] 				: 'Copyright &copy; %year% '.get_bloginfo('name').'. Generate by <a href="http://www.chameleonthemes.net">The Chameleon</a>';	
+			$copyright  = isset ( $instance ['copyright'] ) ? $instance ['copyright'] 				: 'Copyright &copy; %year% '.get_bloginfo('name').'. <a href="https://chameleonthemes.net">The Chameleon</a> Theme. Powered by <a href="http://wordpress.org">WordPress</a>.';	
 
 			return $instance;
 		}
@@ -114,7 +114,7 @@
 			$logo 		= isset ( $instance ['logo'] ) 		? esc_url( $instance ['logo'] )			: get_template_directory_uri().'/img/logo.png';
 			$logo_sticky= isset ( $instance ['logo_sticky'] ) ? esc_url( $instance ['logo_sticky'] )  		: get_template_directory_uri().'/img/logo.png';
 			$logo_type  = isset ( $instance ['logo_type'] ) ? esc_attr( $instance ['logo_type'] ) 	: 'image';
-			$copyright  = isset ( $instance ['copyright'] ) ? $instance ['copyright'] 				: 'Copyright &copy; %year% '.get_bloginfo('name').'. Generate by <a href="http://www.chameleonthemes.net">The Chameleon</a>';
+			$copyright  = isset ( $instance ['copyright'] ) ? $instance ['copyright'] 				: 'Copyright &copy; %year% '.get_bloginfo('name').'. <a href="https://chameleonthemes.net">The Chameleon</a> Theme. Powered by <a href="http://wordpress.org">WordPress</a>.';
 			
 		 	?>	
 				

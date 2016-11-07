@@ -4,7 +4,7 @@
 	global 	$TheChameleonOption;
 	
 	
-	if( is_active_sidebar( "Copyright" ) ) :
+	
 		
 		$TheChameleon->render_template( array(
 
@@ -17,7 +17,7 @@
 																	'id'	  => 'copyright-content',
 														            'tag'	  => 'section',
 														            'class'	  => $TheChameleonOption['copyright_col'],
-														            'part'	  => 'Widgets', 
+														            'part'	  => is_active_sidebar( 'Copyright' ) ? 'Widgets' : 'Copyright',
 														            'setting' => array( 'sidebar' => 'Copyright' ) 
 																	),
 																),	
@@ -25,5 +25,5 @@
 											 ) 
 
 							));
-	endif;
+	
 ?>
