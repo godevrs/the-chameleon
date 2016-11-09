@@ -7,9 +7,9 @@
     <?php if ( $data['show_post_title']=="1" ) : ?>
 		<header class="col100 post-widget-header">
 		    <?php if ( $title_size == '' ) : ?>
-	 			<h3 itemprop="name" style="text-align:left;"><a href="<?php the_permalink(); ?>#post-<?php the_ID(); ?>" itemprop="url"><?php the_title(); ?></a></h3>
+	 			<h3 itemprop="name"><a href="<?php the_permalink(); ?>#post-<?php the_ID(); ?>" itemprop="url"><?php the_title(); ?></a></h3>
 	 	    <?php else : ?>
-	 			<h3 title="<?php the_title(); ?>"  itemprop="name" style="text-align:left;"><a href="<?php the_permalink(); ?>#post-<?php the_ID(); ?>" itemprop="url"><?php echo  $TheChameleon->the_title_maxlength( get_the_title(), $title_size ); ?></a></h3>
+	 			<h3 title="<?php the_title(); ?>"  itemprop="name" ><a href="<?php the_permalink(); ?>#post-<?php the_ID(); ?>" itemprop="url"><?php echo  $TheChameleon->the_title_maxlength( get_the_title(), $title_size ); ?></a></h3>
 	 		<?php endif; ?>
 		</header>
 	<?php endif; ?>

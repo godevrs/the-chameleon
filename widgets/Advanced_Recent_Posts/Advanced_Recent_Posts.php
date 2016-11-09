@@ -73,11 +73,10 @@
 								'order'		 	 => $order, 
 								'nopagging' 	 => true
 							));
-					?>
+					  ?>
+					  
 						<style type="text/css" media="screen">
-					
 							.post-widget img{ max-height:100%;}
-						
 						</style>
 						
 						
@@ -97,22 +96,43 @@
 							);
 						?>
 						
-						
-						<script type="text/javascript">
-	
-							jQuery(document).ready(function(){
-							  jQuery('.the_chameleon_carousel').slick({
-								  slidesToShow: <?php echo $carousel_col[ $columns ] ?>,
-								  slidesToScroll: 2,
-								  arrows: true,
-								  dots: true
+						<?php if ( $template == 'carousel' ) : ?>
+							<script type="text/javascript">
+								jQuery(document).ready(function(){
+								  jQuery('.the_chameleon_carousel').slick({
+									  slidesToShow: <?php echo $carousel_col[ $columns ] ?>,
+									  slidesToScroll: 2,
+									  arrows: true,
+									  dots: true,
+									  responsive: [
+									      {
+									        breakpoint: 1200,
+									        settings: {
+									          slidesToShow: <?php echo $carousel_col[ $columns ] ?>,
+									          slidesToScroll: 2,
+									          infinite: true,
+									          dots: true
+									        }
+									      },
+									      {
+									        breakpoint: 800,
+									        settings: {
+									          slidesToShow: 2,
+									          slidesToScroll: 2
+									        }
+									      },
+									      {
+									        breakpoint: 480,
+									        settings: {
+									          slidesToShow: 1,
+									          slidesToScroll: 1
+									        }
+									      }]
+								  });
+								});
 
-							    /*setting-name: setting-value*/
-							  });
-							});
-	
-						</script>
-
+							</script>
+						<?php endif; ?>
 
 
 					<section class="<?php echo ($template == 'carousel') ? "the_chameleon_carousel" : $columns; ?>">	

@@ -6,9 +6,12 @@ jQuery(document).ready(function() {
    /* =  preloader
    /*-------------------------------------------------*/
   	jQuery(window).load(function() { 
-	    jQuery("body").removeClass('hidden');
+	    jQuery("body").removeClass('hidden');	
 	 });
 	
+		
+		
+		
 		
 	//SEARCH INPUT
 	jQuery('input#s').each(function(){
