@@ -25,11 +25,13 @@
 
 /* = menu awesome icon
 -------------------------------------------------------------- */
-.fa a {
+.widget_nav_menu .fa a,
+.primary-menu .fa a{
 	padding-left: 2em;
 }
 
-.fa::before {
+.widget_nav_menu .fa::before, 
+.primary-menu .fa::before{
     position: absolute;
     top: 50%;
     left: 0;
