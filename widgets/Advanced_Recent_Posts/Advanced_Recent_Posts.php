@@ -34,7 +34,7 @@
 		function widget( $args, $instance ) {
 			extract( $args );		
 	
-			$title 				= apply_filters('widget_title', empty( $instance['title'] ) ? __( '', 'the-chameleon' ) : $instance['title'], $instance, $this->id_base);					
+			$title 				= apply_filters('widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base);					
 	
 			$tag 				= isset ( $instance ['tag'] ) 		? esc_attr ( $instance ['tag'] ) : '';
 			$category 			= isset ( $instance ['category'] ) 	? esc_attr ( $instance ['category'] ) : '';
@@ -81,7 +81,6 @@
 						
 						
 						<?php
-						//https://github.com/kenwheeler/slick/
 						$carousel_col = array(
 	  		 						'col-1' 	  	 => '1',
 									'col-2' 	  	 => '2',
