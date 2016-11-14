@@ -100,11 +100,16 @@ Social  Network – display social network icons with links to your networks.
 -------------------
   Use this JQuery script http://gsgd.co.uk/sandbox/jquery/easing/
   Open source under the BSD License. 
-  Copyright Â© 2008 George McGinley Smith
+  Copyright (c) 2008 George McGinley Smith
 
  Cycle2
 -------------------
   Use this JQuery script http://jquery.malsup.com/cycle2/
   The Cycle2 plugin is dual licensed under the MIT and GPL licenses.
-  Copyright © 2012-2014 M. Alsup.
-
+  Copyright (c) 2012-2014 M. Alsup.
+  
+ Slick 
+-------------------
+  Use this JQuery script https://github.com/kenwheeler/slick.git
+  Ken Wheeler <ken_wheeler@me.com>
+  Copyright (c) 2013-2016 The MIT License (MIT)

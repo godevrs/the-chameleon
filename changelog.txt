@@ -6,7 +6,13 @@
 ==========================================================================================
 
 
-Version 3.2.4 - Released -Nov-7
+Version 3.2.5 - Released 14-Nov-16
+-----------------------------------
+- add carousel in recent posts widget
+- fixed responsive  
+
+
+Version 3.2.4 - Released 7-Nov-16
 -----------------------------------
 - remove customize option for display menu, fixed display menu
 - fixed Blog customize options
