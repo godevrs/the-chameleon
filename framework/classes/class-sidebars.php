@@ -92,6 +92,7 @@
 					'Header'		=> __( 'Header', 'the-chameleon' ),
 					'Top'			=> __( 'Top', 'the-chameleon' ),
 					'Page'			=> __( 'Page', 'the-chameleon' ),
+					'Post Top'		=> __( 'Post Top', 'the-chameleon' ),
 					'Post'			=> __( 'Post', 'the-chameleon' ),
 					'Post Footer'	=> __( 'Post Footer', 'the-chameleon' ),			
 					'Bottom'		=> __( 'Bottom', 'the-chameleon' ),
@@ -100,8 +101,11 @@
 				);
 
 			$custom =  get_option( $this->slug.'custom_sidebars', array() );
-			$custom = !empty( $custom ) ? array_combine( $custom, $custom )  : array();			
-			$this->sidebars = array_merge( $defaul_sidebars,  $custom ); 
+			$custom = !empty( $custom ) ? array_combine( $custom, $custom )  : array();		
+			asort( $custom );
+			
+				
+			$this->sidebars = array_merge( $defaul_sidebars, $custom ); 
 
 			global $config;
 			$config->sidebars = $this->sidebars;

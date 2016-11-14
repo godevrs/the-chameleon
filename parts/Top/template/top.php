@@ -5,8 +5,9 @@
    global $TheChameleonMeta;	
 
 	$sidebar = !empty( $TheChameleonMeta['top_sidebar'] ) ? $TheChameleonMeta['top_sidebar'] : 'Top';
-	$wrap 	 = !empty( $TheChameleonMeta['top_wrap'] ) ? $TheChameleonMeta['top_wrap'] : $TheChameleonOption['top_wrap'];	
-	$col 	 = !empty( $TheChameleonMeta['top_col'] ) ? $TheChameleonMeta['top_col'] : $TheChameleonOption['top_col'];
+	$sidebar = ( is_singular() ) ? 'Post Top' : $sidebar; 	
+	$wrap 	 = !empty( $TheChameleonMeta['top_wrap'] )    ? $TheChameleonMeta['top_wrap']    : $TheChameleonOption['top_wrap'];	
+	$col 	 = !empty( $TheChameleonMeta['top_col'] )     ? $TheChameleonMeta['top_col']     : $TheChameleonOption['top_col'];
 	
 
 	if( is_active_sidebar( "$sidebar" ) ) :
