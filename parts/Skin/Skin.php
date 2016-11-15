@@ -42,7 +42,7 @@ namespace TheChameleon{
 			
 			foreach ( $config->skins as $key => $value) :
 					
-				$url = WP_CONTENT_URL.'/'.$this->config->skins_dir.'/'.$value->slug.'/style.css';	
+				$url = content_url().'/'.$this->config->skins_dir.'/'.$value->slug.'/style.css';	
 					
 					$choices[ $url ] =  $value->name;
 					
@@ -50,7 +50,7 @@ namespace TheChameleon{
 						
 							foreach ( $value->sub  as  $sub) :
 								
-									$url = WP_CONTENT_URL.'/'.$this->config->skins_dir.'/'.$value->slug.'/style-'.$sub->slug.'.css';
+									$url = content_url().'/'.$this->config->skins_dir.'/'.$value->slug.'/style-'.$sub->slug.'.css';
 							
 									$choices[ $url ] =  '- '.$value->name .' '.$sub->name;
 						

@@ -845,7 +845,7 @@
 
 			// Register theme support
 			if ( function_exists( 'add_theme_support' ) ) { 
-				add_theme_support( 'post-thumbnails', array( 'post', 'page') );			
+				add_theme_support( 'post-thumbnails');			
 			}
 
 			//add editor style

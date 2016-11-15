@@ -110,7 +110,7 @@
 			global $config;
 			$config->sidebars = $this->sidebars;
 			
-		   return $this->sidebars;
+		    return $this->sidebars;
 
 
 		}
@@ -130,8 +130,10 @@
 				if ( !empty( $key ) ) :
 					register_sidebar(
 							array(
-								'name'          => $key,
+								'name'          => $value,
 								'id'			=> sanitize_title($key),
+								/*'description'   => 'test',*/
+								'class'			=> 'the_chameleon',
 								'before_widget' => '<section id="%1$s" class="widget hidden %2$s">',
 								'after_widget'  => '</section></section><!-- end widget-->',
 								'before_title'  => '<header class="widget-header"><h4>',

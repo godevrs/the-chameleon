@@ -91,7 +91,7 @@
 						'stretch'		 => __( 'Stretch', 'the-chameleon' ) , 
 						'fullwidth' 	 => __( 'Fullwidth', 'the-chameleon' )
 	   					); 
-
+ 
 
 		}
 		

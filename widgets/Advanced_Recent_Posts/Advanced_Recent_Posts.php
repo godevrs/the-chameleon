@@ -98,7 +98,7 @@
 						<?php if ( $template == 'carousel' ) : ?>
 							<script type="text/javascript">
 								jQuery(document).ready(function(){
-								  jQuery('.the_chameleon_carousel').slick({
+								jQuery(".the_chameleon_carousel").not('.slick-initialized').slick({
 									  slidesToShow: <?php echo $carousel_col[ $columns ] ?>,
 									  slidesToScroll: 2,
 									  arrows: true,
