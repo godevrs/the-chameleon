@@ -24,7 +24,7 @@
 		<section class="col100 post-widget-content">		
 			<?php if ( $TheChameleon->has_post_media( $post->ID ) or has_post_thumbnail() and $data['show_post_media']) : ?>	
 				<figure class="post-media post-widget-media-standard alignleft">				
-					<?php echo $TheChameleon->get_post_featured_media( $post->ID, 'standard', array() ); ?>
+					<a href="<?php the_permalink(); ?>#post-<?php the_ID(); ?>" itemprop="url"><?php echo $TheChameleon->get_post_featured_media( $post->ID, 'standard', array() ); ?></a>
 				</figure>
 			<?php endif; ?>
 			<?php if( $data['show_post_excerpt'] ) :?>

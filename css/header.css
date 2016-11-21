@@ -24,6 +24,10 @@ a:hover img.logo {
 	display:none;
 }
 
+.logo_sticky{
+	display: none;
+}
+
 .header.sticky .logo_no_sticky{
 	display:none;
 }

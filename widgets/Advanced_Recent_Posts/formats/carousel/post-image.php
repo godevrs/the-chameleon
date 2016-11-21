@@ -9,7 +9,7 @@
 		<section class="col100 post-widget-content post-widget-content-carousel">		
 			<?php if ( $TheChameleon->has_post_media( $post->ID ) or has_post_thumbnail() and $data['show_post_media']) : ?>	
 				<figure class="post-media post-widget-media-standard aligncenter">				
-					<?php echo $TheChameleon->get_post_featured_media( $post->ID, 'image', array() ); ?>
+					<a href="<?php the_permalink() ?>"><?php echo $TheChameleon->get_post_featured_media( $post->ID, 'image', array() ); ?></a>
 				</figure>
 			<?php endif; ?>
 			
@@ -32,6 +32,7 @@
 				<?php endif; ?>
 		
 				<?php if( $data['show_post_excerpt'] ) :?>
+					<a href="<?php the_permalink() ?>">
 					<?php if ( $excerpt_size == '0' ) : 								
 							 the_content();		
 						 elseif( $excerpt_size > '0' ) :	
@@ -39,6 +40,7 @@
 						 else : 											
 					 		 the_excerpt();													
 				 		 endif; ?>
+					 </a>
 				 <?php endif;?>
 		  </div>
 		</section>

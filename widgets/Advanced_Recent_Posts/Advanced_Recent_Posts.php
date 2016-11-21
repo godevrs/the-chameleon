@@ -168,14 +168,12 @@
 
 								
 								<div id="post-<?php the_ID(); ?>" <?php post_class('post-widget'); ?> itemscope itemtype="http://schema.org/Article" style="">
-									<a href="<?php the_permalink() ?>">
 									<?php	
 									$format = get_post_format();
 									if ( false === $format )
 										$format = 'standard';
 
 										get_template_part( 'widgets/Advanced_Recent_Posts/formats/carousel/post','image' ); ?>
-									</a>
 								</div>
 
 
