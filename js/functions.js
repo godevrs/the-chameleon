@@ -1,7 +1,6 @@
 jQuery(document).ready(function() {
 	
 
-	
 	/*-------------------------------------------------*/
    /* =  preloader
    /*-------------------------------------------------*/
@@ -9,10 +8,7 @@ jQuery(document).ready(function() {
 	    jQuery("body").removeClass('hidden');	
 	 });
 	
-		
-		
-		
-		
+	
 	//SEARCH INPUT
 	jQuery('input#s').each(function(){
 		jQuery(this).attr('placeholder','Search...');
@@ -29,12 +25,10 @@ jQuery(document).ready(function() {
 		var url = jQuery(this).val();			
 		window.location.href = url;				
 	});
-	
-	
+		
 	//add icon for open respoinsive menu
 	jQuery( "li.menu-item-has-children" ).prepend('<i class="fa fa-chevron-down open-sub-menu"  style="position:absolute; right:0px;" aria-hidden="true"></i>');
-	
-	
+		
 	//main menu responsvise open
 	jQuery('li.main-menu-item .open-sub-menu').click(function() {
 		jQuery(this).parent().children("ul.sub-menu").toggle();			
@@ -44,12 +38,11 @@ jQuery(document).ready(function() {
 	jQuery('.widget_nav_menu li.menu-item-has-children .open-sub-menu').click(function() {	
 		jQuery(this).parent().children("ul.sub-menu").toggle();
 	});
-
 	
 	//responsiv menu
 	jQuery( ".widget_nav_menu .widget-content" ).prepend('<i class="fa fa-bars fa-2x responsive-menu-icon"></i>');
 		
-		
+	
 	//main menu
 	jQuery( ".standard-menu" ).prepend('<i class="fa fa-bars fa-2x responsive-menu-icon"></i>');
 
@@ -58,8 +51,6 @@ jQuery(document).ready(function() {
 		jQuery(this).parent().children().children( "ul.menu" ).toggle();			
 	});
 		
-
-
 	
 	//MESSAGE	
 	jQuery('.message').click(function() {		
@@ -75,9 +66,8 @@ jQuery(document).ready(function() {
 	        offset: 1
 	     });
 	}
-		
+	
 	//Header 
-
 	if (data.header_animate!='') {
 		 jQuery('.header .widget').addClass("hidden").viewportChecker({
 	       	classToAdd: data.header_delay + ' '+ data.header_duration +' animated '+ data.header_animate,
@@ -123,7 +113,7 @@ jQuery(document).ready(function() {
 	}
 	
 
-
+ 	//posts widgets
 	if (data.archive_animate!='') {
 		 jQuery('.post .widget').addClass("hidden").viewportChecker({
 	       	classToAdd: data.archive_delay + ' '+ data.archive_duration +' animated '+ data.archive_animate,
@@ -131,19 +121,8 @@ jQuery(document).ready(function() {
 	        offset: 1
 	     });
 	}
-	
-/*
-	if (data.archive_animate!='') {
-		 jQuery('#main-content .widget').addClass("hidden").viewportChecker({
-	       	classToAdd: data.archive_delay + ' '+ data.archive_duration +' animated '+ data.archive_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}*/
 
-	
-	
-	
+		
 	//Sidebar
 	if (data.sidebar_animate!='') {
 		jQuery('#sidebar .widget').addClass("hidden").viewportChecker({
@@ -161,7 +140,6 @@ jQuery(document).ready(function() {
 	         offset: 1
 	      });
 	}
-
 
 
 	//Bottom
@@ -193,190 +171,6 @@ jQuery(document).ready(function() {
 
 
 
-	//Page Builder
-
-	//Section 1
-	if (data.section_1_animate!='') {
-		 jQuery('#page-builder-section-1 .widget').addClass("hidden").viewportChecker({
-	       	classToAdd: data.section_1_delay + ' '+ data.section_1_duration +' animated '+ data.section_1_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}
-
-	//Section 2
-	if (data.section_2_animate!='') {
-		 jQuery('#page-builder-section-2 .widget').addClass("hidden").viewportChecker({
-	       	classToAdd: data.section_2_delay + ' '+ data.section_2_duration +' animated '+ data.section_2_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}
-
-	//Section 3
-	if (data.section_3_animate!='') {
-		 jQuery('#page-builder-section-3 .widget').addClass("hidden").viewportChecker({
-	       	classToAdd: data.section_3_delay + ' '+ data.section_3_duration +' animated '+ data.section_3_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}
-	
-	
-	//Section 4
-	if (data.section_4_animate!='') {
-		 jQuery('#page-builder-section-4 .widget').addClass("hidden").viewportChecker({
-	       	classToAdd: data.section_4_delay + ' '+ data.section_4_duration +' animated '+ data.section_4_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}
-	
-	//Section 5
-	if (data.section_5_animate!='') {
-		 jQuery('#page-builder-section-5 .widget').addClass("hidden").viewportChecker({
-	       	classToAdd: data.section_5_delay + ' '+ data.section_5_duration +' animated '+ data.section_5_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}
-	
-	//Section 6
-	if (data.section_6_animate!='') {
-		 jQuery('#page-builder-section-6 .widget').addClass('hidden').viewportChecker({
-	       	classToAdd: data.section_6_delay + ' '+ data.section_6_duration +' animated '+ data.section_6_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}	
-	
-	//Section 7
-	if (data.section_7_animate!='') {
-		 jQuery('#page-builder-section-7 .widget').addClass('hidden').viewportChecker({
-	       	classToAdd: data.section_7_delay + ' '+ data.section_7_duration +' animated '+ data.section_7_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}	
-	
-	//Section 8
-	if (data.section_8_animate!='') {
-		 jQuery('#page-builder-section-8 .widget').addClass('hidden').viewportChecker({
-	       	classToAdd: data.section_8_delay + ' '+ data.section_8_duration +' animated '+ data.section_8_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}	
-	
-	//Section 9
-	if (data.section_9_animate!='') {
-		 jQuery('#page-builder-section-9 .widget').addClass('hidden').viewportChecker({
-	       	classToAdd: data.section_9_delay + ' '+ data.section_9_duration +' animated '+ data.section_9_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}	
-	
-	//Section 10
-	if (data.section_10_animate!='') {
-		 jQuery('#page-builder-section-10 .widget').addClass('hidden').viewportChecker({
-	       	classToAdd: data.section_10_delay + ' '+ data.section_10_duration +' animated '+ data.section_10_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}	
-	
-	//Section 11
-	if (data.section_11_animate!='') {
-		 jQuery('#page-builder-section-11 .widget').addClass('hidden').viewportChecker({
-	       	classToAdd: data.section_11_delay + ' '+ data.section_11_duration +' animated '+ data.section_11_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}	
-	
-	//Section 12
-	if (data.section_12_animate!='') {
-		 jQuery('#page-builder-section-12 .widget').addClass('hidden').viewportChecker({
-	       	classToAdd: data.section_12_delay + ' '+ data.section_12_duration +' animated '+ data.section_12_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}	
-	
-	//Section 13
-	if (data.section_13_animate!='') {
-		 jQuery('#page-builder-section-13 .widget').addClass('hidden').viewportChecker({
-	       	classToAdd: data.section_13_delay + ' '+ data.section_13_duration +' animated '+ data.section_13_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}	
-	
-	//Section 14
-	if (data.section_14_animate!='') {
-		 jQuery('#page-builder-section-14 .widget').addClass('hidden').viewportChecker({
-	       	classToAdd: data.section_14_delay + ' '+ data.section_14_duration +' animated '+ data.section_14_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}	
-	
-	//Section 15
-	if (data.section_15_animate!='') {
-		 jQuery('#page-builder-section-15 .widget').addClass('hidden').viewportChecker({
-	       	classToAdd: data.section_15_delay + ' '+ data.section_15_duration +' animated '+ data.section_15_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}	
-	
-	//Section 16
-	if (data.section_16_animate!='') {
-		 jQuery('#page-builder-section-16 .widget').addClass('hidden').viewportChecker({
-	       	classToAdd: data.section_16_delay + ' '+ data.section_16_duration +' animated '+ data.section_16_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}	
-	
-	//Section 17
-	if (data.section_17_animate!='') {
-		 jQuery('#page-builder-section-17 .widget').addClass('hidden').viewportChecker({
-	       	classToAdd: data.section_17_delay + ' '+ data.section_17_duration +' animated '+ data.section_17_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}	
-	
-	//Section 18
-	if (data.section_18_animate!='') {
-		 jQuery('#page-builder-section-18 .widget').addClass('hidden').viewportChecker({
-	       	classToAdd: data.section_18_delay + ' '+ data.section_18_duration +' animated '+ data.section_18_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}	
-	
-	//Section 19
-	if (data.section_19_animate!='') {
-		 jQuery('#page-builder-section-19 .widget').addClass('hidden').viewportChecker({
-	       	classToAdd: data.section_19_delay + ' '+ data.section_19_duration +' animated '+ data.section_19_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}	
-	
-	//Section 20
-	if (data.section_20_animate!='') {
-		 jQuery('#page-builder-section-20 .widget').addClass('hidden').viewportChecker({
-	       	classToAdd: data.section_20_delay + ' '+ data.section_20_duration +' animated '+ data.section_20_animate,
-			classToRemove: 'hidden',
-	        offset: 100
-	     });
-	}
-
-
 
     //Sticky
 	if ( jQuery( '.upper').length ) {
@@ -394,7 +188,7 @@ jQuery(document).ready(function() {
     	var origOffsetYMainMenu = mainMenu.offset().top;
     }
     
-    
+    //On Scrolle
     function scroll() {
 		
 	 	if(data.upper_sticky =='1'){
@@ -414,7 +208,6 @@ jQuery(document).ready(function() {
 		}	
 
     
-		
 		if(data.primary_menu_sticky =='1'){ 
 	        if (jQuery(window).scrollTop() >= origOffsetYMainMenu) {
                jQuery('.menu-wrap').addClass('sticky');

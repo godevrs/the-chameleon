@@ -23,12 +23,13 @@ jQuery(document).ready(function() {
 	
 	});
 	
-	
+	//hide text editor 
 	var active_page_builder = jQuery('#active_page_builder').prop('checked');	
 	if(jQuery('#active_page_builder').prop('checked')){
 		jQuery('#postdivrich').hide();
 	}
-		
+	
+	//hide text editor 
 	jQuery( "#active_page_builder:checkbox" ).change(function() {
 		if(jQuery('#active_page_builder').prop('checked')){
 			jQuery('#postdivrich').hide();

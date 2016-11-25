@@ -5,6 +5,10 @@
                  The Chameleon WordPress Theme Change Log
 ==========================================================================================
 
+Version 3.2.7 - Released -Nov-16
+-----------------------------------
+- separate js for page builder
+
 
 Version 3.2.5 - Released 14-Nov-16
 -----------------------------------

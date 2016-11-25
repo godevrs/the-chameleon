@@ -36,21 +36,19 @@
 		
 			echo $before_title . ' ' . $after_title; 
 
-
 				if( $element == 'logo' ) :
 				
 					$logo_text 		= get_bloginfo( 'name' );
 					$logo_sub_text 	= get_bloginfo( 'description' ) ;
 					
-					if ( $logo_type == "image" ) : ?>
-						<figure class="logo">
-							<a href="<?php echo site_url(); ?>"><img src="<?php echo esc_url( $logo ) ?>" alt="<?php echo $logo_text ?>" class="logo logo_no_sticky"/></a>
-							<a href="<?php echo site_url(); ?>"><img src="<?php echo esc_url( $logo_sticky ) ?>" alt="<?php echo $logo_text ?>" class="logo logo_sticky"/></a>
-						</figure>
-				<?php else :
+					if ( $logo_type == "image" ) : 
+						echo '<figure class="logo">';
+							echo '<a href="'.site_url().'"><img src="'.esc_url( $logo ).'" alt="'.$logo_text.'" class="logo logo_no_sticky"/></a>';
+							echo '<a href="'.site_url().'"><img src="'.esc_url( $logo_sticky ).'" alt="'.$logo_text .'" class="logo logo_sticky"/></a>';
+						echo '</figure>';
+				 else :
 			
-						echo '<hgroup class="logo"><h1 class="site-name"><a href="' . esc_url( site_url() ).'">'. $logo_text .'</a></h1>'.
-							  '<h3 class="site-description">'. $logo_sub_text .'</h3></hgroup>';
+						echo '<hgroup class="logo"><h1 class="site-name"><a href="' . esc_url( site_url() ).'">'. $logo_text .'</a></h1>'.'<h3 class="site-description">'. $logo_sub_text .'</h3></hgroup>';
 
 					endif ; 
 					

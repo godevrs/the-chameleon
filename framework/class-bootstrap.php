@@ -2,7 +2,6 @@
 
 	namespace TheChameleon;
 
-
 	/**
 	 * Theme Bootstrap  
 	 *
@@ -15,7 +14,7 @@
 	 * @subpackage  GoX 
 	 * @since 		GoX 1.0.0
 	 *
-	 * @version 	1.0.0
+	 * @version 	1.0.1
 	 *
 	 **/	
 	class Bootstrap{
@@ -46,29 +45,29 @@
 			//Term Options 
 			$TermMeta = new Term_Meta( $parts );
 
-				//add style and scripts
-				add_action( 'wp_enqueue_scripts', array(&$this, 'scripts_and_styles' ));
+			//add style and scripts
+			add_action( 'wp_enqueue_scripts', array(&$this, 'scripts_and_styles' ));
 
-				//theme supports
-				add_action( 'after_setup_theme', array(&$this, 'theme_supports') );
+			//theme supports
+			add_action( 'after_setup_theme', array(&$this, 'theme_supports') );
 
-				//custom css
-				add_action('wp_head', array(&$this, 'custom_css'), 10, 2);
+			//custom css
+			add_action('wp_head', array(&$this, 'custom_css'), 10, 2);
 
-				//wp_title	
-				add_filter( 'wp_title',  array(&$this, 'wp_title') );
+			//wp_title	
+			add_filter( 'wp_title',  array(&$this, 'wp_title') );
 
-				//load_theme_textdomain	
-				add_action('after_setup_theme', array(&$this, 'load_theme_textdomain') );
+			//load_theme_textdomain	
+			add_action('after_setup_theme', array(&$this, 'load_theme_textdomain') );
 
-				//admin_enqueue_scripts	
-				add_action('admin_enqueue_scripts',  array(&$this, 'admin_scripts_and_styles') );
+			//admin_enqueue_scripts	
+			add_action('admin_enqueue_scripts',  array(&$this, 'admin_scripts_and_styles') );
 
-				//setup theme widgets
-			 	add_action("after_switch_theme",  array(&$this, "after_switch_theme" ) );
-			
-			
-				add_action('admin_menu',  array(&$this, 'theme_doc_menu' ) );
+			//setup theme widgets
+		 	add_action("after_switch_theme",  array(&$this, "after_switch_theme" ) );
+		
+		
+			add_action('admin_menu',  array(&$this, 'theme_doc_menu' ) );
 			
 		}
 		
@@ -103,7 +102,7 @@
 		 *
 		 **/
 		function admin_init(){
-			wp_redirect(admin_url('themes.php?page=the-chameleon-docs'));
+			wp_redirect( admin_url( 'themes.php?page=the-chameleon-docs' ) );
 			exit;
 		}
 		
@@ -174,7 +173,6 @@
 
 						$key  			= ( !empty( $element['id'] ) ) ? $element['id'] : '0';
 						$custom_class 	= ( !empty( $element['class'] ) ) ? $element['class'] : 'no-class';
-
 						$wrap[ $key ] 	= !empty( $element['wrap'] ) ? $element['wrap'] : ( ( !empty( $wraps ) and !empty( $wraps[ $key ]['wrap'] ) ) ? $wraps[ $key ]['wrap'] : 'normal' ) ;
 
 						//html tag
@@ -244,21 +242,16 @@
 																		$this->{$part}->view( strtolower( $view ) ); 
 																	endif;
 
-
-
 																else:	
 																	echo "View does not exists in $value[part] part";
 																endif;	
 
 															else:	
-
 																echo "Part $value[part] does not exists";
-
 															endif; 
 
 													//end html tag		
 													echo ' </' . $tag[ $part_key ] . '> ';		
-
 
 									 	 endforeach;
 
@@ -303,9 +296,7 @@
 		function get_body_class( $class = 'custom', $echo = false ){
 
 			ob_start();
-
 				body_class();	
-
 			$body_class = ob_get_contents();
 			ob_end_clean();
 
@@ -318,7 +309,6 @@
 				//lats class fix
 				$last = count($class_array)-1;	
 				$class_array[$last] = $class_array[$last].'-'.$class;
-
 				$body_class = implode("-$class ", $class_array);
 
 			endif;
@@ -363,7 +353,6 @@
 				else: 
 					$single_category = '';
 					$categories 	 = '';
-
 				endif;
 
 				$meta_category 	 = '<span class="meta-item meta-category" itemprop="articleSection">' . $single_category . '</span>';
@@ -523,9 +512,9 @@
 				}
 
 				if ( $echo ):
-					echo '<p>'.$new_excerpt.'<a href="' . get_permalink( $post->ID ) . '"> [...]</a></p>';
+					echo '<p>'.$new_excerpt.'<a href="' . get_permalink( $post->ID ) . '">...</a></p>';
 				else:
-					return '<p>'.$new_excerpt.'<a href="' . get_permalink( $post->ID ) . '"> [...]</a></p>';
+					return '<p>'.$new_excerpt.'<a href="' . get_permalink( $post->ID ) . '">...</a></p>';
 				endif;
 
 			} else {
@@ -586,42 +575,32 @@
       			
 			include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 			if ( !is_plugin_active( 'the-chameleon-css-generator/the-chameleon-css-generator.php' ) ) :
-				
-			
-				if ( isset( $_COOKIE['theskin'] ) ) :
-								
+							
+				if ( isset( $_COOKIE['theskin'] ) ) :							
 					$TheChameleonOption['skin'] = $_COOKIE['theskin'] ;
-					
 				endif;
-			
-				
-				
+
 				//skin
 				wp_register_style( 'the-chameleon-skin', $TheChameleonOption['skin'], array('the-chameleon') );
 				wp_enqueue_style( 'the-chameleon-skin' );
 					
 			endif;
-		
-			
+				
 			//responsive style
    	    	wp_enqueue_style( 'the-chameleon-responsove', get_template_directory_uri().'/css/responsove.css', array('the-chameleon') );
+			
    	    	if ( !is_admin() ) :	
-      
-   	    		//functions			
-   	    		wp_enqueue_script( 'the-chameleon-functions', get_template_directory_uri()  .'/js/functions.js', array( 'jquery' ), '1.0.0'  );
-      
+ 
    	    		global $TheChameleonMeta;
    	    		global $TheChameleonOption;
    	    		global $TheChameleonTerm;
       
    	    		$data = array(
-					
-					
-					'sticky_header'         => !empty( $TheChameleonOption['header_sticky'] ) 		? $TheChameleonOption['header_sticky'] 		: '', 					
+										
+					'sticky_header'         => !empty( $TheChameleonOption['header_sticky'] ) 		? $TheChameleonOption['header_sticky'] 		 : '', 					
 					'primary_menu_sticky'   => !empty( $TheChameleonOption['primary_menu_sticky'] ) ? $TheChameleonOption['primary_menu_sticky'] : '', 	
-					'upper_sticky' 			=> !empty( $TheChameleonOption['upper_sticky'] ) 		? $TheChameleonOption['upper_sticky'] : '', 
-					
-					
+					'upper_sticky' 			=> !empty( $TheChameleonOption['upper_sticky'] ) 		? $TheChameleonOption['upper_sticky'] 		 : '', 
+
    	    			'site_url'				=> site_url(),
       
    	    			'upper_animate'			=> !empty( $TheChameleonOption['upper_animate'] ) 		? $TheChameleonOption['upper_animate'] 		: 'fadeIn',
@@ -652,86 +631,6 @@
    	    			'sidebar_two_duration'	=> !empty( $TheChameleonMeta['sidebar_two_duration'] ) 	? $TheChameleonMeta['sidebar_two_duration'] : ( !empty ( $TheChameleonOption['sidebar_two_duration'] ) 	? $TheChameleonOption['sidebar_two_duration']  	: 'animated07' ) ,
    	    			'sidebar_two_delay'		=> !empty( $TheChameleonMeta['sidebar_two_delay'] ) 	? $TheChameleonMeta['sidebar_two_delay'] 	: ( !empty ( $TheChameleonOption['sidebar_two_delay'] ) 	? $TheChameleonOption['sidebar_two_delay']  	: 'delay03' ) ,
       
-   	    			'section_1_animate'		=> !empty( $TheChameleonMeta['section_1_animate'] ) 	? $TheChameleonMeta['section_1_animate'] 	: 'fadeIn',
-   	    			'section_1_duration'	=> !empty( $TheChameleonMeta['section_1_duration'] ) 	? $TheChameleonMeta['section_1_duration'] 	: 'animated07',
-   	    			'section_1_delay'		=> !empty( $TheChameleonMeta['section_1_delay'] ) 		? $TheChameleonMeta['section_1_delay'] 		: 'delay03',
-      
-   	    			'section_2_animate'		=> !empty( $TheChameleonMeta['section_2_animate'] ) 	? $TheChameleonMeta['section_2_animate'] 	: 'fadeIn',
-   	    			'section_2_duration'	=> !empty( $TheChameleonMeta['section_2_duration'] ) 	? $TheChameleonMeta['section_2_duration'] 	: 'animated07',
-   	    			'section_2_delay'		=> !empty( $TheChameleonMeta['section_2_delay'] ) 		? $TheChameleonMeta['section_2_delay'] 		: 'delay03',
-      
-   	    			'section_3_animate'		=> !empty( $TheChameleonMeta['section_3_animate'] ) 	? $TheChameleonMeta['section_3_animate'] 	: 'fadeIn',
-   	    			'section_3_duration'	=> !empty( $TheChameleonMeta['section_3_duration'] ) 	? $TheChameleonMeta['section_3_duration'] 	: 'animated07',
-   	    			'section_3_delay'		=> !empty( $TheChameleonMeta['section_3_delay'] ) 		? $TheChameleonMeta['section_3_delay'] 		: 'delay03',
-      
-   	    			'section_4_animate'		=> !empty( $TheChameleonMeta['section_4_animate'] ) 	? $TheChameleonMeta['section_4_animate'] 	: 'fadeIn',
-   	    			'section_4_duration'	=> !empty( $TheChameleonMeta['section_4_duration'] ) 	? $TheChameleonMeta['section_4_duration'] 	: 'animated07',
-   	    			'section_4_delay'		=> !empty( $TheChameleonMeta['section_4_delay'] ) 		? $TheChameleonMeta['section_4_delay'] 		: 'delay03',
-      
-   	    			'section_5_animate'		=> !empty( $TheChameleonMeta['section_5_animate'] ) 	? $TheChameleonMeta['section_5_animate'] 	: 'fadeIn',
-   	    			'section_5_duration'	=> !empty( $TheChameleonMeta['section_5_duration'] ) 	? $TheChameleonMeta['section_5_duration'] 	: 'animated07',
-   	    			'section_5_delay'		=> !empty( $TheChameleonMeta['section_5_delay'] ) 		? $TheChameleonMeta['section_5_delay'] 		: 'delay03',
-      
-   	    			'section_6_animate'		=> !empty( $TheChameleonMeta['section_6_animate'] ) 	? $TheChameleonMeta['section_6_animate'] 	: 'fadeIn',
-   	    			'section_6_duration'	=> !empty( $TheChameleonMeta['section_6_duration'] ) 	? $TheChameleonMeta['section_6_duration'] 	: 'animated07',
-   	    			'section_6_delay'		=> !empty( $TheChameleonMeta['section_6_delay'] ) 		? $TheChameleonMeta['section_6_delay'] 		: 'delay03',
-   	    	
-					'section_7_animate'		=> !empty( $TheChameleonMeta['section_7_animate'] ) 	? $TheChameleonMeta['section_7_animate'] 	: 'fadeIn',
-   	    			'section_7_duration'	=> !empty( $TheChameleonMeta['section_7_duration'] ) 	? $TheChameleonMeta['section_7_duration'] 	: 'animated07',
-   	    			'section_7_delay'		=> !empty( $TheChameleonMeta['section_7_delay'] ) 		? $TheChameleonMeta['section_7_delay'] 		: 'delay03',
-				
-					'section_8_animate'		=> !empty( $TheChameleonMeta['section_8_animate'] ) 	? $TheChameleonMeta['section_8_animate'] 	: 'fadeIn',
-   	    			'section_8_duration'	=> !empty( $TheChameleonMeta['section_8_duration'] ) 	? $TheChameleonMeta['section_8_duration'] 	: 'animated07',
-   	    			'section_8_delay'		=> !empty( $TheChameleonMeta['section_8_delay'] ) 		? $TheChameleonMeta['section_8_delay'] 		: 'delay03',
-   	    		
-					'section_9_animate'		=> !empty( $TheChameleonMeta['section_9_animate'] ) 	? $TheChameleonMeta['section_9_animate'] 	: 'fadeIn',
-   	    			'section_9_duration'	=> !empty( $TheChameleonMeta['section_9_duration'] ) 	? $TheChameleonMeta['section_9_duration'] 	: 'animated07',
-   	    			'section_9_delay'		=> !empty( $TheChameleonMeta['section_9_delay'] ) 		? $TheChameleonMeta['section_9_delay'] 		: 'delay03',
-   	    		
-					'section_10_animate'	=> !empty( $TheChameleonMeta['section_10_animate'] ) 	? $TheChameleonMeta['section_10_animate'] 	: 'fadeIn',
-   	    			'section_10_duration'	=> !empty( $TheChameleonMeta['section_10_duration'] ) 	? $TheChameleonMeta['section_10_duration'] 	: 'animated07',
-   	    			'section_10_delay'		=> !empty( $TheChameleonMeta['section_10_delay'] ) 		? $TheChameleonMeta['section_10_delay'] 	: 'delay03',
-   	    			
-					'section_11_animate'		=> !empty( $TheChameleonMeta['section_11_animate'] ) 	? $TheChameleonMeta['section_11_animate'] 	: 'fadeIn',
-					'section_11_duration'	=> !empty( $TheChameleonMeta['section_11_duration'] ) 	? $TheChameleonMeta['section_11_duration'] 	: 'animated07',
-					'section_11_delay'		=> !empty( $TheChameleonMeta['section_11_delay'] ) 		? $TheChameleonMeta['section_11_delay'] 		: 'delay03',
-
-					'section_12_animate'		=> !empty( $TheChameleonMeta['section_12_animate'] ) 	? $TheChameleonMeta['section_12_animate'] 	: 'fadeIn',
-					'section_12_duration'	=> !empty( $TheChameleonMeta['section_12_duration'] ) 	? $TheChameleonMeta['section_12_duration'] 	: 'animated07',
-					'section_12_delay'		=> !empty( $TheChameleonMeta['section_12_delay'] ) 		? $TheChameleonMeta['section_12_delay'] 		: 'delay03',
-
-					'section_13_animate'		=> !empty( $TheChameleonMeta['section_13_animate'] ) 	? $TheChameleonMeta['section_13_animate'] 	: 'fadeIn',
-					'section_13_duration'	=> !empty( $TheChameleonMeta['section_13_duration'] ) 	? $TheChameleonMeta['section_13_duration'] 	: 'animated07',
-					'section_13_delay'		=> !empty( $TheChameleonMeta['section_13_delay'] ) 		? $TheChameleonMeta['section_13_delay'] 		: 'delay03',
-
-					'section_14_animate'		=> !empty( $TheChameleonMeta['section_14_animate'] ) 	? $TheChameleonMeta['section_14_animate'] 	: 'fadeIn',
-					'section_14_duration'	=> !empty( $TheChameleonMeta['section_14_duration'] ) 	? $TheChameleonMeta['section_14_duration'] 	: 'animated07',
-					'section_14_delay'		=> !empty( $TheChameleonMeta['section_14_delay'] ) 		? $TheChameleonMeta['section_14_delay'] 		: 'delay03',
-
-					'section_15_animate'		=> !empty( $TheChameleonMeta['section_15_animate'] ) 	? $TheChameleonMeta['section_15_animate'] 	: 'fadeIn',
-					'section_15_duration'	=> !empty( $TheChameleonMeta['section_15_duration'] ) 	? $TheChameleonMeta['section_15_duration'] 	: 'animated07',
-					'section_15_delay'		=> !empty( $TheChameleonMeta['section_15_delay'] ) 		? $TheChameleonMeta['section_15_delay'] 		: 'delay03',
-
-					'section_16_animate'		=> !empty( $TheChameleonMeta['section_16_animate'] ) 	? $TheChameleonMeta['section_16_animate'] 	: 'fadeIn',
-					'section_16_duration'	=> !empty( $TheChameleonMeta['section_16_duration'] ) 	? $TheChameleonMeta['section_16_duration'] 	: 'animated07',
-					'section_16_delay'		=> !empty( $TheChameleonMeta['section_16_delay'] ) 		? $TheChameleonMeta['section_16_delay'] 		: 'delay03',
-
-					'section_17_animate'		=> !empty( $TheChameleonMeta['section_17_animate'] ) 	? $TheChameleonMeta['section_17_animate'] 	: 'fadeIn',
-					'section_17_duration'	=> !empty( $TheChameleonMeta['section_17_duration'] ) 	? $TheChameleonMeta['section_17_duration'] 	: 'animated07',
-					'section_17_delay'		=> !empty( $TheChameleonMeta['section_17_delay'] ) 		? $TheChameleonMeta['section_17_delay'] 		: 'delay03',
-
-					'section_18_animate'		=> !empty( $TheChameleonMeta['section_18_animate'] ) 	? $TheChameleonMeta['section_18_animate'] 	: 'fadeIn',
-					'section_18_duration'	=> !empty( $TheChameleonMeta['section_18_duration'] ) 	? $TheChameleonMeta['section_18_duration'] 	: 'animated07',
-					'section_18_delay'		=> !empty( $TheChameleonMeta['section_18_delay'] ) 		? $TheChameleonMeta['section_18_delay'] 		: 'delay03',
-
-					'section_19_animate'		=> !empty( $TheChameleonMeta['section_19_animate'] ) 	? $TheChameleonMeta['section_19_animate'] 	: 'fadeIn',
-					'section_19_duration'	=> !empty( $TheChameleonMeta['section_19_duration'] ) 	? $TheChameleonMeta['section_19_duration'] 	: 'animated07',
-					'section_19_delay'		=> !empty( $TheChameleonMeta['section_19_delay'] ) 		? $TheChameleonMeta['section_19_delay'] 		: 'delay03',
-
-					'section_20_animate'	=> !empty( $TheChameleonMeta['section_20_animate'] ) 	? $TheChameleonMeta['section_20_animate'] 	: 'fadeIn',
-					'section_20_duration'	=> !empty( $TheChameleonMeta['section_20_duration'] ) 	? $TheChameleonMeta['section_20_duration'] 	: 'animated07',
-					'section_20_delay'		=> !empty( $TheChameleonMeta['section_20_delay'] ) 		? $TheChameleonMeta['section_20_delay'] 	: 'delay03',
-
 					'bottom_animate'		=> !empty( $TheChameleonMeta['bottom_animate'] ) 		? $TheChameleonMeta['bottom_animate'] 	  	: ( !empty ( $TheChameleonOption['bottom_animate'] ) 	? $TheChameleonOption['bottom_animate']  	: 'fadeIn' ) ,
    	    			'bottom_duration'		=> !empty( $TheChameleonMeta['bottom_duration'] ) 		? $TheChameleonMeta['bottom_duration']  	: ( !empty ( $TheChameleonOption['bottom_duration'] ) 	? $TheChameleonOption['bottom_duration']  	: 'animated07' ) ,
    	    			'bottom_delay'			=> !empty( $TheChameleonMeta['bottom_delay'] ) 			? $TheChameleonMeta['bottom_delay'] 		: ( !empty ( $TheChameleonOption['bottom_delay'] ) 		? $TheChameleonOption['bottom_delay']  		: 'delay03' ) ,
@@ -746,38 +645,61 @@
       
       
    	    		);
+				
+   	    		//functions			
+   	    		wp_enqueue_script( 'the-chameleon-functions', get_template_directory_uri()  .'/js/functions.js', array( 'jquery' ), '1.0.0'  );
+				
+				//localize functions
    	    		wp_localize_script( 'the-chameleon-functions', 'data', $data );
+      	  
+				//page builder effects load just on pages
+				if (is_singular('page') and !is_plugin_active( 'the-chameleon-page-builder/the-chameleon-page-builder.php' ) ) :
+					//page builder
+					
+					//page builder data
+					for ($i=1; $i <= 20 ; $i++) :
+	   	    			$page_builder['section_'.$i.'_animate']	= !empty( $TheChameleonMeta['section_'.$i.'_animate'] ) 	? $TheChameleonMeta['section_'.$i.'_animate'] 	: 'fadeIn';
+	   	    			$page_builder['section_'.$i.'_duration']= !empty( $TheChameleonMeta['section_'.$i.'_duration'] ) 	? $TheChameleonMeta['section_'.$i.'_duration'] 	: 'animated07';
+	   	    			$page_builder['section_'.$i.'_delay']	= !empty( $TheChameleonMeta['section_'.$i.'_delay'] ) 		? $TheChameleonMeta['section_'.$i.'_delay'] 	: 'delay03';
+					endfor;
+						
+	   	    		//page builder			
+	   	    		wp_enqueue_script( 'the-chameleon-page-builder', get_template_directory_uri()  .'/js/page-builder.js', array( 'jquery' ), '1.0.0'  );
+							
+					//page builder localize functions
+	   	    		wp_localize_script( 'the-chameleon-page-builder', 'page_builder_data', $page_builder );
       
+				endif;
+				
    	    		//easing	
-   	    		wp_enqueue_script( 'the-chameleon-jquery-easing', get_template_directory_uri()  .'/js/jquery.easing.1.3.js', array( 'jquery' ), '1.3.0', true  );
+   	    		wp_enqueue_script( 'the-chameleon-jquery-easing', get_template_directory_uri()  .'/js/jquery.easing.min.js', array( 'jquery' ), '1.3.0', true  );
       
    	    		//jquery.viewportchecker.js
-   	    		wp_register_script( 'the-chameleon-viewport-checker', get_template_directory_uri()  .'/js/jQuery-viewport-checker/src/jquery.viewportchecker.js', array( 'jquery' ), '1.0.0', true );
+   	    		wp_register_script( 'the-chameleon-viewport-checker', get_template_directory_uri()  .'/js/viewport-checker/dist/jquery.viewportchecker.min.js', array( 'jquery' ), '1.0.0', true );
    	    		wp_enqueue_script( 'the-chameleon-viewport-checker' );
           
 
 				//cycle 2 scripts
+			 	/*
 			 	wp_enqueue_script('the-chameleon-cycle', 		    get_template_directory_uri() .'/js/cycle2/cycle2.js',      array('jquery', 'the-chameleon-jquery-easing'), '2.1.6', true);			
-				wp_register_script('the-chameleon-cycle-flip', 	    get_template_directory_uri() .'/js/cycle2/Flip.js',        array('jquery', 'the-chameleon-jquery-easing', 'the-chameleon-cycle'), '1.0.0', true);			
-				wp_register_script('the-chameleon-cycle-tile', 	    get_template_directory_uri() .'/js/cycle2/Tile.js',        array('jquery', 'the-chameleon-jquery-easing', 'the-chameleon-cycle'), '1.0.0', true);			
-				wp_register_script('the-chameleon-cycle-scrollVert', get_template_directory_uri() .'/js/cycle2/ScrollVert.js', array('jquery', 'the-chameleon-jquery-easing', 'the-chameleon-cycle'), '1.0.0', true);			
-				wp_register_script('the-chameleon-cycle-ie-fade',    get_template_directory_uri() .'/js/cycle2/IE-Fade.js',    array('jquery', 'the-chameleon-jquery-easing', 'the-chameleon-cycle'), '1.0.0', true);			
-				wp_register_script('the-chameleon-cycle-shuffle',    get_template_directory_uri() .'/js/cycle2/Shuffle.js',    array('jquery', 'the-chameleon-jquery-easing', 'the-chameleon-cycle'), '1.0.0', true);			
-				wp_register_script('the-chameleon-cycle-carousel',   get_template_directory_uri() .'/js/cycle2/Carousel.js',   array('jquery', 'the-chameleon-jquery-easing', 'the-chameleon-cycle'), '1.0.0', true);			
-				wp_register_script('the-chameleon-cycle-caption',   get_template_directory_uri() .'/js/cycle2/Caption2.js',    array('jquery', 'the-chameleon-jquery-easing', 'the-chameleon-cycle'), '1.0.0', true);
-				wp_enqueue_script( 'the-chameleon-cycle' );
+			 					wp_register_script('the-chameleon-cycle-flip', 	    get_template_directory_uri() .'/js/cycle2/Flip.js',        array('jquery', 'the-chameleon-jquery-easing', 'the-chameleon-cycle'), '1.0.0', true);			
+			 					wp_register_script('the-chameleon-cycle-tile', 	    get_template_directory_uri() .'/js/cycle2/Tile.js',        array('jquery', 'the-chameleon-jquery-easing', 'the-chameleon-cycle'), '1.0.0', true);			
+			 					wp_register_script('the-chameleon-cycle-scrollVert', get_template_directory_uri() .'/js/cycle2/ScrollVert.js', array('jquery', 'the-chameleon-jquery-easing', 'the-chameleon-cycle'), '1.0.0', true);			
+			 					wp_register_script('the-chameleon-cycle-ie-fade',    get_template_directory_uri() .'/js/cycle2/IE-Fade.js',    array('jquery', 'the-chameleon-jquery-easing', 'the-chameleon-cycle'), '1.0.0', true);			
+			 					wp_register_script('the-chameleon-cycle-shuffle',    get_template_directory_uri() .'/js/cycle2/Shuffle.js',    array('jquery', 'the-chameleon-jquery-easing', 'the-chameleon-cycle'), '1.0.0', true);			
+			 					wp_register_script('the-chameleon-cycle-carousel',   get_template_directory_uri() .'/js/cycle2/Carousel.js',   array('jquery', 'the-chameleon-jquery-easing', 'the-chameleon-cycle'), '1.0.0', true);			
+			 					wp_register_script('the-chameleon-cycle-caption',   get_template_directory_uri() .'/js/cycle2/Caption2.js',    array('jquery', 'the-chameleon-jquery-easing', 'the-chameleon-cycle'), '1.0.0', true);
+			 					wp_enqueue_script( 'the-chameleon-cycle' );*/
+			 	
 
 
    	    		//comments	
    	    		if ( is_singular() && get_option( 'thread_comments' ) )
    	    			wp_enqueue_script( 'comment-reply' );
-      
-      
+  
+  
    	    	endif;
-      
-   	    
-      
-      
+ 
    	    }
 
 	 	/**
@@ -788,14 +710,10 @@
 		 *
 		 **/
    	    function admin_scripts_and_styles(){
-
 			//functions			
    	    	wp_enqueue_script( 'the-chameleon-functions', get_template_directory_uri()  .'/js/admin.js', array( 'jquery' ), '1.0.0'  );
 
-	
 		}
-
-
 	   	
 		/**
 		 * 	Theme support 
@@ -806,7 +724,7 @@
 		 **/
 		function theme_supports() {		
 
-		$defaults = array(
+			$defaults = array(
 						'default-color'          => '',
 						'default-image'          => '',
 						'default-repeat'         => '',

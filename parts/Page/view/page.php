@@ -4,11 +4,13 @@
 	global $TheChameleonOption;
 	global $TheChameleonMeta;
 	
+	
 	$main_wrap = !empty($TheChameleonMeta['main_wrap']) ? $TheChameleonMeta['main_wrap'] : $TheChameleonOption['main_wrap'] ;		
 	$page_class = !empty( $TheChameleonMeta['section_1_sidebar'] ) ?  'col100 page-builder-wrap' : 'col100 page-wrap' ; ?>
 	
 
 	<?php echo ( $TheChameleonMeta['custom_css'] ) ? '<style>' .  $TheChameleonMeta['custom_css']  . '</style>' : NULL; ?>
+	
 <!-- Start page -->
 <section id="page-<?php the_ID(); ?>" <?php post_class( $page_class ); ?>>
 		
